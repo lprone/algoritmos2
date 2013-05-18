@@ -1,0 +1,34 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package guia4;
+
+import java.util.LinkedList;
+
+/**
+ *
+ * @author lprone
+ */
+public class ej3 {
+
+    public double fibo(double n) {
+
+        if (n == 0 || n == 1) {
+            return 1;
+        } else {
+            LinkedList<Double> fibos = new LinkedList();
+            fibos.add(0, new Double(1));
+            fibos.add(1, new Double(1));
+            for (int i = 2; i <= n; i++) {
+                fibos.add(i, (fibos.get(i - 1) + fibos.get(i - 2)));
+            }
+            return fibos.get((int) n);
+        }
+    }
+
+    public static void main(String[] args) {
+        ej3 e = new ej3();
+        System.out.printf("%.0f \n", e.fibo(1475));
+    }
+}
