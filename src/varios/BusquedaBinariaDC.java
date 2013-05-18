@@ -13,15 +13,31 @@ import java.util.Arrays;
  */
 public class BusquedaBinariaDC {
 
+    /**
+     *
+     * @param in
+     * @return
+     */
     private boolean isBase(int[] in) {
         return in.length == 1;
     }
 
+    /**
+     *
+     * @param in
+     * @param elem
+     * @return
+     */
     private boolean base(int[] in, int elem) {
         System.out.println("base: " + in[0]);
         return in[0] == elem;
     }
 
+    /**
+     *
+     * @param a
+     * @return
+     */
     private ArrayList<int[]> split(int[] a) {
         ArrayList<int[]> ret = new ArrayList<int[]>();
         int[] aux1;
@@ -40,6 +56,11 @@ public class BusquedaBinariaDC {
         return ret;
     }
 
+    /**
+     *
+     * @param l
+     * @return
+     */
     private boolean join(ArrayList<Boolean> l) {
         boolean aux = false;
         for (int i = 0; i < l.size(); i++) {
@@ -48,6 +69,12 @@ public class BusquedaBinariaDC {
         return aux;
     }
 
+    /**
+     *
+     * @param a
+     * @param e
+     * @return
+     */
     public boolean busquedaBinaria(int[] a, int e) {
 
         ArrayList<int[]> sp = new ArrayList(Arrays.asList(a));
@@ -78,6 +105,12 @@ public class BusquedaBinariaDC {
         return join(mapBase(cb, e));
     }
 
+    /**
+     *
+     * @param cb
+     * @param e
+     * @return
+     */
     private ArrayList<Boolean> mapBase(ArrayList<int[]> cb, int e) {
         ArrayList<Boolean> sols = new ArrayList();
         for (int[] is : cb) {

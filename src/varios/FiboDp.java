@@ -12,14 +12,29 @@ import java.util.ArrayList;
  */
 public class FiboDp {
 
+    /**
+     *
+     * @param in
+     * @return
+     */
     private boolean isBase(int in) {
         return in == 0 || in == 1;
     }
 
+    /**
+     *
+     * @param elem
+     * @return
+     */
     private int base(int elem) {
         return 1;
     }
 
+    /**
+     *
+     * @param a
+     * @return
+     */
     private ArrayList<Integer> split(int a) {
         ArrayList<Integer> ret = new ArrayList();
         int p1 = a - 1;
@@ -29,6 +44,11 @@ public class FiboDp {
         return ret;
     }
 
+    /**
+     *
+     * @param l
+     * @return
+     */
     private int join(ArrayList<Integer> l) {
         int aux = 0;
         for (int elem : l) {
@@ -37,6 +57,11 @@ public class FiboDp {
         return aux;
     }
 
+    /**
+     *
+     * @param a
+     * @return
+     */
     public int fibo(int a) {
 
         ArrayList<Integer> sp = new ArrayList();
@@ -60,6 +85,11 @@ public class FiboDp {
         return join(map(cb));
     }
 
+    /**
+     *
+     * @param cb
+     * @return
+     */
     private ArrayList<Integer> map(ArrayList<Integer> cb) {
         ArrayList<Integer> sols = new ArrayList();
         for (int is : cb) {

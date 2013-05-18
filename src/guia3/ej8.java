@@ -17,32 +17,65 @@ class MyPoint implements Comparable {
     private int x;
     private int y;
 
+    /**
+     *
+     * @param x
+     * @param y
+     */
     public MyPoint(int x, int y) {
         this.x = x;
         this.y = y;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getX() {
         return x;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getY() {
         return y;
     }
 
+    /**
+     *
+     * @param p
+     * @return
+     */
     public int dist(MyPoint p) {
         return (int) (Math.pow(Math.abs(x - p.x), 2) + Math.pow(Math.abs(y - p.y), 2));
     }
 
+    /**
+     *
+     * @param o1
+     * @param o2
+     * @return
+     */
     public int compare(MyPoint o1, MyPoint o2) {
         return o1.getX() - o2.getX();
     }
 
+    /**
+     *
+     * @param other
+     * @return
+     */
     @Override
     public int compareTo(Object other) {
         return this.getX() - ((MyPoint) other).getX();
     }
 
+    /**
+     *
+     * @return
+     */
     @Override
     public String toString() {
         return ("(" + x + "," + y + ")");
@@ -55,20 +88,40 @@ class ret implements Comparable {
     MyPoint p1;
     MyPoint p2;
 
+    /**
+     *
+     * @param p1
+     * @param p2
+     * @param d
+     */
     public ret(MyPoint p1, MyPoint p2, int d) {
         this.p1 = p1;
         this.p2 = p2;
         this.d = d;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getD() {
         return d;
     }
 
+    /**
+     *
+     * @return
+     */
+    @Override
     public String toString() {
         return ("(" + p1.toString() + "," + p2.toString() + " - d = " + Point.distance(p1.getX(), p1.getY(), p2.getX(), p2.getY()) + ")");
     }
 
+    /**
+     *
+     * @param other
+     * @return
+     */
     @Override
     public int compareTo(Object other) {
         return Math.abs(this.getD() - ((ret) other).getD());
@@ -77,14 +130,29 @@ class ret implements Comparable {
 
 public class ej8 {
 
+    /**
+     *
+     * @param p
+     * @return
+     */
     boolean isBase(MyPoint[] p) {
         return p.length == 2;
     }
 
+    /**
+     *
+     * @param a
+     * @return
+     */
     private ret base(MyPoint[] a) {
         return new ret(a[0], a[1], a[0].dist(a[1]));
     }
 
+    /**
+     *
+     * @param a
+     * @return
+     */
     public ArrayList<MyPoint[]> split(MyPoint[] a) {
         ArrayList<MyPoint[]> ret = new ArrayList();
         MyPoint[] aux1 = new MyPoint[2];
@@ -96,6 +164,11 @@ public class ej8 {
         return ret;
     }
 
+    /**
+     *
+     * @param in
+     * @return
+     */
     private ret join(ArrayList<ret> in) {
         ret r = in.get(0);
         ArrayList<ret> points = in;
@@ -108,6 +181,11 @@ public class ej8 {
         return r;
     }
 
+    /**
+     *
+     * @param in
+     * @return
+     */
     public ret minDist(ArrayList<MyPoint[]> in) {
         ArrayList<MyPoint[]> sp = new ArrayList();
         sp.add(in.get(0));
@@ -125,6 +203,11 @@ public class ej8 {
         return join(map(cb));
     }
 
+    /**
+     *
+     * @param cb
+     * @return
+     */
     private ArrayList<ret> map(ArrayList<MyPoint[]> cb) {
         ArrayList<ret> sols = new ArrayList();
         for (MyPoint[] is : cb) {

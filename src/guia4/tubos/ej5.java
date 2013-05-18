@@ -14,14 +14,28 @@ public class ej5 {
 
     private int[][] adyacencia;
 
+    /**
+     *
+     * @param a
+     */
     public ej5(ArrayList<Integer> a) {
         adyacencia = new int[a.size()][a.size()];
     }
 
+    /**
+     *
+     * @param t1
+     * @param t2
+     * @return
+     */
     private int costoUnir(int t1, int t2) {
         return (t1 == t2) ? t1 : 2 * Math.max(t1, t2);
     }
 
+    /**
+     *
+     * @param tubos
+     */
     public void inicializarUniones(ArrayList<Integer> tubos) {
         for (int i = 0; i < adyacencia.length; i++) {
             for (int j = i; j < adyacencia.length; j++) {
@@ -36,6 +50,10 @@ public class ej5 {
         }
     }
 
+    /**
+     *
+     * @param m
+     */
     public void mostrarMatriz(int[][] m) {
 
         for (int i = 0; i < m.length; i++) {
@@ -46,6 +64,10 @@ public class ej5 {
         }
     }
 
+    /**
+     *
+     * @param tubos
+     */
     private void une(ArrayList<Integer> tubos) {
 //        for j= 1 to n
 //        N[j,j] = 0
@@ -76,6 +98,10 @@ public class ej5 {
 
     }
 
+    /**
+     *
+     * @param tubos
+     */
     private void unir(ArrayList<Integer> tubos) {
         for (int l = 0; l < adyacencia.length - 1; l++) {
             for (int i = 0; i <= adyacencia.length - l; i++) {
@@ -94,10 +120,14 @@ public class ej5 {
         System.out.println("");
     }
 
+    /**
+     *
+     * @param tubos
+     */
     public void floydWarshall(ArrayList<Integer> tubos) {
         for (int i = 0; i < adyacencia.length; i++) {
             int minimo;
-            for (int j = i+1; j < adyacencia.length; j++) {
+            for (int j = i + 1; j < adyacencia.length; j++) {
                 int aux;
                 minimo = Integer.MAX_VALUE;
                 for (int p = 0; p < adyacencia.length; p++) {
@@ -108,10 +138,15 @@ public class ej5 {
                 }
                 adyacencia[i][j] = minimo;
             }
-            
+
         }
     }
 
+    /**
+     *
+     * @param tubos
+     * @return
+     */
     public int lalala(ArrayList<Integer> tubos) {
         int N = adyacencia.length;
         for (int j = 1; j < adyacencia.length; j++) {
@@ -158,7 +193,7 @@ public class ej5 {
         e.mostrarMatriz(e.adyacencia);
 
         System.out.println("^^^^^^^^^^^^^^^^");
-        System.out.println(e.adyacencia[1][a.size()-2]);
+        System.out.println(e.adyacencia[1][a.size() - 2]);
 
     }
 }

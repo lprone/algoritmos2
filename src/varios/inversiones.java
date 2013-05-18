@@ -13,19 +13,29 @@ import java.util.Arrays;
  */
 public class inversiones {
 
+    /**
+     *
+     * @param a
+     * @return
+     */
     private boolean isBase(int[] a) {
         return a.length == 2;
     }
 
+    /**
+     *
+     * @param a
+     * @return
+     */
     private int base(int[] a) {
-//        System.out.print("base: ");
-//        for (int j = 0; j < a.length; j++) {
-//            System.out.print(a[j] + " ");
-//        }
-//        System.out.println("");
         return (a[0] > a[1]) ? 1 : 0;
     }
 
+    /**
+     *
+     * @param a
+     * @return
+     */
     private ArrayList<int[]> split(int[] a) {
         ArrayList<int[]> ret = new ArrayList();
         int[] aux1 = new int[2];
@@ -37,6 +47,11 @@ public class inversiones {
         return ret;
     }
 
+    /**
+     *
+     * @param in
+     * @return
+     */
     private int join(ArrayList<Integer> in) {
         int ret = 0;
         for (int j = 0; j < in.size(); j++) {
@@ -45,6 +60,11 @@ public class inversiones {
         return ret;
     }
 
+    /**
+     *
+     * @param in
+     * @return
+     */
     public int inversiones(int[] in) {
 
         // join(map (inversiones (split isbase base)))
@@ -71,6 +91,11 @@ public class inversiones {
         return join(map(cb));
     }
 
+    /**
+     *
+     * @param cb
+     * @return
+     */
     private ArrayList<Integer> map(ArrayList<int[]> cb) {
         ArrayList<Integer> sols = new ArrayList();
         for (int[] is : cb) {

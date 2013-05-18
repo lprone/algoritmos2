@@ -15,10 +15,20 @@ public class ej5 {
 
     private int[][] adyacencia;
 
+    /**
+     *
+     * @param a
+     */
     public ej5(ArrayList<Point> a) {
         adyacencia = new int[a.size()][a.size()];
     }
 
+    /**
+     *
+     * @param t1
+     * @param t2
+     * @return
+     */
     private int costoUnir(Point t1, Point t2) {
         if (t1.y == t2.x || t2.y == t1.x) {
             return 0;
@@ -27,6 +37,10 @@ public class ej5 {
         }
     }
 
+    /**
+     *
+     * @param tubos
+     */
     public void inicializarUniones(ArrayList<Point> tubos) {
         for (int i = 0; i < adyacencia.length; i++) {
             for (int j = 0; j < adyacencia.length; j++) {
@@ -39,6 +53,10 @@ public class ej5 {
         }
     }
 
+    /**
+     *
+     * @param m
+     */
     public void mostrarMatriz(int[][] m) {
         for (int i = 0; i < m.length; i++) {
             for (int j = 0; j < m.length; j++) {
@@ -48,13 +66,16 @@ public class ej5 {
         }
     }
 
+    /**
+     *
+     */
     public void floydWarshall() {
         for (int k = 1; k < adyacencia.length; k++) {
             for (int i = 0; i < adyacencia.length; i++) {
                 for (int j = 0; j < adyacencia.length; j++) {
-                    if ((adyacencia[i][j] > (adyacencia[i][k-1] + adyacencia[k][j])) && i != j) {
+                    if ((adyacencia[i][j] > (adyacencia[i][k - 1] + adyacencia[k][j])) && i != j) {
                         adyacencia[i][j] = adyacencia[i][k] + adyacencia[k][j];
-                        System.out.println(i+" "+j+" "+adyacencia[i][j]);
+                        System.out.println(i + " " + j + " " + adyacencia[i][j]);
                     }
                 }
             }

@@ -17,6 +17,12 @@ class Planta implements Comparable {
     private int potencia, tiempo;
     private double potenciaTiempo;
 
+    /**
+     *
+     * @param especie
+     * @param potencia
+     * @param tiempo
+     */
     public Planta(String especie, int potencia, int tiempo) {
         this.especie = especie;
         this.potencia = potencia;
@@ -24,22 +30,44 @@ class Planta implements Comparable {
         this.potenciaTiempo = new Double(potencia) / new Double(tiempo);
     }
 
+    /**
+     *
+     * @return
+     */
     public String getEspecie() {
         return especie;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getPotencia() {
         return potencia;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getTiempo() {
         return tiempo;
     }
 
+    /**
+     *
+     * @return
+     */
+    @Override
     public String toString() {
         return especie + " - " + potencia + " - " + tiempo + " - " + potenciaTiempo;
     }
 
+    /**
+     *
+     * @param other
+     * @return
+     */
     @Override
     public int compareTo(Object other) {
         if (potenciaTiempo > ((Planta) other).potenciaTiempo) {
@@ -55,6 +83,11 @@ class Planta implements Comparable {
 
 public class PlantasVsZombies {
 
+    /**
+     *
+     * @param plantas
+     * @return
+     */
     public static Planta[] solveGame(ArrayList<Planta> plantas) {
         Collections.sort(plantas);
         Planta[] sol = new Planta[8];

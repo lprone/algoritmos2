@@ -10,6 +10,9 @@ package guia1;
  */
 public class ej8 {
 
+    /**
+     *
+     */
     private void fiboLong() {
         long f1 = 1;
         long f2 = 1;
@@ -22,6 +25,9 @@ public class ej8 {
         }
     }
 
+    /**
+     *
+     */
     private void fiboInt() {
         int f1 = 1;
         int f2 = 1;

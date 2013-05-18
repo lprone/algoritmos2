@@ -10,6 +10,12 @@ package varios;
  */
 public class busquedaBinaria {
 
+    /**
+     *
+     * @param in
+     * @param e
+     * @return
+     */
     public boolean buscar(int[] in, int e) {
         int init = 0, fin = in.length;
         while (Math.abs(init - fin) > 1) {

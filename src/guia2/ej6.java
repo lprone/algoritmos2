@@ -13,6 +13,11 @@ import java.util.Collections;
  */
 public class ej6 {
 
+    /**
+     * 
+     * @param n
+     * @return 
+     */
     public boolean esCapicua(int n) {
         String aux = null;
         if (n >= 0 && n < 10) {
@@ -39,6 +44,10 @@ public class ej6 {
         return ret;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public ArrayList generarCapicuas() {
         ArrayList ret = new ArrayList();
         for (int i = 0; i < 100000; i++) {
@@ -49,12 +58,22 @@ public class ej6 {
         return ret;
     }
 
+    /**
+     * 
+     * @param aux
+     * @return 
+     */
     public ArrayList ordenarCapicuas(ArrayList aux) {
         ArrayList ret = aux;
         Collections.sort(ret);
         return ret;
     }
 
+    /**
+     * 
+     * @param aux
+     * @return 
+     */
     public int buscarMenorDiferencia(ArrayList aux) {
         int min = 99999;
         for (int i = 0; i < aux.size() - 1; i++) {

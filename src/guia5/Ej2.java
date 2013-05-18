@@ -15,19 +15,37 @@ class Moneda implements Comparable {
 
     int valor;
 
+    /**
+     *
+     * @param valor
+     */
     public Moneda(int valor) {
         this.valor = valor;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getValor() {
         return this.valor;
     }
 
+    /**
+     *
+     * @param other
+     * @return
+     */
     @Override
     public int compareTo(Object other) {
         return ((Moneda) other).valor - this.valor;
     }
 
+    /**
+     *
+     * @return
+     */
+    @Override
     public String toString() {
         return String.valueOf(valor);
     }
@@ -35,6 +53,12 @@ class Moneda implements Comparable {
 
 public class Ej2 {
 
+    /**
+     *
+     * @param monedas
+     * @param precio
+     * @return
+     */
     public static ArrayList<Moneda> cambio(ArrayList<Moneda> monedas, int precio) {
         Collections.sort(monedas);
         int retornado = 0;

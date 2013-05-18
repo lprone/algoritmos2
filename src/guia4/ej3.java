@@ -12,6 +12,11 @@ import java.util.LinkedList;
  */
 public class ej3 {
 
+    /**
+     *
+     * @param n
+     * @return
+     */
     public double fibo(double n) {
 
         if (n == 0 || n == 1) {

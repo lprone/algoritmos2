@@ -10,6 +10,12 @@ package guia4;
  */
 public class ej7 {
 
+    /**
+     *
+     * @param str1
+     * @param str2
+     * @return
+     */
     public int computeLevenshteinDistance(String str1, String str2) {
         int[][] distance = new int[str1.length() + 1][];
         int repi, repj;
@@ -65,6 +71,13 @@ public class ej7 {
         return distance[str1.length()][str2.length()];
     }
 
+    /**
+     *
+     * @param a
+     * @param b
+     * @param c
+     * @return
+     */
     private int minimum(int a, int b, int c) {
         if (a <= b && a <= c) {
             return a;

@@ -16,6 +16,13 @@ class Cita implements Comparable {
     private String descripcion;
     private int hi, hf, p;
 
+    /**
+     *
+     * @param descripcion
+     * @param hi
+     * @param hf
+     * @param p
+     */
     public Cita(String descripcion, int hi, int hf, int p) {
         this.descripcion = descripcion;
         this.hi = hi;
@@ -23,23 +30,44 @@ class Cita implements Comparable {
         this.p = p;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getP() {
         return p;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getHf() {
         return hf;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getHi() {
         return hi;
     }
 
+    /**
+     *
+     * @return
+     */
     @Override
     public String toString() {
         return descripcion + " - " + hi + " - " + hf + " - " + p;
     }
 
+    /**
+     *
+     * @param other
+     * @return
+     */
     @Override
     public int compareTo(Object other) {
         return this.p - ((Cita) other).p;
@@ -48,6 +76,11 @@ class Cita implements Comparable {
 
 public class Ej3 {
 
+    /**
+     *
+     * @param citas
+     * @return
+     */
     public static ArrayList<Cita> organizarAgenda(ArrayList<Cita> citas) {
         Collections.sort(citas);
         Collections.reverse(citas);

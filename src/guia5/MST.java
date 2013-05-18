@@ -6,9 +6,6 @@ package guia5;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Iterator;
-import java.util.PriorityQueue;
-import java.util.Set;
 
 /**
  *
@@ -19,29 +16,56 @@ class Arista implements Comparable {
     String nodeA, nodeB;
     int costo;
 
+    /**
+     * 
+     * @param nodeA
+     * @param nodeB
+     * @param costo 
+     */
     public Arista(String nodeA, String nodeB, int costo) {
         this.nodeA = nodeA;
         this.nodeB = nodeB;
         this.costo = costo;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public String getNodeA() {
         return nodeA;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public String getNodeB() {
         return nodeB;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public int getCosto() {
         return costo;
     }
 
+    /**
+     * 
+     * @return 
+     */
     @Override
     public String toString() {
         return nodeA + " - " + nodeB + " - " + costo;
     }
 
+    /**
+     * 
+     * @param o
+     * @return 
+     */
     @Override
     public int compareTo(Object o) {
         return costo - ((Arista) o).costo;
@@ -50,6 +74,12 @@ class Arista implements Comparable {
 
 public class MST {
 
+    /**
+     * 
+     * @param aristas
+     * @param nodos
+     * @return 
+     */
     public static ArrayList<Arista> kruskal(ArrayList<Arista> aristas, ArrayList<String> nodos) {
         Collections.sort(aristas);
         ArrayList<Arista> mst = new ArrayList();

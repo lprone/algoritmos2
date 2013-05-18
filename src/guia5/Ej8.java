@@ -18,6 +18,12 @@ class Elemento implements Comparable {
     int felicidad;
     double felicidadPrecio;
 
+    /**
+     *
+     * @param name
+     * @param peso
+     * @param felicidad
+     */
     public Elemento(String name, int peso, int felicidad) {
         this.name = name;
         this.peso = peso;
@@ -26,22 +32,44 @@ class Elemento implements Comparable {
         System.out.println(toString());
     }
 
+    /**
+     *
+     * @return
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getPeso() {
         return peso;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getFelicidad() {
         return felicidad;
     }
 
+    /**
+     *
+     * @return
+     */
+    @Override
     public String toString() {
         return name + " - " + peso + " - " + felicidad + " - " + felicidadPrecio;
     }
 
+    /**
+     *
+     * @param other
+     * @return
+     */
     @Override
     public int compareTo(Object other) {
 //        return this.getFelicidad() / this.getPeso() - ((Elemento) other).getFelicidad() / ((Elemento) other).getPeso();
@@ -58,6 +86,12 @@ class Elemento implements Comparable {
 
 public class Ej8 {
 
+    /**
+     *
+     * @param elementos
+     * @param capacidad
+     * @return
+     */
     public static ArrayList<Elemento> llenarMochila(ArrayList<Elemento> elementos, int capacidad) {
         Collections.sort(elementos);
         ArrayList<Elemento> mochila = new ArrayList();

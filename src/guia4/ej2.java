@@ -8,53 +8,28 @@ package guia4;
  *
  * @author lprone
  */
-//class Pair<L, R> {
-//
-//    private final L left;
-//    private final R right;
-//
-//    public Pair(L left, R right) {
-//        this.left = left;
-//        this.right = right;
-//    }
-//
-//    public L getLeft() {
-//        return left;
-//    }
-//
-//    public R getRight() {
-//        return right;
-//    }
-//
-//    @Override
-//    public int hashCode() {
-//        return left.hashCode() ^ right.hashCode();
-//    }
-//
-//    @Override
-//    public boolean equals(Object o) {
-//        if (o == null) {
-//            return false;
-//        }
-//        if (!(o instanceof Pair)) {
-//            return false;
-//        }
-//        Pair pairo = (Pair) o;
-//        return this.left.equals(pairo.getLeft())
-//                && this.right.equals(pairo.getRight());
-//    }
-//}
 class Pair<A, B> {
 
     private A first;
     private B second;
 
+    /**
+     *
+     * @param first
+     * @param second
+     */
     public Pair(A first, B second) {
         super();
         this.first = first;
         this.second = second;
     }
 
+    /**
+     *
+     * @param other
+     * @return
+     */
+    @Override
     public boolean equals(Object other) {
         if (other instanceof Pair) {
             Pair otherPair = (Pair) other;
@@ -69,22 +44,43 @@ class Pair<A, B> {
         return false;
     }
 
+    /**
+     *
+     * @return
+     */
+    @Override
     public String toString() {
         return "(" + first + ", " + second + ")";
     }
 
+    /**
+     *
+     * @return
+     */
     public A getFirst() {
         return first;
     }
 
+    /**
+     *
+     * @param first
+     */
     public void setFirst(A first) {
         this.first = first;
     }
 
+    /**
+     *
+     * @return
+     */
     public B getSecond() {
         return second;
     }
 
+    /**
+     *
+     * @param second
+     */
     public void setSecond(B second) {
         this.second = second;
     }
@@ -92,6 +88,12 @@ class Pair<A, B> {
 
 public class ej2 {
 
+    /**
+     *
+     * @param m
+     * @param n
+     * @return
+     */
     public int combinatorio(int m, int n) {
         int[] cache = null;
         int a = fact(m, cache);
@@ -99,6 +101,12 @@ public class ej2 {
         return a / b;
     }
 
+    /**
+     *
+     * @param m
+     * @param n
+     * @return
+     */
     public int comb(int m, int n) {
         switch (n) {
             case 0:
@@ -116,6 +124,12 @@ public class ej2 {
 
     }
 
+    /**
+     *
+     * @param n
+     * @param cache
+     * @return
+     */
     public int fact(int n, int[] cache) {
         Pair a = new Pair(n, cache);
         return n * fact(n - 1, cache);

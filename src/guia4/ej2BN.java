@@ -10,6 +10,11 @@ package guia4;
  */
 public class ej2BN {
 
+    /**
+     *
+     * @param n
+     * @return
+     */
     private double[][] triangulo(int n) {
         double[][] matriz = new double[n + 1][];
         matriz[0] = new double[]{1};
@@ -24,10 +29,21 @@ public class ej2BN {
         return matriz;
     }
 
+    /**
+     *
+     * @param m
+     * @param n
+     * @return
+     */
     public double combDP(int m, int n) {
         return triangulo(m)[m][n];
     }
 
+    /**
+     *
+     * @param n
+     * @return
+     */
     private int fact(int n) {
         if (n == 0) {
             return 1;
@@ -36,6 +52,12 @@ public class ej2BN {
         }
     }
 
+    /**
+     *
+     * @param m
+     * @param n
+     * @return
+     */
     public int comb(int m, int n) {
         return fact(m) / (fact(n) * fact(m - n));
     }
