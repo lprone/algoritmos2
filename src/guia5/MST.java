@@ -17,10 +17,10 @@ class Arista implements Comparable {
     int costo;
 
     /**
-     * 
+     *
      * @param nodeA
      * @param nodeB
-     * @param costo 
+     * @param costo
      */
     public Arista(String nodeA, String nodeB, int costo) {
         this.nodeA = nodeA;
@@ -29,32 +29,32 @@ class Arista implements Comparable {
     }
 
     /**
-     * 
-     * @return 
+     *
+     * @return
      */
     public String getNodeA() {
         return nodeA;
     }
 
     /**
-     * 
-     * @return 
+     *
+     * @return
      */
     public String getNodeB() {
         return nodeB;
     }
 
     /**
-     * 
-     * @return 
+     *
+     * @return
      */
     public int getCosto() {
         return costo;
     }
 
     /**
-     * 
-     * @return 
+     *
+     * @return
      */
     @Override
     public String toString() {
@@ -62,9 +62,9 @@ class Arista implements Comparable {
     }
 
     /**
-     * 
+     *
      * @param o
-     * @return 
+     * @return
      */
     @Override
     public int compareTo(Object o) {
@@ -75,10 +75,10 @@ class Arista implements Comparable {
 public class MST {
 
     /**
-     * 
+     *
      * @param aristas
      * @param nodos
-     * @return 
+     * @return
      */
     public static ArrayList<Arista> kruskal(ArrayList<Arista> aristas, ArrayList<String> nodos) {
         Collections.sort(aristas);
