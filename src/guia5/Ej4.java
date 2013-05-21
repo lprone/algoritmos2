@@ -81,6 +81,7 @@ public class Ej4 {
             System.out.println("vuelve " + best.nombre);
             personas.remove(0);
         }
+        System.out.println("Tiempo total: "+tTotal);
         return tTotal <= t;
     }
 
