@@ -84,7 +84,7 @@ class Elemento implements Comparable {
     }
 }
 
-public class Ej8 {
+public class Ej6 {
 
     /**
      *
