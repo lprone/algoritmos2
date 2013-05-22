@@ -56,13 +56,13 @@ public class Ej7 {
                 if (matrizAdyacencia[i][i] == 0) {
                     matrizAdyacencia[i][i] = colorUsado;
                 }
-                if (matrizAdyacencia[i][j] == 0 && matrizAdyacencia[j][j] == 0) {
+                if (matrizAdyacencia[i][j] == 0) {
                     matrizAdyacencia[j][j] = colorUsado;
                 }
             }
             colorUsado++;
         }
-        verMatriz(matrizAdyacencia);                
+        verMatriz(matrizAdyacencia);
         ArrayList<Pair<String, String>> ret = new ArrayList();
         for (int i = 0; i < matrizAdyacencia.length; i++) {
             ret.add(new Pair(nodos.get(i), colores.get(matrizAdyacencia[i][i] - 5)));
@@ -93,12 +93,20 @@ public class Ej7 {
         colores.add("amarillo");
         colores.add("verde");
         colores.add("rojo");
+        colores.add("negro");
+        colores.add("blanco");
 
-        nodos.add(0,"A");
-        nodos.add(1,"B");
-        nodos.add(2,"C");
-        nodos.add(3,"D");
-        nodos.add(4,"E");
+        nodos.add(0, "A");
+        nodos.add(1, "B");
+        nodos.add(2, "C");
+        nodos.add(3, "D");
+        nodos.add(4, "E");
+
+//        aristas.add(new Pair(0, 1));
+//        aristas.add(new Pair(1, 2));
+//        aristas.add(new Pair(2, 3));
+//        aristas.add(new Pair(3, 4));
+//        aristas.add(new Pair(4, 1));
 
         aristas.add(new Pair(0, 1));
         aristas.add(new Pair(0, 2));
