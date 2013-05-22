@@ -4,103 +4,97 @@
  */
 package guia5;
 
+import java.awt.Point;
 import java.util.ArrayList;
 
 /**
  *
  * @author lprone
  */
-class Node {
+class Pair {
 
-    String name;
-    int color;
-    ArrayList<Node> adyacentes = new ArrayList();
+    int a, b;
 
-    /**
-     * 
-     * @param name
-     * @param color 
-     */
-    public Node(String name, int color) {
-        this.name = name;
-        this.color = color;
-    }
-
-    /**
-     * 
-     * @param color 
-     */
-    public void setColor(int color) {
-        this.color = color;
-    }
-
-    /**
-     * 
-     * @return 
-     */
-    @Override
-    public String toString() {
-        return String.valueOf(color);
-    }
-}
-
-class Edge {
-
-    Node a, b;
-
-    /**
-     * 
-     * @param a
-     * @param b 
-     */
-    public Edge(Node a, Node b) {
+    public Pair(int a, int b) {
         this.a = a;
         this.b = b;
     }
 
-    /**
-     * 
-     * @return 
-     */
-    public Node getA() {
+    public int getA() {
         return a;
     }
 
-    /**
-     * 
-     * @return 
-     */
-    public Node getB() {
+    public int getB() {
         return b;
+    }
+
+    @Override
+    public String toString() {
+        return a + " - " + b;
     }
 }
 
 public class Ej7 {
 
-    /**
-     * 
-     * @param grafo
-     * @return 
-     */
-    public static ArrayList<Node> colorear(ArrayList<Edge> grafo) {
-        ArrayList<Node> coloreados = new ArrayList();
-        int ultimoColorUsado = 0;
-        while (true) {
-            for (Edge e : grafo) {
-                if (e.a.color == -1 && e.b.color == -1) {
-                    e.a.color = ultimoColorUsado;
-                    coloreados.add(e.a);
-                }
+    public static void verTablero(int[][] tablero) {
+        for (int i = 0; i < tablero.length; i++) {
+            for (int j = 0; j < tablero.length; j++) {
+                System.out.print(tablero[i][j] + " ");
             }
+            System.out.println("");
         }
+        System.out.println("");
     }
 
     public static void main(String[] args) {
-        ArrayList<Edge> grafo = new ArrayList();
-        grafo.add(new Edge(new Node("A", -1), new Node("B", -1)));
-        grafo.add(new Edge(new Node("A", -1), new Node("C", -1)));
-        grafo.add(new Edge(new Node("C", -1), new Node("B", -1)));
-        grafo.add(new Edge(new Node("C", -1), new Node("D", -1)));
-        System.out.println(colorear(grafo));
+        ArrayList<String> nodos = new ArrayList();
+        ArrayList<Pair> aristas = new ArrayList();
+        ArrayList<String> colores = new ArrayList();
+        int colorUsado = 5;
+
+        colores.add("azul");
+        colores.add("amarillo");
+        colores.add("verde");
+        colores.add("rojo");
+
+        nodos.add("A");
+        nodos.add("B");
+        nodos.add("C");
+        nodos.add("D");
+        nodos.add("E");
+
+        aristas.add(new Pair(0, 1));
+        aristas.add(new Pair(0, 2));
+        aristas.add(new Pair(0, 3));
+        aristas.add(new Pair(2, 4));
+        aristas.add(new Pair(1, 2));
+        aristas.add(new Pair(4, 1));
+
+        int[][] matrizAdyacencia = new int[nodos.size()][nodos.size()];
+
+        for (Pair p : aristas) {
+            matrizAdyacencia[p.a][p.b] = matrizAdyacencia[p.b][p.a] = 1;
+        }
+
+        verTablero(matrizAdyacencia);
+
+        for (int i = 0; i < matrizAdyacencia.length; i++) {
+            for (int j = i; j < matrizAdyacencia.length; j++) {
+                if (matrizAdyacencia[i][i] == 0) {
+                    matrizAdyacencia[i][i] = colorUsado;
+                }
+                if (matrizAdyacencia[i][j] == 0 && matrizAdyacencia[j][j] == 0) {
+                    matrizAdyacencia[j][j] = colorUsado;
+                }
+            }
+            colorUsado++;
+        }
+
+        verTablero(matrizAdyacencia);
+
+        for (int i = 0; i < matrizAdyacencia.length; i++) {
+            System.out.print("(" + nodos.get(i) + "," + colores.get(matrizAdyacencia[i][i] - 5) + ") ");
+        }
+
     }
 }
