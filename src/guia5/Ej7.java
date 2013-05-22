@@ -15,19 +15,20 @@ class Pair {
 
     int a, b;
 
+    /**
+     * 
+     * @param a
+     * @param b 
+     */
     public Pair(int a, int b) {
         this.a = a;
         this.b = b;
-    }
+    }    
 
-    public int getA() {
-        return a;
-    }
-
-    public int getB() {
-        return b;
-    }
-
+    /**
+     * 
+     * @return 
+     */
     @Override
     public String toString() {
         return a + " - " + b;
@@ -36,6 +37,10 @@ class Pair {
 
 public class Ej7 {
 
+    /**
+     * 
+     * @param tablero 
+     */
     public static void verTablero(int[][] tablero) {
         for (int i = 0; i < tablero.length; i++) {
             for (int j = 0; j < tablero.length; j++) {
