@@ -4,30 +4,30 @@
  */
 package guia5;
 
-import java.awt.Point;
 import java.util.ArrayList;
 
 /**
  *
  * @author lprone
  */
-class Pair {
+class Pair<A, B> {
 
-    int a, b;
+    A a;
+    B b;
 
     /**
-     * 
+     *
      * @param a
-     * @param b 
+     * @param b
      */
-    public Pair(int a, int b) {
+    public Pair(A a, B b) {
         this.a = a;
         this.b = b;
-    }    
+    }
 
     /**
-     * 
-     * @return 
+     *
+     * @return
      */
     @Override
     public String toString() {
@@ -38,51 +38,19 @@ class Pair {
 public class Ej7 {
 
     /**
-     * 
-     * @param tablero 
+     *
+     * @param nodos
+     * @param aristas
+     * @param colores
+     * @return
      */
-    public static void verTablero(int[][] tablero) {
-        for (int i = 0; i < tablero.length; i++) {
-            for (int j = 0; j < tablero.length; j++) {
-                System.out.print(tablero[i][j] + " ");
-            }
-            System.out.println("");
-        }
-        System.out.println("");
-    }
-
-    public static void main(String[] args) {
-        ArrayList<String> nodos = new ArrayList();
-        ArrayList<Pair> aristas = new ArrayList();
-        ArrayList<String> colores = new ArrayList();
+    public static ArrayList<Pair<String, String>> colorear(ArrayList<String> nodos, ArrayList<Pair<Integer, Integer>> aristas, ArrayList<String> colores) {
         int colorUsado = 5;
-
-        colores.add("azul");
-        colores.add("amarillo");
-        colores.add("verde");
-        colores.add("rojo");
-
-        nodos.add("A");
-        nodos.add("B");
-        nodos.add("C");
-        nodos.add("D");
-        nodos.add("E");
-
-        aristas.add(new Pair(0, 1));
-        aristas.add(new Pair(0, 2));
-        aristas.add(new Pair(0, 3));
-        aristas.add(new Pair(2, 4));
-        aristas.add(new Pair(1, 2));
-        aristas.add(new Pair(4, 1));
-
         int[][] matrizAdyacencia = new int[nodos.size()][nodos.size()];
-
         for (Pair p : aristas) {
-            matrizAdyacencia[p.a][p.b] = matrizAdyacencia[p.b][p.a] = 1;
+            matrizAdyacencia[(int) p.a][(int) p.b] = matrizAdyacencia[(int) p.b][(int) p.a] = 1;
         }
-
-        verTablero(matrizAdyacencia);
-
+        verMatriz(matrizAdyacencia);
         for (int i = 0; i < matrizAdyacencia.length; i++) {
             for (int j = i; j < matrizAdyacencia.length; j++) {
                 if (matrizAdyacencia[i][i] == 0) {
@@ -94,12 +62,53 @@ public class Ej7 {
             }
             colorUsado++;
         }
-
-        verTablero(matrizAdyacencia);
-
+        verMatriz(matrizAdyacencia);                
+        ArrayList<Pair<String, String>> ret = new ArrayList();
         for (int i = 0; i < matrizAdyacencia.length; i++) {
-            System.out.print("(" + nodos.get(i) + "," + colores.get(matrizAdyacencia[i][i] - 5) + ") ");
+            ret.add(new Pair(nodos.get(i), colores.get(matrizAdyacencia[i][i] - 5)));
         }
+        return ret;
+    }
 
+    /**
+     *
+     * @param matriz
+     */
+    public static void verMatriz(int[][] matriz) {
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz.length; j++) {
+                System.out.print(matriz[i][j] + " ");
+            }
+            System.out.println("");
+        }
+        System.out.println("");
+    }
+
+    public static void main(String[] args) {
+        ArrayList<String> nodos = new ArrayList();
+        ArrayList<Pair<Integer, Integer>> aristas = new ArrayList();
+        ArrayList<String> colores = new ArrayList();
+
+        colores.add("azul");
+        colores.add("amarillo");
+        colores.add("verde");
+        colores.add("rojo");
+
+        nodos.add(0,"A");
+        nodos.add(1,"B");
+        nodos.add(2,"C");
+        nodos.add(3,"D");
+        nodos.add(4,"E");
+
+        aristas.add(new Pair(0, 1));
+        aristas.add(new Pair(0, 2));
+        aristas.add(new Pair(0, 3));
+        aristas.add(new Pair(2, 4));
+        aristas.add(new Pair(1, 2));
+        aristas.add(new Pair(4, 1));
+
+        for (Pair<String, String> a : colorear(nodos, aristas, colores)) {
+            System.out.println(a);
+        }
     }
 }
