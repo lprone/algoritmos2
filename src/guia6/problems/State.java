@@ -1,4 +1,4 @@
-package guia6;
+package guia6.problems;
 
 /**
  * Title: State<p>

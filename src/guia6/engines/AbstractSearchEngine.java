@@ -1,4 +1,4 @@
-package guia6.engine;
+package guia6.engines;
 
 /**
  * Title: AbstractSearchEngine<p>
@@ -11,7 +11,7 @@ package guia6.engine;
  * @author Nazareno Aguirre
  * @version 0.3
  */
-import guia6.AbstractSearchProblem;
+import guia6.problems.AbstractSearchProblem;
 import java.util.*; // necessary for the use of lists
 
 abstract public class AbstractSearchEngine {

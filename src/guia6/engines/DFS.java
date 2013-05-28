@@ -2,25 +2,30 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package guia6.engine;
+package guia6.engines;
 
-import guia6.State;
-import java.util.ArrayList;
+import guia6.problems.State;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Stack;
 
 /**
  *
  * @author lprone
  */
-public class BFS extends AbstractSearchEngine {
+public class DFS extends AbstractSearchEngine {
 
-    private List path = new ArrayList();
+    /**
+     * 
+     */
+    private List path = new LinkedList();
+
     /**
      *
      * @return
      */
     @Override
-    public List getPath() {        
+    public List getPath() {
         return path;
     }
 
@@ -38,16 +43,14 @@ public class BFS extends AbstractSearchEngine {
      */
     @Override
     public boolean performSearch() {
-        ArrayList<State> estados = new ArrayList();
+        Stack<State> estados = new Stack();
         estados.add(problem.initialState());
         while (!estados.isEmpty()) {
-            if (problem.success(estados.get(0))) {
+            System.out.println(estados.peek().toString());
+            if (problem.success(estados.peek())) {
                 return true;
             } else {
-                for (State state : problem.getSuccessors(estados.get(estados.size() - 1))) {
-                    estados.add(state);
-                }
-                estados.remove(0);
+                estados.addAll(problem.getSuccessors(estados.pop()));
             }
         }
         return false;
