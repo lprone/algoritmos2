@@ -53,6 +53,13 @@ public class JugsState implements State {
         return this.j1 == ((JugsState) other).j1 && this.j2 == ((JugsState) other).j2;
     }
 
+//    @Override
+//    public boolean equals(Object obj) {
+//        return equals((State)obj);
+//    }
+    
+    
+
     /**
      *
      * @return

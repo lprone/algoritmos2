@@ -30,7 +30,7 @@ public class JugsProblem implements guia6.problems.AbstractSearchProblem {
      */
     @Override
     public boolean success(State s) {
-        return ((JugsState) s).getJ1() == 2 || ((JugsState) s).getJ2() == 2;
+        return ((JugsState) s).getJ1() == 2 ;
     }
 
     /**

@@ -6,21 +6,21 @@ package guia6.games;
 
 import guia6.engines.*;
 import guia6.problems.*;
-import guia6.problems.jugs.*;
+import guia6.problems.ochoReinas.OchoReinasProblem;
 
 /**
  *
  * @author lprone
  */
-public class Jugs {
+public class OchoReinas {
 
     /**
      *
      */
     public static void solveWithDFS() {
-        AbstractSearchProblem j = new JugsProblem();
+        AbstractSearchProblem or = new OchoReinasProblem();
         AbstractSearchEngine d = new DFS();
-        d.setProblem(j);
+        d.setProblem(or);
         System.out.println(d.performSearch());
         d.report();
     }
@@ -29,9 +29,9 @@ public class Jugs {
      *
      */
     public static void solveWithBFS() {
-        AbstractSearchProblem j = new JugsProblem();
+        AbstractSearchProblem or = new OchoReinasProblem();
         AbstractSearchEngine b = new BFS();
-        b.setProblem(j);
+        b.setProblem(or);
         System.out.println(b.performSearch());
     }
 
@@ -39,9 +39,9 @@ public class Jugs {
      *
      */
     public static void solveWithID() {
-        AbstractSearchProblem j = new JugsProblem();
-        AbstractSearchEngine i = new ID(6);
-        i.setProblem(j);
+        AbstractSearchProblem or = new OchoReinasProblem();
+        AbstractSearchEngine i = new ID();
+        i.setProblem(or);
         System.out.println(i.performSearch());
         i.report();
     }
@@ -50,13 +50,13 @@ public class Jugs {
      *
      */
     public static void solveWithBestFS() {
-        AbstractSearchProblem j = new JugsProblem();
+        AbstractSearchProblem or = new OchoReinasProblem();
         AbstractSearchEngine b = new BestFS();
-        b.setProblem(j);
+        b.setProblem(or);
         System.out.println(b.performSearch());
     }
 
     public static void main(String[] args) {
-        solveWithID();
+        solveWithBFS();
     }
 }
