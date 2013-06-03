@@ -95,7 +95,7 @@ public class ID extends AbstractSearchEngine {
                     State s = estados.peek();
                     List<State> aux = problem.getSuccessors(estados.pop());
                     for (State state : aux) {
-                        if (!in(visitados, state)&& !s.equals(state)) {
+                        if (!in(visitados, state) && !s.equals(state)) {
                             estados.add(state);
                         }
                     }

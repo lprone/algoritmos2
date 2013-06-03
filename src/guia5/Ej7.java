@@ -33,6 +33,16 @@ class Pair<A, B> {
     public String toString() {
         return a + " - " + b;
     }
+
+    /**
+     *
+     * @param other
+     * @return
+     */
+    @Override
+    public boolean equals(Object other) {
+        return ((Pair) other).a.equals(a) && ((Pair) other).b.equals(b);
+    }
 }
 
 public class Ej7 {

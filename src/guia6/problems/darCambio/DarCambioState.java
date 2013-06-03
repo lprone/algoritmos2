@@ -14,7 +14,6 @@ import java.util.LinkedList;
 public class DarCambioState implements State {
 
     int total;
-    String cambio = "";
 
     /**
      *
@@ -25,11 +24,6 @@ public class DarCambioState implements State {
         this.total = total;
     }
     
-    public DarCambioState(int total, String moneda) {        
-        this.total = total;
-        this.cambio+=moneda+" ";
-    }
-
     /**
      *
      * @param o
@@ -37,7 +31,7 @@ public class DarCambioState implements State {
      */
     @Override
     public boolean equals(State o) {
-        return this.total == ((DarCambioState) o).total && this.cambio == ((DarCambioState)o).cambio;
+        return this.total == ((DarCambioState) o).total;
     }
 
     /**
@@ -47,6 +41,6 @@ public class DarCambioState implements State {
     @Override
     public String toString() {
         
-        return total+" - "+cambio;
+        return total+"";
     }
 }

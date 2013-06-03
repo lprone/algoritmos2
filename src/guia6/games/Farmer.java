@@ -33,6 +33,7 @@ public class Farmer {
         AbstractSearchEngine b = new BFS();
         b.setProblem(f);
         System.out.println(b.performSearch());
+        b.report();
     }
 
     /**
@@ -58,6 +59,6 @@ public class Farmer {
     }
 
     public static void main(String[] args) {
-        solveWithDFS();
+        solveWithBFS();
     }
 }

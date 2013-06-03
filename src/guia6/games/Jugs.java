@@ -33,6 +33,7 @@ public class Jugs {
         AbstractSearchEngine b = new BFS();
         b.setProblem(j);
         System.out.println(b.performSearch());
+        b.report();
     }
 
     /**
@@ -57,6 +58,11 @@ public class Jugs {
     }
 
     public static void main(String[] args) {
-        solveWithID();
+        long time_start, time_end;
+
+        time_start = System.currentTimeMillis();
+        solveWithBFS();
+        time_end = System.currentTimeMillis();
+        System.out.println("the task has taken " + (time_end - time_start) / 1000 + " seconds");
     }
 }

@@ -25,12 +25,21 @@ public class FarmerProblem implements AbstractSearchProblem {
 
     /**
      *
+     * @return
+     */
+    @Override
+    public State finalState() {
+        return new FarmerState(1, 1, 1, 1);
+    }
+
+    /**
+     *
      * @param s
      * @return
      */
     @Override
     public boolean success(State s) {
-        return s.equals(new FarmerState(1, 1, 1, 1));
+        return ((FarmerState) s).equals(finalState());
     }
 
     /**

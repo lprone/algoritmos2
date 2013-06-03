@@ -37,6 +37,7 @@ public class DarCambio {
         AbstractSearchEngine b = new BFS();
         b.setProblem(dc);
         System.out.println(b.performSearch());
+        b.report();
     }
 
     /**
@@ -65,7 +66,7 @@ public class DarCambio {
         long time_start, time_end;
         
         time_start = System.currentTimeMillis();
-        solveWithDFS(1000000);
+        solveWithBFS(68);
         time_end = System.currentTimeMillis();
         System.out.println("the task has taken " + (time_end - time_start) / 1000 + " seconds");
 

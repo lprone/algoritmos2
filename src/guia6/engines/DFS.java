@@ -70,13 +70,13 @@ public class DFS extends AbstractSearchEngine {
             path.add(estados.peek());
 //            System.out.println(estados.peek().toString());
             if (problem.success(estados.peek())) {
-                System.out.println(estados.peek().toString());
+//                System.out.println(estados.peek().toString());
                 return true;
             } else {
                 State s = estados.peek();
                 List<State> aux = problem.getSuccessors(estados.pop());
                 for (State state : aux) {
-                    if (!in(visitados, state)&& !s.equals(state)) {
+                    if (!in(visitados, state) && !s.equals(state)) {
                         estados.add(state);
                     }
                 }

@@ -25,6 +25,15 @@ public class OchoReinasProblem implements guia6.problems.AbstractSearchProblem {
 
     /**
      *
+     * @return
+     */
+    @Override
+    public State finalState() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    /**
+     *
      * @param s
      * @return
      */
@@ -72,8 +81,8 @@ public class OchoReinasProblem implements guia6.problems.AbstractSearchProblem {
      */
     private boolean validateDiagSec(State s) {
         for (int i = 0; i < ((OchoReinasState) s).tablero.length; i++) {
-            for (int j = i+1; j < ((OchoReinasState) s).tablero.length; j++) {
-                if (((OchoReinasState) s).tablero[i-j+1] == ((OchoReinasState) s).tablero[j]) {
+            for (int j = i + 1; j < ((OchoReinasState) s).tablero.length; j++) {
+                if (((OchoReinasState) s).tablero[i - j + 1] == ((OchoReinasState) s).tablero[j]) {
                     return false;
                 }
             }
