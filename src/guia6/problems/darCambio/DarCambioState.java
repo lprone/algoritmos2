@@ -14,16 +14,18 @@ import java.util.LinkedList;
 public class DarCambioState implements State {
 
     int total;
+    LinkedList<Integer> monedas = new LinkedList();
 
     /**
      *
      * @param total
-     * @param retornado
      */
     public DarCambioState(int total) {
         this.total = total;
     }
+
     
+
     /**
      *
      * @param o
@@ -40,7 +42,7 @@ public class DarCambioState implements State {
      */
     @Override
     public String toString() {
-        
-        return total+"";
+
+        return total + "";
     }
 }
