@@ -24,8 +24,6 @@ public class DarCambioState implements State {
         this.total = total;
     }
 
-    
-
     /**
      *
      * @param o
@@ -42,7 +40,6 @@ public class DarCambioState implements State {
      */
     @Override
     public String toString() {
-
         return total + "";
     }
 }
