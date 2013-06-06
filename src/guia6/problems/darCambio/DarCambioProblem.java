@@ -44,21 +44,12 @@ public class DarCambioProblem implements AbstractSearchProblem {
 
     /**
      *
-     * @return
-     */
-    @Override
-    public State finalState() {
-        return new DarCambioState(0);
-    }
-
-    /**
-     *
      * @param s
      * @return
      */
     @Override
     public boolean success(State s) {
-        return ((DarCambioState) s).equals(finalState());
+        return ((DarCambioState) s).equals(new DarCambioState(0));
     }
 
     /**
@@ -70,7 +61,7 @@ public class DarCambioProblem implements AbstractSearchProblem {
     public List<State> getSuccessors(State s) {
         int total = ((DarCambioState) s).total;
         List<State> sucesores = new LinkedList();
-        for (Integer p : monedas) {            
+        for (Integer p : monedas) {
             sucesores.add(new DarCambioState(total - p));
         }
         Collections.reverse(sucesores);

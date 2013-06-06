@@ -5,7 +5,6 @@
 package guia6.problems.darCambio;
 
 import guia6.problems.State;
-import java.util.LinkedList;
 
 /**
  *
@@ -14,7 +13,6 @@ import java.util.LinkedList;
 public class DarCambioState implements State {
 
     int total;
-    LinkedList<Integer> monedas = new LinkedList();
 
     /**
      *

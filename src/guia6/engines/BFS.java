@@ -89,6 +89,7 @@ public class BFS extends AbstractSearchEngine {
     /**
      *
      */
+    private State finalState;
     private List<State> path = new LinkedList();
     private LinkedList<Pair<State, State>> father = new LinkedList();
 
@@ -98,7 +99,7 @@ public class BFS extends AbstractSearchEngine {
      */
     @Override
     public List getPath() {
-        State aux = problem.finalState();
+        State aux = finalState;
         while (!aux.equals(problem.initialState())) {
             path.add(aux);
             aux = getFather(aux);
@@ -174,8 +175,9 @@ public class BFS extends AbstractSearchEngine {
         estados.add(problem.initialState());
         while (!estados.isEmpty()) {
             visitados.add(estados.peek());
-//            System.out.println(estados.peek().toString());            
+//            System.out.println(estados.peek().toString());
             if (problem.success(estados.peek())) {
+                finalState = estados.peek();
 //                System.out.println(estados.peek().toString());
                 return true;
             } else {

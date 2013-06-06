@@ -61,7 +61,7 @@ public class Jugs {
         long time_start, time_end;
 
         time_start = System.currentTimeMillis();
-        solveWithBFS();
+        solveWithDFS();
         time_end = System.currentTimeMillis();
         System.out.println("the task has taken " + (time_end - time_start) / 1000 + " seconds");
     }

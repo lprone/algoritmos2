@@ -25,15 +25,6 @@ public class OchoReinasProblem implements guia6.problems.AbstractSearchProblem {
 
     /**
      *
-     * @return
-     */
-    @Override
-    public State finalState() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    /**
-     *
      * @param s
      * @return
      */

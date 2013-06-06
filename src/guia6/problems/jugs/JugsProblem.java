@@ -25,21 +25,12 @@ public class JugsProblem implements guia6.problems.AbstractSearchProblem {
 
     /**
      *
-     * @return
-     */
-    @Override
-    public State finalState() {
-        return new JugsState(2, 0);
-    }
-
-    /**
-     *
      * @param s
      * @return
      */
     @Override
     public boolean success(State s) {
-        return ((JugsState) s).equals(finalState());
+        return ((JugsState) s).equals(new JugsState(2, 0));
     }
 
     /**

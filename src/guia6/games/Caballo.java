@@ -9,22 +9,21 @@ import guia6.engines.BFS;
 import guia6.engines.BestFS;
 import guia6.engines.DFS;
 import guia6.engines.ID;
-import guia6.problems.AbstractSearchProblem;
-import guia6.problems.darCambio.DarCambioProblem;
+import guia6.problems.caballo.CaballoProblem;
 
 /**
  *
  * @author lprone
  */
-public class DarCambio {
+public class Caballo {
 
     /**
      *
      */
-    public static void solveWithDFS(int n) {
-        AbstractSearchProblem dc = new DarCambioProblem(n);
+    public static void solveWithDFS(int x, int y) {
+        CaballoProblem c = new CaballoProblem(x, y);
         AbstractSearchEngine d = new DFS();
-        d.setProblem(dc);
+        d.setProblem(c);
         System.out.println(d.performSearch());
 //        d.report();
     }
@@ -32,21 +31,21 @@ public class DarCambio {
     /**
      *
      */
-    public static void solveWithBFS(int n) {
-        AbstractSearchProblem dc = new DarCambioProblem(n);
+    public static void solveWithBFS(int x, int y) {
+        CaballoProblem c = new CaballoProblem(x, y);
         AbstractSearchEngine b = new BFS();
-        b.setProblem(dc);
+        b.setProblem(c);
         System.out.println(b.performSearch());
-        b.report();
+//        b.report();
     }
 
     /**
      *
      */
-    public static void solveWithID(int n) {
-        AbstractSearchProblem dc = new DarCambioProblem(n);
+    public static void solveWithID(int x, int y) {
+        CaballoProblem c = new CaballoProblem(x, y);
         AbstractSearchEngine i = new ID(20);
-        i.setProblem(dc);
+        i.setProblem(c);
         System.out.println(i.performSearch());
 //        i.report();
     }
@@ -54,19 +53,19 @@ public class DarCambio {
     /**
      *
      */
-    public static void solveWithBestFS(int n) {
-        AbstractSearchProblem dc = new DarCambioProblem(n);
+    public static void solveWithBestFS(int x, int y) {
+        CaballoProblem c = new CaballoProblem(x, y);
         AbstractSearchEngine b = new BestFS();
-        b.setProblem(dc);
+        b.setProblem(c);
         System.out.println(b.performSearch());
     }
 
     public static void main(String[] args) {
 
         long time_start, time_end;
-        
+
         time_start = System.currentTimeMillis();
-        solveWithBFS(68);
+        solveWithBFS(4, 0);
         time_end = System.currentTimeMillis();
         System.out.println("the task has taken " + (time_end - time_start) / 1000 + " seconds");
 

@@ -27,17 +27,6 @@ public interface AbstractSearchProblem {
     abstract public State initialState();
 
     /**
-     * Returns the final state corresponding to the problem. Concrete
-     * implementations of AbstractSearchProblem must implement this routine, to
-     * indicate the end point for the search.
-     *
-     * @return the final state for the problem
-     * @pre. true.
-     * @post. the final state for the problem is returned.
-     */
-    abstract public State finalState();
-
-    /**
      * Returns the list of successor states for a given state, in the context of
      * the current problem. Concrete implementations of AbstractSearchProblem
      * must implement this routine, to indicate the 'advance' rules for the
