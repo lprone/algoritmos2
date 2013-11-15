@@ -57,6 +57,10 @@ public class Jugs {
         System.out.println(b.performSearch());
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         long time_start, time_end;
 

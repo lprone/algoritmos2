@@ -81,6 +81,10 @@ class Planta implements Comparable {
     }
 }
 
+/**
+ *
+ * @author lprone
+ */
 public class PlantasVsZombies {
 
     /**
@@ -116,6 +120,10 @@ public class PlantasVsZombies {
         return sol;
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         ArrayList<Planta> plantas = new ArrayList();
         plantas.add(new Planta("E", 4, 2));

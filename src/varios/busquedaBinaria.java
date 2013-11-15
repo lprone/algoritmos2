@@ -28,6 +28,10 @@ public class busquedaBinaria {
         return in[fin] == e;
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         busquedaBinaria b = new busquedaBinaria();
         int[] a = {1, 2, 3, 4, 5};

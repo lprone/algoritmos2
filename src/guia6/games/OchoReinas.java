@@ -56,6 +56,10 @@ public class OchoReinas {
         System.out.println(b.performSearch());
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         solveWithBFS();
     }

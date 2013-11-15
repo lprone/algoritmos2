@@ -104,6 +104,10 @@ public class inversiones {
         return sols;
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         inversiones i = new inversiones();
         int[] a = {1, 4, 3, 2, 1};

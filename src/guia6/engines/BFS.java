@@ -84,6 +84,10 @@ class Pair<A, B> {
     }
 }
 
+/**
+ *
+ * @author lprone
+ */
 public class BFS extends AbstractSearchEngine {
 
     /**

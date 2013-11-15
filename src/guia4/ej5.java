@@ -83,6 +83,10 @@ public class ej5 {
         System.out.println("");
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         ArrayList<Point> a = new ArrayList();
         a.add(new Point(1, 6));

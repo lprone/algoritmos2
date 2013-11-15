@@ -45,6 +45,10 @@ class Pair<A, B> {
     }
 }
 
+/**
+ *
+ * @author lprone
+ */
 public class Ej7 {
 
     /**
@@ -94,6 +98,10 @@ public class Ej7 {
         System.out.println("");
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         ArrayList<String> nodos = new ArrayList();
         ArrayList<Pair<Integer, Integer>> aristas = new ArrayList();

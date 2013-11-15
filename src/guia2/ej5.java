@@ -258,6 +258,10 @@ public class ej5 {
         System.out.println(e.getPosicionReinas());
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         solve();
     }

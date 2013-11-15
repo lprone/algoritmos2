@@ -14,9 +14,16 @@ package guia6.engines;
 import guia6.problems.AbstractSearchProblem;
 import java.util.*; // necessary for the use of lists
 
+/**
+ *
+ * @author lprone
+ */
 abstract public class AbstractSearchEngine {
 
     // a reference to the problem to apply search to
+    /**
+     *
+     */
     protected AbstractSearchProblem problem;
 
     /**

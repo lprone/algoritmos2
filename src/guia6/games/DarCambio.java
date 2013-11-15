@@ -20,6 +20,7 @@ public class DarCambio {
 
     /**
      *
+     * @param n 
      */
     public static void solveWithDFS(int n) {
         AbstractSearchProblem dc = new DarCambioProblem(n);
@@ -31,6 +32,7 @@ public class DarCambio {
 
     /**
      *
+     * @param n 
      */
     public static void solveWithBFS(int n) {
         AbstractSearchProblem dc = new DarCambioProblem(n);
@@ -42,6 +44,7 @@ public class DarCambio {
 
     /**
      *
+     * @param n 
      */
     public static void solveWithID(int n) {
         AbstractSearchProblem dc = new DarCambioProblem(n);
@@ -53,6 +56,7 @@ public class DarCambio {
 
     /**
      *
+     * @param n 
      */
     public static void solveWithBestFS(int n) {
         AbstractSearchProblem dc = new DarCambioProblem(n);
@@ -61,6 +65,10 @@ public class DarCambio {
         System.out.println(b.performSearch());
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
 
         long time_start, time_end;

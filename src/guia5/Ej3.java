@@ -74,6 +74,10 @@ class Cita implements Comparable {
     }
 }
 
+/**
+ *
+ * @author lprone
+ */
 public class Ej3 {
 
     /**
@@ -103,6 +107,10 @@ public class Ej3 {
         return sol;
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         ArrayList<Cita> citas = new ArrayList();
         citas.add(new Cita(null, 1, 2, 5));

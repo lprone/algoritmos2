@@ -58,6 +58,10 @@ public class Farmer {
         
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         solveWithBFS();
     }

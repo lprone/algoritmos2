@@ -13,6 +13,10 @@ package guia6.problems;
  */
 import java.util.*; // necessary due to the use of lists.
 
+/**
+ *
+ * @author lprone
+ */
 public interface AbstractSearchProblem {
 
     /**

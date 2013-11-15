@@ -33,7 +33,7 @@ public class FarmerState implements State {
 
     /**
      *
-     * @param other
+     * @param o 
      * @return
      */
     @Override

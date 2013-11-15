@@ -62,6 +62,10 @@ class Persona implements Comparable {
     }
 }
 
+/**
+ *
+ * @author lprone
+ */
 public class Ej4 {
 
     /**
@@ -85,6 +89,10 @@ public class Ej4 {
         return tTotal <= t;
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         ArrayList<Persona> personas = new ArrayList();
         personas.add(new Persona("indiana", 1));

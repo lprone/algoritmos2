@@ -231,6 +231,10 @@ public class ej5b {
         }
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         solveBusquedaExaustiva();
     }

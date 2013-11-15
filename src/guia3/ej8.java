@@ -128,6 +128,10 @@ class ret implements Comparable {
     }
 }
 
+/**
+ *
+ * @author lprone
+ */
 public class ej8 {
 
     /**
@@ -216,6 +220,10 @@ public class ej8 {
         return sols;
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
 
         ej8 e = new ej8();

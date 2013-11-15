@@ -86,6 +86,10 @@ class Pair<A, B> {
     }
 }
 
+/**
+ *
+ * @author lprone
+ */
 public class ej2 {
 
     /**
@@ -135,6 +139,10 @@ public class ej2 {
         return n * fact(n - 1, cache);
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         ej2 e = new ej2();
         int[] cache = null;

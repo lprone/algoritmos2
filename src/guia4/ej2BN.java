@@ -62,6 +62,10 @@ public class ej2BN {
         return fact(m) / (fact(n) * fact(m - n));
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         ej2BN e = new ej2BN();
         int m = 1269, n = 1265;

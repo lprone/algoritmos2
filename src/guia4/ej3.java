@@ -32,6 +32,10 @@ public class ej3 {
         }
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         ej3 e = new ej3();
         System.out.printf("%.0f \n", e.fibo(1475));

@@ -19,6 +19,8 @@ public class Caballo {
 
     /**
      *
+     * @param x 
+     * @param y 
      */
     public static void solveWithDFS(int x, int y) {
         CaballoProblem c = new CaballoProblem(x, y);
@@ -30,6 +32,8 @@ public class Caballo {
 
     /**
      *
+     * @param x 
+     * @param y 
      */
     public static void solveWithBFS(int x, int y) {
         CaballoProblem c = new CaballoProblem(x, y);
@@ -41,6 +45,8 @@ public class Caballo {
 
     /**
      *
+     * @param x 
+     * @param y 
      */
     public static void solveWithID(int x, int y) {
         CaballoProblem c = new CaballoProblem(x, y);
@@ -52,6 +58,8 @@ public class Caballo {
 
     /**
      *
+     * @param x 
+     * @param y 
      */
     public static void solveWithBestFS(int x, int y) {
         CaballoProblem c = new CaballoProblem(x, y);
@@ -60,6 +68,10 @@ public class Caballo {
         System.out.println(b.performSearch());
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
 
         long time_start, time_end;

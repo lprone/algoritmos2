@@ -72,6 +72,10 @@ class Arista implements Comparable {
     }
 }
 
+/**
+ *
+ * @author lprone
+ */
 public class MST {
 
     /**
@@ -94,6 +98,10 @@ public class MST {
         return mst;
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         ArrayList<Arista> aristas = new ArrayList();
         ArrayList<String> nodosSet = new ArrayList();

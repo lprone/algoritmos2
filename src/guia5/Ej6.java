@@ -84,6 +84,10 @@ class Elemento implements Comparable {
     }
 }
 
+/**
+ *
+ * @author lprone
+ */
 public class Ej6 {
 
     /**
@@ -106,6 +110,10 @@ public class Ej6 {
         return mochila;
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         ArrayList<Elemento> elementos = new ArrayList();
         elementos.add(new Elemento(null, 4, 8));

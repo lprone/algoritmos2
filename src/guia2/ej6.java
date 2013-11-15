@@ -85,6 +85,10 @@ public class ej6 {
         return min;
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         ej6 e = new ej6();
         ArrayList cap = e.generarCapicuas();

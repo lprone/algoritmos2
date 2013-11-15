@@ -40,6 +40,10 @@ public class ej8 {
         }
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         ej8 e = new ej8();
         e.fiboInt();

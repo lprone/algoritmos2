@@ -88,6 +88,10 @@ public class ej7 {
         return c;
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         ej7 e = new ej7();
         e.computeLevenshteinDistance("auto", "casa");

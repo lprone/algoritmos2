@@ -171,6 +171,10 @@ public class ej5 {
         return adyacencia[0][N - 1];
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         ArrayList<Integer> a = new ArrayList();
         a.add(1);

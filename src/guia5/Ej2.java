@@ -51,6 +51,10 @@ class Moneda implements Comparable {
     }
 }
 
+/**
+ *
+ * @author lprone
+ */
 public class Ej2 {
 
     /**
@@ -74,6 +78,10 @@ public class Ej2 {
         return vuelto;
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         ArrayList<Moneda> monedas = new ArrayList();
         monedas.add(new Moneda(25));
