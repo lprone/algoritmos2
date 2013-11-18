@@ -4,9 +4,7 @@
  */
 package guia6.problems.caballo;
 
-import guia6.problems.caballo.*;
 import guia6.problems.*;
-import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 

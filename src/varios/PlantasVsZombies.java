@@ -92,7 +92,7 @@ public class PlantasVsZombies {
      * @param plantas
      * @return
      */
-    public static Planta[] solveGame(ArrayList<Planta> plantas) {
+    static Planta[] solveGame(ArrayList<Planta> plantas) {
         Collections.sort(plantas);
         Planta[] sol = new Planta[8];
         int auxArreglo, auxList = 0;

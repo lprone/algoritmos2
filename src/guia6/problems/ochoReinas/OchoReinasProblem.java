@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package guia6.problems.ochoReinas;
 
 import guia6.problems.State;
@@ -36,17 +32,7 @@ public class OchoReinasProblem implements guia6.problems.AbstractSearchProblem {
                 }
             }
         }
-        return false;
-
-//        return s.equals(new OchoReinasState(
-//                ((OchoReinasState) s).tablero[0],
-//                ((OchoReinasState) s).tablero[1],
-//                ((OchoReinasState) s).tablero[2],
-//                ((OchoReinasState) s).tablero[3],
-//                ((OchoReinasState) s).tablero[4],
-//                ((OchoReinasState) s).tablero[5],
-//                ((OchoReinasState) s).tablero[6],
-//                ((OchoReinasState) s).tablero[7]));
+        return true;
     }
 
     /**
@@ -62,7 +48,7 @@ public class OchoReinasProblem implements guia6.problems.AbstractSearchProblem {
                 }
             }
         }
-        return false;
+        return true;
     }
 
     /**
@@ -78,7 +64,7 @@ public class OchoReinasProblem implements guia6.problems.AbstractSearchProblem {
                 }
             }
         }
-        return false;
+        return true;
     }
 
     /**
@@ -98,15 +84,6 @@ public class OchoReinasProblem implements guia6.problems.AbstractSearchProblem {
      */
     @Override
     public List<State> getSuccessors(State s) {
-        int t0 = ((OchoReinasState) s).tablero[0],
-                t1 = ((OchoReinasState) s).tablero[0],
-                t2 = ((OchoReinasState) s).tablero[1],
-                t3 = ((OchoReinasState) s).tablero[2],
-                t4 = ((OchoReinasState) s).tablero[3],
-                t5 = ((OchoReinasState) s).tablero[4],
-                t6 = ((OchoReinasState) s).tablero[5],
-                t7 = ((OchoReinasState) s).tablero[6];
-
         List<State> sucesores = new ArrayList();
         sucesores.add(new OchoReinasState(
                 new Double(Math.random() * 8).intValue(),
@@ -119,8 +96,4 @@ public class OchoReinasProblem implements guia6.problems.AbstractSearchProblem {
                 new Double(Math.random() * 8).intValue()));
         return sucesores;
     }
-    /* pinoluz
-     * cepillo
-     * canasta
-     */
 }

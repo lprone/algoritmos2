@@ -74,7 +74,7 @@ public class Ej4 {
      * @param t
      * @return
      */
-    public static boolean cruzarRio(ArrayList<Persona> personas, int t) {
+    static boolean cruzarRio(ArrayList<Persona> personas, int t) {
         int tTotal = 0;
         Collections.sort(personas);
         Persona best = personas.get(0);
@@ -85,7 +85,7 @@ public class Ej4 {
             System.out.println("vuelve " + best.nombre);
             personas.remove(0);
         }
-        System.out.println("Tiempo total: "+tTotal);
+        System.out.println("Tiempo total: " + tTotal);
         return tTotal <= t;
     }
 

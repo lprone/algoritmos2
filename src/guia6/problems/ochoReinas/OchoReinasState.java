@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package guia6.problems.ochoReinas;
 
 import guia6.problems.State;
@@ -17,14 +13,14 @@ public class OchoReinasState implements State {
 
     /**
      *
-     * @param t0 
-     * @param t1 
-     * @param t3 
+     * @param t0
+     * @param t1
+     * @param t3
      * @param t2
      * @param t4
      * @param t5
-     * @param t6 
-     * @param t7  
+     * @param t6
+     * @param t7
      */
     public OchoReinasState(int t0, int t1, int t2, int t3, int t4, int t5, int t6, int t7) {
         tablero[0] = t0;

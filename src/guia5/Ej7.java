@@ -58,7 +58,7 @@ public class Ej7 {
      * @param colores
      * @return
      */
-    public static ArrayList<Pair<String, String>> colorear(ArrayList<String> nodos, ArrayList<Pair<Integer, Integer>> aristas, ArrayList<String> colores) {
+    static ArrayList<Pair<String, String>> colorear(ArrayList<String> nodos, ArrayList<Pair<Integer, Integer>> aristas, ArrayList<String> colores) {
         int colorUsado = 5;
         int[][] matrizAdyacencia = new int[nodos.size()][nodos.size()];
         for (Pair p : aristas) {

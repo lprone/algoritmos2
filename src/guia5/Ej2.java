@@ -63,7 +63,7 @@ public class Ej2 {
      * @param precio
      * @return
      */
-    public static ArrayList<Moneda> cambio(ArrayList<Moneda> monedas, int precio) {
+    static ArrayList<Moneda> cambio(ArrayList<Moneda> monedas, int precio) {
         Collections.sort(monedas);
         int retornado = 0;
         ArrayList<Moneda> vuelto = new ArrayList();

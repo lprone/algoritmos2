@@ -85,7 +85,7 @@ public class Ej3 {
      * @param citas
      * @return
      */
-    public static ArrayList<Cita> organizarAgenda(ArrayList<Cita> citas) {
+    static ArrayList<Cita> organizarAgenda(ArrayList<Cita> citas) {
         Collections.sort(citas);
         Collections.reverse(citas);
         ArrayList<Cita> sol = new ArrayList();

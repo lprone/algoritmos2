@@ -1,10 +1,5 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package guia6.engines;
 
-import guia6.problems.State;
 import java.util.LinkedList;
 import java.util.List;
 

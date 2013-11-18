@@ -33,5 +33,6 @@ public interface State {
      * @pre. true.
      * @post. A text representation of the current state is returned.
      */
+    @Override
     abstract public String toString();
 }

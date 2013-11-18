@@ -96,7 +96,7 @@ public class Ej6 {
      * @param capacidad
      * @return
      */
-    public static ArrayList<Elemento> llenarMochila(ArrayList<Elemento> elementos, int capacidad) {
+     static ArrayList<Elemento> llenarMochila(ArrayList<Elemento> elementos, int capacidad) {
         Collections.sort(elementos);
         ArrayList<Elemento> mochila = new ArrayList();
         int espacioDisponible = capacidad;

@@ -84,7 +84,7 @@ public class MST {
      * @param nodos
      * @return
      */
-    public static ArrayList<Arista> kruskal(ArrayList<Arista> aristas, ArrayList<String> nodos) {
+    static ArrayList<Arista> kruskal(ArrayList<Arista> aristas, ArrayList<String> nodos) {
         Collections.sort(aristas);
         ArrayList<Arista> mst = new ArrayList();
         ArrayList<String> unidos = new ArrayList();
