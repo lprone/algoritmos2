@@ -1,3 +1,4 @@
 algoritmos2
 ===========
-Lucas Prone - https://twitter.com/sac2087
+Lucas Prone - lprone.com.ar
+              https://twitter.com/lucasprone
