@@ -2,59 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa772ce1-3f2d-4980-b819-884cb0910ba3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/build-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/build-impl.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/genfiles.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/genfiles.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia2/ej5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia2/ej5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia2/ej5b.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia2/ej5b.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia2/ej6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia2/ej6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia3/Ej10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia3/Ej10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia3/ej8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia3/ej8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia3/triomino/Ej10Recursivo.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia3/triomino/Ej10Recursivo.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia3/triomino/Ej10Recursivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia3/triomino/Ej10Recursivo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia4/ej2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia4/ej2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia4/ej2BN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia4/ej2BN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia4/ej3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia4/ej3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia4/ej5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia4/ej5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia4/ej7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia4/ej7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia4/tubos/ej5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia4/tubos/ej5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia5/Ej2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia5/Ej2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia5/Ej3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia5/Ej3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia5/Ej4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia5/Ej4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia5/Ej6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia5/Ej6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia5/Ej7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia5/Ej7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia5/MST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia5/MST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia6/engines/AbstractSearchEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia6/engines/SearchEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia6/engines/BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia6/engines/BFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia6/engines/BestFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia6/engines/BestFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia6/engines/DFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia6/engines/DFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia6/engines/ID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia6/engines/ID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia6/games/Caballo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia6/games/Caballo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia6/games/DarCambio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia6/games/DarCambio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia6/games/Farmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia6/games/Farmer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia6/games/Jugs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia6/games/Jugs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia6/games/OchoReinas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia6/games/OchoReinas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia6/problems/AbstractSearchProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia6/problems/SearchProblem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia6/problems/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia6/problems/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia6/problems/caballo/CaballoProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia6/problems/caballo/CaballoProblem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia6/problems/caballo/CaballoState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia6/problems/caballo/CaballoState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia6/problems/darCambio/DarCambioProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia6/problems/darCambio/DarCambioProblem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia6/problems/darCambio/DarCambioState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia6/problems/darCambio/DarCambioState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia6/problems/farmer/FarmerProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia6/problems/farmer/FarmerProblem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia6/problems/farmer/FarmerState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia6/problems/farmer/FarmerState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia6/problems/jugs/JugsProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia6/problems/jugs/JugsProblem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia6/problems/jugs/JugsState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia6/problems/jugs/JugsState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia6/problems/ochoReinas/OchoReinasProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia6/problems/ochoReinas/OchoReinasProblem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guia6/problems/ochoReinas/OchoReinasState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guia6/problems/ochoReinas/OchoReinasState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/varios/BusquedaBinariaDC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/varios/BusquedaBinariaDC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/varios/FiboDc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/varios/FiboDc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/varios/FiboDp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/varios/FiboDp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/varios/PlantasVsZombies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/varios/PlantasVsZombies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/varios/busquedaBinaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/varios/busquedaBinaria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/varios/inversiones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/varios/inversiones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -182,7 +130,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539832012685" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539832221898" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -210,12 +158,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539830168598</updated>
-      <workItem from="1539830188750" duration="1648000" />
+      <workItem from="1539830188750" duration="1943000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1648000" />
+    <option name="totallyTimeSpent" value="1943000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
@@ -227,10 +175,10 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Inspection Results" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Inspection Results" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
