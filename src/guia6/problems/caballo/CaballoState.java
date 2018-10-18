@@ -9,8 +9,9 @@ import java.util.Arrays;
  */
 public class CaballoState implements State {
 
-    int[][] tablero;
-    int x, y;
+    final int[][] tablero;
+    final int x;
+    final int y;
 
     /**
      *
@@ -42,6 +43,6 @@ public class CaballoState implements State {
      */
     @Override
     public String toString() {
-        return x + " - " + y + " - " + tablero.toString();
+        return x + " - " + y + " - " + Arrays.deepToString(tablero);
     }
 }

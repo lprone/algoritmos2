@@ -50,8 +50,8 @@ public class inversiones {
      */
     private int join(ArrayList<Integer> in) {
         int ret = 0;
-        for (int j = 0; j < in.size(); j++) {
-            ret += in.get(j);
+        for (Integer anIn : in) {
+            ret += anIn;
         }
         return ret;
     }
@@ -61,7 +61,7 @@ public class inversiones {
      * @param in
      * @return
      */
-    public int inversiones(int[] in) {
+    private int inversiones(int[] in) {
 
         // join(map (inversiones (split isbase base)))
         ArrayList<int[]> sp = new ArrayList(Arrays.asList(in));
@@ -82,7 +82,7 @@ public class inversiones {
                 }
                 System.out.print(" -  ");
             }
-            System.out.println("");
+            System.out.println();
         }
         return join(map(cb));
     }

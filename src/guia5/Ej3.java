@@ -13,8 +13,8 @@ import java.util.Collections;
  */
 class Cita implements Comparable {
 
-    private String descripcion;
-    private int hi, hf, p;
+    private final String descripcion;
+    private final int hi, hf, p;
 
     /**
      *
@@ -85,7 +85,7 @@ public class Ej3 {
      * @param citas
      * @return
      */
-    static ArrayList<Cita> organizarAgenda(ArrayList<Cita> citas) {
+    private static ArrayList<Cita> organizarAgenda(ArrayList<Cita> citas) {
         Collections.sort(citas);
         Collections.reverse(citas);
         ArrayList<Cita> sol = new ArrayList();

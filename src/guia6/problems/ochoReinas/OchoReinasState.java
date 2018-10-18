@@ -9,7 +9,7 @@ import guia6.problems.State;
 public class OchoReinasState implements State {
 
     int[][] tableroMatriz = new int[8][8];
-    int[] tablero = new int[8];
+    final int[] tablero = new int[8];
 
     /**
      *

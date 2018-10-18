@@ -6,17 +6,17 @@ package guia2;
  */
 public class ej5 {
 
-    private int tablero[][] = new int[8][8];
+    private final int tablero[][] = new int[8][8];
     private int reinas = 0;
-    private int reina = 8;
-    private int disponible = 0;
-    private int noDisponible = 1;
+    private final int reina = 8;
+    private final int disponible = 0;
+    private final int noDisponible = 1;
 
     /**
      *
      * @return
      */
-    public boolean tableroLleno() {
+    private boolean tableroLleno() {
         for (int i = 0; i < tablero.length; i++) {
             for (int j = 0; j < tablero.length; j++) {
                 if (posicionPermitida(i, j)) {
@@ -31,23 +31,23 @@ public class ej5 {
      *
      * @return
      */
-    public String getPosicionReinas() {
-        String ret = "";
+    private String getPosicionReinas() {
+        StringBuilder ret = new StringBuilder();
         for (int i = 0; i < tablero.length; i++) {
             for (int j = 0; j < tablero.length; j++) {
                 if (esReina(i, j)) {
-                    ret += "( " + i + " , " + j + " )  ";
+                    ret.append("( ").append(i).append(" , ").append(j).append(" )  ");
                 }
             }
         }
-        return ret;
+        return ret.toString();
     }
 
     /**
      *
      * @return
      */
-    public int getReinas() {
+    private int getReinas() {
         return reinas;
     }
 
@@ -75,7 +75,7 @@ public class ej5 {
      * @param x
      * @param y
      */
-    public void setReina(int x, int y) {
+    private void setReina(int x, int y) {
         tablero[x][y] = reina;
         reinas++;
         setFil(x);
@@ -86,7 +86,7 @@ public class ej5 {
     /**
      *
      */
-    public void inicializarTablero() {
+    private void inicializarTablero() {
         for (int i = 0; i < tablero.length; i++) {
             for (int j = 0; j < tablero.length; j++) {
                 tablero[i][j] = disponible;
@@ -175,20 +175,20 @@ public class ej5 {
     /**
      *
      */
-    public void verTablero() {
+    private void verTablero() {
         for (int i = 0; i < tablero.length; i++) {
             for (int j = 0; j < tablero.length; j++) {
                 System.out.print(tablero[i][j] + " ");
             }
-            System.out.println("");
+            System.out.println();
         }
-        System.out.println("");
+        System.out.println();
     }
 
     /**
      *
      */
-    public static void solve() {
+    private static void solve() {
         ej5 e = new ej5();
         e.inicializarTablero();
         int i, j;

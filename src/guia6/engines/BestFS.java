@@ -7,12 +7,12 @@ import java.util.List;
  *
  * @author lprone
  */
-public class BestFS extends AbstractSearchEngine {
+public class BestFS extends SearchEngine {
 
     /**
      *
      */
-    private List path = new LinkedList();
+    private final List path = new LinkedList();
 
     /**
      *

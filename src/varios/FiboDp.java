@@ -58,7 +58,7 @@ public class FiboDp {
      * @param a
      * @return
      */
-    public int fibo(int a) {
+    private int fibo(int a) {
 
         ArrayList<Integer> sp = new ArrayList();
         sp.add(a);

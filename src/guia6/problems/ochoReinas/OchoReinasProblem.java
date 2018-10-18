@@ -8,7 +8,7 @@ import java.util.List;
  *
  * @author lprone
  */
-public class OchoReinasProblem implements guia6.problems.AbstractSearchProblem {
+public class OchoReinasProblem implements guia6.problems.SearchProblem {
 
     /**
      *

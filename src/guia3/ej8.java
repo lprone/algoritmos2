@@ -10,8 +10,8 @@ import java.util.Collections;
  */
 class MyPoint implements Comparable {
 
-    private int x;
-    private int y;
+    private final int x;
+    private final int y;
 
     /**
      *
@@ -80,9 +80,9 @@ class MyPoint implements Comparable {
 
 class ret implements Comparable {
 
-    int d;
-    MyPoint p1;
-    MyPoint p2;
+    final int d;
+    private final MyPoint p1;
+    private final MyPoint p2;
 
     /**
      *
@@ -100,7 +100,7 @@ class ret implements Comparable {
      *
      * @return
      */
-    public int getD() {
+    private int getD() {
         return d;
     }
 
@@ -135,7 +135,7 @@ public class ej8 {
      * @param p
      * @return
      */
-    boolean isBase(MyPoint[] p) {
+    private boolean isBase(MyPoint[] p) {
         return p.length == 2;
     }
 
@@ -153,7 +153,7 @@ public class ej8 {
      * @param a
      * @return
      */
-    public ArrayList<MyPoint[]> split(MyPoint[] a) {
+    private ArrayList<MyPoint[]> split(MyPoint[] a) {
         ArrayList<MyPoint[]> ret = new ArrayList();
         MyPoint[] aux1 = new MyPoint[2];
         MyPoint[] aux2 = new MyPoint[a.length - 1];
@@ -186,7 +186,7 @@ public class ej8 {
      * @param in
      * @return
      */
-    public ret minDist(ArrayList<MyPoint[]> in) {
+    private ret minDist(ArrayList<MyPoint[]> in) {
         ArrayList<MyPoint[]> sp = new ArrayList();
         sp.add(in.get(0));
         ArrayList<MyPoint[]> cb = new ArrayList();

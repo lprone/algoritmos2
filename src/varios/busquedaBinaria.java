@@ -12,7 +12,7 @@ public class busquedaBinaria {
      * @param e
      * @return
      */
-    public boolean buscar(int[] in, int e) {
+    private boolean buscar(int[] in, int e) {
         int init = 0, fin = in.length;
         while (Math.abs(init - fin) > 1) {
             if (in[(init + fin) / 2] < e) {

@@ -1,8 +1,6 @@
 package guia3;
 
-import java.awt.Point;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.*;
 import java.util.LinkedList;
 import java.util.Observable;
 import java.util.Observer;
@@ -46,7 +44,7 @@ class Game {
      *
      * @param o
      */
-    public static void addObs(Observer o) {
+    public void addObs(Observer o) {
         game.addObserver(o);
     }
 
@@ -93,7 +91,9 @@ class Game {
 
 class Chip {
 
-    Point p1, p2, p3;
+    private final Point p1;
+    private final Point p2;
+    private final Point p3;
 
     /**
      *
@@ -115,7 +115,7 @@ class Chip {
      * @return
      */
     public LinkedList<Point> getChip() {
-        LinkedList<Point> ret = new LinkedList<Point>();
+        LinkedList<Point> ret = new LinkedList<>();
         ret.add(p1);
         ret.add(p2);
         ret.add(p3);
@@ -130,10 +130,10 @@ class Chip {
     }
 }
 
- class Triomino extends Observable {
+class Triomino extends Observable {
 
-    LinkedList result;
-    private int[][] board;
+    private final LinkedList result;
+    private final int[][] board;
     private int count;
 
     /**
@@ -195,7 +195,7 @@ class Chip {
             for (int j = 0; j < board.length; j++) {
                 System.out.print(board[i][j] + " ");
             }
-            System.out.println("");
+            System.out.println();
         }
         System.out.println("------------------------------");
     }
@@ -233,7 +233,7 @@ class Chip {
      * @param x
      * @param y
      */
-    public void paintNeighbour(int x, int y) {
+    private void paintNeighbour(int x, int y) {
     }
 
     /**
@@ -347,10 +347,7 @@ class View extends javax.swing.JFrame implements Observer {
     /**
      *
      */
-    private javax.swing.Timer timer = new javax.swing.Timer(1000, new ActionListener() {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-        }
+    private final javax.swing.Timer timer = new javax.swing.Timer(1000, e -> {
     });
 
     /**
@@ -377,7 +374,7 @@ class View extends javax.swing.JFrame implements Observer {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jTable1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jTable1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jTable1.setFont(new java.awt.Font("Tahoma", Font.PLAIN, 24)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null},

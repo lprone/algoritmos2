@@ -8,13 +8,13 @@ import java.util.ArrayList;
  */
 public class ej5 {
 
-    private int[][] adyacencia;
+    private final int[][] adyacencia;
 
     /**
      *
      * @param a
      */
-    public ej5(ArrayList<Integer> a) {
+    private ej5(ArrayList<Integer> a) {
         adyacencia = new int[a.size()][a.size()];
     }
 
@@ -50,13 +50,13 @@ public class ej5 {
      *
      * @param m
      */
-    public void mostrarMatriz(int[][] m) {
+    private void mostrarMatriz(int[][] m) {
 
         for (int i = 0; i < m.length; i++) {
             for (int j = 0; j < m.length; j++) {
                 System.out.print(m[i][j] + " ");
             }
-            System.out.println("");
+            System.out.println();
         }
     }
 
@@ -76,7 +76,6 @@ public class ej5 {
 //        if q < m[j,p]
 //        m[j,p] = q
 //        s[j,p] = i
-
 
         for (int l = 1; l < adyacencia.length - 1; l++) {
             for (int i = 1; i < adyacencia.length - l - 1; i++) {
@@ -113,14 +112,14 @@ public class ej5 {
                 }
             }
         }
-        System.out.println("");
+        System.out.println();
     }
 
     /**
      *
      * @param tubos
      */
-    public void floydWarshall(ArrayList<Integer> tubos) {
+    private void floydWarshall(ArrayList<Integer> tubos) {
         for (int i = 0; i < adyacencia.length; i++) {
             int minimo;
             for (int j = i + 1; j < adyacencia.length; j++) {

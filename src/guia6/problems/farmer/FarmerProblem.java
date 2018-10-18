@@ -8,7 +8,7 @@ import java.util.List;
  *
  * @author lprone
  */
-public class FarmerProblem implements AbstractSearchProblem {
+public class FarmerProblem implements SearchProblem {
 
     /**
      *
@@ -26,7 +26,7 @@ public class FarmerProblem implements AbstractSearchProblem {
      */
     @Override
     public boolean success(State s) {
-        return ((FarmerState) s).equals(new FarmerState(1, 1, 1, 1));
+        return s.equals(new FarmerState(1, 1, 1, 1));
     }
 
     /**
@@ -98,8 +98,7 @@ public class FarmerProblem implements AbstractSearchProblem {
          * 
          */
 
-        /*-------------------------------*/
-
+ /*-------------------------------*/
         if (mismoLado(granjero, zorro, gallina, maiz)) {
             sucesores.add(new FarmerState(cruzar(granjero), zorro, cruzar(gallina), maiz));
         }
@@ -139,7 +138,6 @@ public class FarmerProblem implements AbstractSearchProblem {
         }
 
         /*-------------------------------*/
-
 //        if (mismoLado(granjero, zorro, gallina, maiz)) {
 //            sucesores.add(new FarmerState(cruzar(granjero), zorro, cruzar(gallina), maiz));
 //        }
@@ -184,7 +182,6 @@ public class FarmerProblem implements AbstractSearchProblem {
 //            sucesores.add(new FarmerState(cruzar(granjero), cruzar(zorro), gallina, maiz));
 //            sucesores.add(new FarmerState(cruzar(granjero), zorro, cruzar(gallina), maiz));
 //        }
-
         return sucesores;
     }
 }

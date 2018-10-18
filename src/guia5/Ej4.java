@@ -13,8 +13,8 @@ import java.util.Collections;
  */
 class Persona implements Comparable {
 
-    String nombre;
-    int tiempo;
+    final String nombre;
+    final int tiempo;
 
     /**
      *
@@ -74,7 +74,7 @@ public class Ej4 {
      * @param t
      * @return
      */
-    static boolean cruzarRio(ArrayList<Persona> personas, int t) {
+    private static boolean cruzarRio(ArrayList<Persona> personas, int t) {
         int tTotal = 0;
         Collections.sort(personas);
         Persona best = personas.get(0);

@@ -11,7 +11,10 @@ public class FarmerState implements State {
     /**
      *
      */
-    int granjero, zorro, gallina, maiz;
+    final int granjero;
+    final int zorro;
+    final int gallina;
+    final int maiz;
 
     /**
      *
@@ -29,7 +32,7 @@ public class FarmerState implements State {
 
     /**
      *
-     * @param o 
+     * @param o
      * @return
      */
     @Override

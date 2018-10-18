@@ -11,13 +11,13 @@ import java.util.Stack;
  *
  * @author lprone
  */
-public class ID extends AbstractSearchEngine {
+public class ID extends SearchEngine {
 
     /**
      *
      */
-    private int cotaMax;
-    private LinkedList<State> path = new LinkedList();
+    private final int cotaMax;
+    private final LinkedList<State> path = new LinkedList();
 
     /**
      *

@@ -13,7 +13,7 @@ import java.util.Collections;
  */
 class Moneda implements Comparable {
 
-    int valor;
+    private final int valor;
 
     /**
      *
@@ -63,13 +63,12 @@ public class Ej2 {
      * @param precio
      * @return
      */
-    static ArrayList<Moneda> cambio(ArrayList<Moneda> monedas, int precio) {
+    private static ArrayList<Moneda> cambio(ArrayList<Moneda> monedas, int precio) {
         Collections.sort(monedas);
         int retornado = 0;
         ArrayList<Moneda> vuelto = new ArrayList();
 
-        for (int i = 0; i < monedas.size(); i++) {
-            Moneda m = monedas.get(i);
+        for (Moneda m : monedas) {
             while (m.getValor() <= precio - retornado) {
                 vuelto.add(m);
                 retornado += m.getValor();

@@ -9,10 +9,10 @@ import java.util.List;
  *
  * @author lprone
  */
-public class DarCambioProblem implements AbstractSearchProblem {
+public class DarCambioProblem implements SearchProblem {
 
-    int total;
-    LinkedList<Integer> monedas = new LinkedList();
+    private final int total;
+    private final LinkedList<Integer> monedas = new LinkedList();
 //    private int m1 = 10000, m2 = 1000, m3 = 500, m4 = 100, m5 = 10;
 //    private int m1 = 1, m2 = 2, m3 = 5, m4 = 10, m5 = 25;
 
@@ -45,7 +45,7 @@ public class DarCambioProblem implements AbstractSearchProblem {
      */
     @Override
     public boolean success(State s) {
-        return ((DarCambioState) s).equals(new DarCambioState(0));
+        return s.equals(new DarCambioState(0));
     }
 
     /**

@@ -12,9 +12,10 @@ import java.util.List;
  *
  * @author lprone
  */
-public class CaballoProblem implements AbstractSearchProblem {
+public class CaballoProblem implements SearchProblem {
 
-    int x, y;
+    private final int x;
+    private final int y;
 
     /**
      *

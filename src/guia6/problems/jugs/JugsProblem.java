@@ -8,7 +8,7 @@ import java.util.List;
  *
  * @author lprone
  */
-public class JugsProblem implements guia6.problems.AbstractSearchProblem {
+public class JugsProblem implements guia6.problems.SearchProblem {
 
     /**
      *
@@ -26,7 +26,7 @@ public class JugsProblem implements guia6.problems.AbstractSearchProblem {
      */
     @Override
     public boolean success(State s) {
-        return ((JugsState) s).equals(new JugsState(2, 0));
+        return s.equals(new JugsState(2, 0));
     }
 
     /**

@@ -14,8 +14,8 @@ public class OchoReinas {
      *
      */
     public static void solveWithDFS() {
-        AbstractSearchProblem or = new OchoReinasProblem();
-        AbstractSearchEngine d = new DFS();
+        SearchProblem or = new OchoReinasProblem();
+        SearchEngine d = new DFS();
         d.setProblem(or);
         System.out.println(d.performSearch());
         d.report();
@@ -24,9 +24,9 @@ public class OchoReinas {
     /**
      *
      */
-    public static void solveWithBFS() {
-        AbstractSearchProblem or = new OchoReinasProblem();
-        AbstractSearchEngine b = new BFS();
+    private static void solveWithBFS() {
+        SearchProblem or = new OchoReinasProblem();
+        SearchEngine b = new BFS();
         b.setProblem(or);
         System.out.println(b.performSearch());
     }
@@ -35,8 +35,8 @@ public class OchoReinas {
      *
      */
     public static void solveWithID() {
-        AbstractSearchProblem or = new OchoReinasProblem();
-        AbstractSearchEngine i = new ID();
+        SearchProblem or = new OchoReinasProblem();
+        SearchEngine i = new ID();
         i.setProblem(or);
         System.out.println(i.performSearch());
         i.report();
@@ -46,8 +46,8 @@ public class OchoReinas {
      *
      */
     public static void solveWithBestFS() {
-        AbstractSearchProblem or = new OchoReinasProblem();
-        AbstractSearchEngine b = new BestFS();
+        SearchProblem or = new OchoReinasProblem();
+        SearchEngine b = new BestFS();
         b.setProblem(or);
         System.out.println(b.performSearch());
     }

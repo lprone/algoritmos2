@@ -1,12 +1,8 @@
 package guia6.engines;
 
 import guia6.problems.State;
-import java.util.Collections;
-import java.util.LinkedHashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
-import java.util.Set;
+
+import java.util.*;
 
 /**
  *
@@ -84,14 +80,14 @@ class Pair<A, B> {
  *
  * @author lprone
  */
-public class BFS extends AbstractSearchEngine {
+public class BFS extends SearchEngine {
 
     /**
      *
      */
     private State finalState;
-    private List<State> path = new LinkedList();
-    private LinkedList<Pair<State, State>> father = new LinkedList();
+    private final List<State> path = new LinkedList();
+    private final LinkedList<Pair<State, State>> father = new LinkedList();
 
     /**
      *
@@ -100,7 +96,7 @@ public class BFS extends AbstractSearchEngine {
     @Override
     public List getPath() {
         State aux = finalState;
-        while (!aux.equals(problem.initialState())) {
+        while (!Objects.requireNonNull(aux).equals(problem.initialState())) {
             path.add(aux);
             aux = getFather(aux);
         }
@@ -115,9 +111,9 @@ public class BFS extends AbstractSearchEngine {
      * @return
      */
     private State getFather(State s) {
-        for (int i = 0; i < father.size(); i++) {
-            if (father.get(i).getSecond().equals(s)) {
-                return father.get(i).getFirst();
+        for (Pair<State, State> aFather : father) {
+            if (aFather.getSecond().equals(s)) {
+                return aFather.getFirst();
             }
         }
         return null;
@@ -185,7 +181,7 @@ public class BFS extends AbstractSearchEngine {
                 List<State> aux = problem.getSuccessors(estados.poll());
                 for (State state : aux) {
                     father.add(new Pair(s, state));
-                    if (!in(visitados, state) && !s.equals(state)) {
+                    if (!in(visitados, state) && !Objects.requireNonNull(s).equals(state)) {
                         estados.add(state);
                     }
                 }

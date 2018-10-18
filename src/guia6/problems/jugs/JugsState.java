@@ -11,7 +11,7 @@ public class JugsState implements State {
     /**
      *
      */
-    private int j1, j2;
+    private final int j1, j2;
 
     /**
      *

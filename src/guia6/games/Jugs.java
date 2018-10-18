@@ -13,9 +13,9 @@ public class Jugs {
     /**
      *
      */
-    public static void solveWithDFS() {
-        AbstractSearchProblem j = new JugsProblem();
-        AbstractSearchEngine d = new DFS();
+    private static void solveWithDFS() {
+        JugsProblem j = new JugsProblem();
+        SearchEngine d = new DFS();
         d.setProblem(j);
         System.out.println(d.performSearch());
         d.report();
@@ -25,8 +25,8 @@ public class Jugs {
      *
      */
     public static void solveWithBFS() {
-        AbstractSearchProblem j = new JugsProblem();
-        AbstractSearchEngine b = new BFS();
+        SearchProblem j = new JugsProblem();
+        SearchEngine b = new BFS();
         b.setProblem(j);
         System.out.println(b.performSearch());
         b.report();
@@ -36,8 +36,8 @@ public class Jugs {
      *
      */
     public static void solveWithID() {
-        AbstractSearchProblem j = new JugsProblem();
-        AbstractSearchEngine i = new ID(6);
+        SearchProblem j = new JugsProblem();
+        SearchEngine i = new ID(6);
         i.setProblem(j);
         System.out.println(i.performSearch());
         i.report();
@@ -47,8 +47,8 @@ public class Jugs {
      *
      */
     public static void solveWithBestFS() {
-        AbstractSearchProblem j = new JugsProblem();
-        AbstractSearchEngine b = new BestFS();
+        SearchProblem j = new JugsProblem();
+        SearchEngine b = new BestFS();
         b.setProblem(j);
         System.out.println(b.performSearch());
     }

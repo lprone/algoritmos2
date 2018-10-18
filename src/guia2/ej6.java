@@ -10,29 +10,30 @@ import java.util.Collections;
 public class ej6 {
 
     /**
-     * 
+     *
      * @param n
-     * @return 
+     * @return
      */
-    public boolean esCapicua(int n) {
+    private boolean esCapicua(int n) {
         String aux = null;
         if (n >= 0 && n < 10) {
-            aux = "0000" + new String((new Integer(n).toString()));
+            aux = "0000" + (Integer.toString(n));
         }
         if (n >= 10 && n < 110) {
-            aux = "000" + new String((new Integer(n).toString()));
+            aux = "000" + (Integer.toString(n));
         }
         if (n >= 100 && n < 1000) {
-            aux = "00" + new String((new Integer(n).toString()));
+            aux = "00" + (Integer.toString(n));
         }
         if (n >= 1000 && n < 10000) {
-            aux = "0" + new String((new Integer(n).toString()));
+            aux = "0" + (Integer.toString(n));
         }
         if (n >= 10000 && n < 100000) {
-            aux = new String((new Integer(n).toString()));
+            aux = (Integer.toString(n));
         }
         boolean ret = true;
         for (int i = 0; i < 2; i++) {
+            assert aux != null;
             if (aux.charAt(i) != aux.charAt(aux.length() - i - 1)) {
                 ret = false;
             }
@@ -41,13 +42,13 @@ public class ej6 {
     }
 
     /**
-     * 
-     * @return 
+     *
+     * @return
      */
-    public ArrayList generarCapicuas() {
+    private ArrayList generarCapicuas() {
         ArrayList ret = new ArrayList();
         for (int i = 0; i < 100000; i++) {
-            if (esCapicua(i)) {                
+            if (esCapicua(i)) {
                 ret.add(i);
             }
         }
@@ -55,27 +56,27 @@ public class ej6 {
     }
 
     /**
-     * 
+     *
      * @param aux
-     * @return 
+     * @return
      */
-    public ArrayList ordenarCapicuas(ArrayList aux) {
+    private ArrayList ordenarCapicuas(ArrayList aux) {
         ArrayList ret = aux;
         Collections.sort(ret);
         return ret;
     }
 
     /**
-     * 
+     *
      * @param aux
-     * @return 
+     * @return
      */
-    public int buscarMenorDiferencia(ArrayList aux) {
+    private int buscarMenorDiferencia(ArrayList aux) {
         int min = 99999;
         for (int i = 0; i < aux.size() - 1; i++) {
             if (((Integer) aux.get(i + 1) - (Integer) aux.get(i)) < min) {
                 min = (Integer) aux.get(i + 1) - (Integer) aux.get(i);
-                System.out.println(aux.get(i + 1) + " - " + (Integer) aux.get(i));
+                System.out.println(aux.get(i + 1) + " - " + aux.get(i));
             }
         }
         return min;

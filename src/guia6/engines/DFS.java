@@ -11,12 +11,12 @@ import java.util.Stack;
  *
  * @author lprone
  */
-public class DFS extends AbstractSearchEngine {
+public class DFS extends SearchEngine {
 
     /**
      *
      */
-    private LinkedList<State> path = new LinkedList();
+    private final LinkedList<State> path = new LinkedList();
 
     /**
      *

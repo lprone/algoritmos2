@@ -9,13 +9,13 @@ import java.util.ArrayList;
  */
 public class ej5 {
 
-    private int[][] adyacencia;
+    private final int[][] adyacencia;
 
     /**
      *
      * @param a
      */
-    public ej5(ArrayList<Point> a) {
+    private ej5(ArrayList<Point> a) {
         adyacencia = new int[a.size()][a.size()];
     }
 
@@ -37,7 +37,7 @@ public class ej5 {
      *
      * @param tubos
      */
-    public void inicializarUniones(ArrayList<Point> tubos) {
+    private void inicializarUniones(ArrayList<Point> tubos) {
         for (int i = 0; i < adyacencia.length; i++) {
             for (int j = 0; j < adyacencia.length; j++) {
                 adyacencia[i][j] = costoUnir(tubos.get(i), tubos.get(j));
@@ -53,19 +53,19 @@ public class ej5 {
      *
      * @param m
      */
-    public void mostrarMatriz(int[][] m) {
+    private void mostrarMatriz(int[][] m) {
         for (int i = 0; i < m.length; i++) {
             for (int j = 0; j < m.length; j++) {
                 System.out.print(m[i][j] + " ");
             }
-            System.out.println("");
+            System.out.println();
         }
     }
 
     /**
      *
      */
-    public void floydWarshall() {
+    private void floydWarshall() {
         for (int k = 1; k < adyacencia.length; k++) {
             for (int i = 0; i < adyacencia.length; i++) {
                 for (int j = 0; j < adyacencia.length; j++) {
@@ -76,7 +76,7 @@ public class ej5 {
                 }
             }
         }
-        System.out.println("");
+        System.out.println();
     }
 
     /**
@@ -97,7 +97,6 @@ public class ej5 {
         e.floydWarshall();
         e.mostrarMatriz(e.adyacencia);
         System.out.println("--------");
-
 
     }
 }

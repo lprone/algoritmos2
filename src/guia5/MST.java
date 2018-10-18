@@ -13,8 +13,9 @@ import java.util.Collections;
  */
 class Arista implements Comparable {
 
-    String nodeA, nodeB;
-    int costo;
+    private final String nodeA;
+    private final String nodeB;
+    private final int costo;
 
     /**
      *
@@ -84,7 +85,7 @@ public class MST {
      * @param nodos
      * @return
      */
-    static ArrayList<Arista> kruskal(ArrayList<Arista> aristas, ArrayList<String> nodos) {
+    private static ArrayList<Arista> kruskal(ArrayList<Arista> aristas, ArrayList<String> nodos) {
         Collections.sort(aristas);
         ArrayList<Arista> mst = new ArrayList();
         ArrayList<String> unidos = new ArrayList();

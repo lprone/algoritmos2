@@ -1,30 +1,19 @@
 package guia6.engines;
 
-/**
- * Title: AbstractSearchEngine<p>
- * Description: class AbstractSearchEngine: abstract class which defines the
- * basic elements that are required for a search engine. Different search
- * strategies should extend this class. <p>
- * Copyright: Copyright (c) Nazareno Aguirre 2003,2010<p>
- * Company: UNRC<p>
- *
- * @author Nazareno Aguirre
- * @version 0.3
- */
-import guia6.problems.AbstractSearchProblem;
 import java.util.*; // necessary for the use of lists
+import guia6.problems.SearchProblem;
 
 /**
  *
  * @author lprone
  */
-abstract public class AbstractSearchEngine {
+abstract public class SearchEngine {
 
     // a reference to the problem to apply search to
     /**
      *
      */
-    protected AbstractSearchProblem problem;
+    SearchProblem problem;
 
     /**
      * Constructor for abstract class AbstractSearchEngine
@@ -32,19 +21,17 @@ abstract public class AbstractSearchEngine {
      * @pre. true.
      * @post. This constructor does nothing (skip).
      */
-    public AbstractSearchEngine() {
+    SearchEngine() {
     }
 
-    ;
-    
-	/** 
+    /**
 	 * Constructor for abstract class AbstractSearchEngine.
 	 * @param p is the abstract search problem associated with the engine
 	 * being created.
 	 * @pre. p!=null.
 	 * @post. A reference to p is stored in field problem.
 	 */	
-    public AbstractSearchEngine(AbstractSearchProblem p) {
+    public SearchEngine(SearchProblem p) {
         problem = p;
     }
 
@@ -84,7 +71,7 @@ abstract public class AbstractSearchEngine {
      * @pre. p!=null.
      * @post. 'problem' is set to p.
      */
-    public void setProblem(AbstractSearchProblem p) {
+    public void setProblem(SearchProblem p) {
         problem = p;
     }
 }

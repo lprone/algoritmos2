@@ -1,12 +1,12 @@
 package guia6.games;
 
-import guia6.engines.AbstractSearchEngine;
+import guia6.engines.SearchEngine;
 import guia6.engines.BFS;
 import guia6.engines.BestFS;
 import guia6.engines.DFS;
 import guia6.engines.ID;
-import guia6.problems.AbstractSearchProblem;
 import guia6.problems.darCambio.DarCambioProblem;
+import guia6.problems.SearchProblem;
 
 /**
  *
@@ -16,11 +16,11 @@ public class DarCambio {
 
     /**
      *
-     * @param n 
+     * @param n
      */
     public static void solveWithDFS(int n) {
-        AbstractSearchProblem dc = new DarCambioProblem(n);
-        AbstractSearchEngine d = new DFS();
+        SearchProblem dc = new DarCambioProblem(n);
+        SearchEngine d = new DFS();
         d.setProblem(dc);
         System.out.println(d.performSearch());
 //        d.report();
@@ -28,11 +28,11 @@ public class DarCambio {
 
     /**
      *
-     * @param n 
+     * @param n
      */
-    public static void solveWithBFS(int n) {
-        AbstractSearchProblem dc = new DarCambioProblem(n);
-        AbstractSearchEngine b = new BFS();
+    private static void solveWithBFS(int n) {
+        SearchProblem dc = new DarCambioProblem(n);
+        SearchEngine b = new BFS();
         b.setProblem(dc);
         System.out.println(b.performSearch());
         b.report();
@@ -40,11 +40,11 @@ public class DarCambio {
 
     /**
      *
-     * @param n 
+     * @param n
      */
     public static void solveWithID(int n) {
-        AbstractSearchProblem dc = new DarCambioProblem(n);
-        AbstractSearchEngine i = new ID(20);
+        SearchProblem dc = new DarCambioProblem(n);
+        SearchEngine i = new ID(20);
         i.setProblem(dc);
         System.out.println(i.performSearch());
 //        i.report();
@@ -52,11 +52,11 @@ public class DarCambio {
 
     /**
      *
-     * @param n 
+     * @param n
      */
     public static void solveWithBestFS(int n) {
-        AbstractSearchProblem dc = new DarCambioProblem(n);
-        AbstractSearchEngine b = new BestFS();
+        SearchProblem dc = new DarCambioProblem(n);
+        SearchEngine b = new BestFS();
         b.setProblem(dc);
         System.out.println(b.performSearch());
     }
@@ -68,7 +68,7 @@ public class DarCambio {
     public static void main(String[] args) {
 
         long time_start, time_end;
-        
+
         time_start = System.currentTimeMillis();
         solveWithBFS(68);
         time_end = System.currentTimeMillis();

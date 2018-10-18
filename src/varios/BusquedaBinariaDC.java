@@ -35,7 +35,7 @@ public class BusquedaBinariaDC {
      * @return
      */
     private ArrayList<int[]> split(int[] a) {
-        ArrayList<int[]> ret = new ArrayList<int[]>();
+        ArrayList<int[]> ret = new ArrayList<>();
         int[] aux1;
         int[] aux2;
         aux1 = new int[a.length / 2];
@@ -71,7 +71,7 @@ public class BusquedaBinariaDC {
      * @param e
      * @return
      */
-    public boolean busquedaBinaria(int[] a, int e) {
+    private boolean busquedaBinaria(int[] a, int e) {
 
         ArrayList<int[]> sp = new ArrayList(Arrays.asList(a));
         ArrayList<int[]> cb = new ArrayList();
@@ -96,7 +96,7 @@ public class BusquedaBinariaDC {
                 }
                 System.out.print(" -  ");
             }
-            System.out.println("");
+            System.out.println();
         }
         return join(mapBase(cb, e));
     }

@@ -1,8 +1,7 @@
 package guia3.triomino;
 
-import java.awt.Point;
+import java.awt.*;
 import java.util.LinkedList;
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -16,11 +15,10 @@ public class Ej10Recursivo {
      */
     public static void main(String args[]) {
 
-
 //        int n = Integer.valueOf(JOptionPane.showInputDialog("N= "));
 //        Point ip = new Point(Integer.valueOf(JOptionPane.showInputDialog("X= ")), Integer.valueOf(JOptionPane.showInputDialog("X= ")));        
         int n = 3;
-        Point ip = new Point(1, 1);
+        Point ip = new Point(4, 4);
 
         Game g = new Game(n, ip);
         g.cubrir();
@@ -34,7 +32,9 @@ class Triomino {
     /**
      *
      */
-    Point p1, p2, p3;
+    final Point p1;
+    final Point p2;
+    final Point p3;
 
     /**
      *
@@ -63,8 +63,8 @@ class Triomino {
 class Game {
 
     Point initialPoint = new Point();
-    int n;
-    LinkedList<Triomino> result;
+    private final int n;
+    final LinkedList<Triomino> result;
 
     /**
      *
@@ -183,7 +183,7 @@ class View extends javax.swing.JFrame {
     private void delay(int t) {
         try {
             Thread.sleep(t);
-        } catch (Exception e) {
+        } catch (Exception ignored) {
         }
     }
 
@@ -215,7 +215,7 @@ class View extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         board.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        board.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        board.setFont(new java.awt.Font("Tahoma", Font.PLAIN, 24)); // NOI18N
         board.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null},

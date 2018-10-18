@@ -1,6 +1,6 @@
 package guia6.games;
 
-import guia6.engines.AbstractSearchEngine;
+import guia6.engines.SearchEngine;
 import guia6.engines.BFS;
 import guia6.engines.BestFS;
 import guia6.engines.DFS;
@@ -15,12 +15,12 @@ public class Caballo {
 
     /**
      *
-     * @param x 
-     * @param y 
+     * @param x
+     * @param y
      */
     public static void solveWithDFS(int x, int y) {
         CaballoProblem c = new CaballoProblem(x, y);
-        AbstractSearchEngine d = new DFS();
+        SearchEngine d = new DFS();
         d.setProblem(c);
         System.out.println(d.performSearch());
 //        d.report();
@@ -28,12 +28,12 @@ public class Caballo {
 
     /**
      *
-     * @param x 
-     * @param y 
+     * @param x
+     * @param y
      */
-    public static void solveWithBFS(int x, int y) {
+    private static void solveWithBFS(int x, int y) {
         CaballoProblem c = new CaballoProblem(x, y);
-        AbstractSearchEngine b = new BFS();
+        SearchEngine b = new BFS();
         b.setProblem(c);
         System.out.println(b.performSearch());
 //        b.report();
@@ -41,12 +41,12 @@ public class Caballo {
 
     /**
      *
-     * @param x 
-     * @param y 
+     * @param x
+     * @param y
      */
     public static void solveWithID(int x, int y) {
         CaballoProblem c = new CaballoProblem(x, y);
-        AbstractSearchEngine i = new ID(20);
+        SearchEngine i = new ID(20);
         i.setProblem(c);
         System.out.println(i.performSearch());
 //        i.report();
@@ -54,12 +54,12 @@ public class Caballo {
 
     /**
      *
-     * @param x 
-     * @param y 
+     * @param x
+     * @param y
      */
     public static void solveWithBestFS(int x, int y) {
         CaballoProblem c = new CaballoProblem(x, y);
-        AbstractSearchEngine b = new BestFS();
+        SearchEngine b = new BestFS();
         b.setProblem(c);
         System.out.println(b.performSearch());
     }

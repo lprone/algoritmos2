@@ -13,10 +13,10 @@ import java.util.ArrayList;
  */
 class Elemento implements Comparable {
 
-    String name;
-    int peso;
-    int felicidad;
-    double felicidadPrecio;
+    private final String name;
+    private final int peso;
+    private final int felicidad;
+    private final double felicidadPrecio;
 
     /**
      *
@@ -28,7 +28,7 @@ class Elemento implements Comparable {
         this.name = name;
         this.peso = peso;
         this.felicidad = felicidad;
-        this.felicidadPrecio = new Double(felicidad) / new Double(peso);
+        this.felicidadPrecio = (double) felicidad / (double) peso;
         System.out.println(toString());
     }
 
@@ -96,7 +96,7 @@ public class Ej6 {
      * @param capacidad
      * @return
      */
-     static ArrayList<Elemento> llenarMochila(ArrayList<Elemento> elementos, int capacidad) {
+    private static ArrayList<Elemento> llenarMochila(ArrayList<Elemento> elementos, int capacidad) {
         Collections.sort(elementos);
         ArrayList<Elemento> mochila = new ArrayList();
         int espacioDisponible = capacidad;

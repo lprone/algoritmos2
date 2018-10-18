@@ -14,8 +14,8 @@ public class Farmer {
      *
      */
     public static void solveWithDFS() {
-        AbstractSearchProblem f = new FarmerProblem();
-        AbstractSearchEngine d = new DFS();
+        SearchProblem f = new FarmerProblem();
+        SearchEngine d = new DFS();
         d.setProblem(f);
         System.out.println(d.performSearch());
         d.report();
@@ -24,9 +24,9 @@ public class Farmer {
     /**
      *
      */
-    public static void solveWithBFS() {
-        AbstractSearchProblem f = new FarmerProblem();
-        AbstractSearchEngine b = new BFS();
+    private static void solveWithBFS() {
+        SearchProblem f = new FarmerProblem();
+        SearchEngine b = new BFS();
         b.setProblem(f);
         System.out.println(b.performSearch());
         b.report();
@@ -36,8 +36,8 @@ public class Farmer {
      *
      */
     public static void solveWithID() {
-        AbstractSearchProblem f = new FarmerProblem();
-        AbstractSearchEngine i = new ID(4);
+        SearchProblem f = new FarmerProblem();
+        SearchEngine i = new ID(4);
         i.setProblem(f);
         System.out.println(i.performSearch());
         i.report();
@@ -47,11 +47,11 @@ public class Farmer {
      *
      */
     public static void solveWithBestFS() {
-        AbstractSearchProblem f = new FarmerProblem();
-        AbstractSearchEngine b = new BestFS();
+        SearchProblem f = new FarmerProblem();
+        SearchEngine b = new BestFS();
         b.setProblem(f);
         System.out.println(b.performSearch());
-        
+
     }
 
     /**

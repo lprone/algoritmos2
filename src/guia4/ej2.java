@@ -116,7 +116,6 @@ public class ej2 {
             default:
                 if (m == n) {
                     return 1;
-                } else {
                 }
 
         }
@@ -130,7 +129,7 @@ public class ej2 {
      * @param cache
      * @return
      */
-    public int fact(int n, int[] cache) {
+    private int fact(int n, int[] cache) {
         Pair a = new Pair(n, cache);
         return n * fact(n - 1, cache);
     }

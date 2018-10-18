@@ -31,7 +31,7 @@ public class ej2BN {
      * @param n
      * @return
      */
-    public double combDP(int m, int n) {
+    private double combDP(int m, int n) {
         return triangulo(m)[m][n];
     }
 

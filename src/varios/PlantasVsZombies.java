@@ -13,9 +13,10 @@ import java.util.Collections;
  */
 class Planta implements Comparable {
 
-    private String especie;
-    private int potencia, tiempo;
-    private double potenciaTiempo;
+    private final String especie;
+    private final int potencia;
+    private final int tiempo;
+    private final double potenciaTiempo;
 
     /**
      *
@@ -27,7 +28,7 @@ class Planta implements Comparable {
         this.especie = especie;
         this.potencia = potencia;
         this.tiempo = tiempo;
-        this.potenciaTiempo = new Double(potencia) / new Double(tiempo);
+        this.potenciaTiempo = (double) potencia / (double) tiempo;
     }
 
     /**
@@ -92,7 +93,7 @@ public class PlantasVsZombies {
      * @param plantas
      * @return
      */
-    static Planta[] solveGame(ArrayList<Planta> plantas) {
+    private static Planta[] solveGame(ArrayList<Planta> plantas) {
         Collections.sort(plantas);
         Planta[] sol = new Planta[8];
         int auxArreglo, auxList = 0;
@@ -140,8 +141,8 @@ public class PlantasVsZombies {
         System.out.println("---------------");
         PlantasVsZombies p = new PlantasVsZombies();
         Planta[] solve = solveGame(plantas);
-        for (int i = 0; i < solve.length; i++) {
-            System.out.println(solve[i]);
+        for (Planta aSolve : solve) {
+            System.out.println(aSolve);
         }
     }
 }

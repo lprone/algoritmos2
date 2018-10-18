@@ -12,8 +12,8 @@ import java.util.ArrayList;
  */
 class Pair<A, B> {
 
-    A a;
-    B b;
+    final A a;
+    final B b;
 
     /**
      *
@@ -58,7 +58,7 @@ public class Ej7 {
      * @param colores
      * @return
      */
-    static ArrayList<Pair<String, String>> colorear(ArrayList<String> nodos, ArrayList<Pair<Integer, Integer>> aristas, ArrayList<String> colores) {
+    private static ArrayList<Pair<String, String>> colorear(ArrayList<String> nodos, ArrayList<Pair<Integer, Integer>> aristas, ArrayList<String> colores) {
         int colorUsado = 5;
         int[][] matrizAdyacencia = new int[nodos.size()][nodos.size()];
         for (Pair p : aristas) {
@@ -88,14 +88,14 @@ public class Ej7 {
      *
      * @param matriz
      */
-    public static void verMatriz(int[][] matriz) {
+    private static void verMatriz(int[][] matriz) {
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz.length; j++) {
                 System.out.print(matriz[i][j] + " ");
             }
-            System.out.println("");
+            System.out.println();
         }
-        System.out.println("");
+        System.out.println();
     }
 
     /**
@@ -125,7 +125,6 @@ public class Ej7 {
 //        aristas.add(new Pair(2, 3));
 //        aristas.add(new Pair(3, 4));
 //        aristas.add(new Pair(4, 1));
-
         aristas.add(new Pair(0, 1));
         aristas.add(new Pair(0, 2));
         aristas.add(new Pair(0, 3));

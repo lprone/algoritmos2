@@ -8,7 +8,7 @@ import guia6.problems.State;
  */
 public class DarCambioState implements State {
 
-    int total;
+    final int total;
 
     /**
      *

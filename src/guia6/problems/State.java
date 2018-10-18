@@ -6,7 +6,8 @@ package guia6.problems;
  * when characterising problems as search problems. State definitions for
  * particular search problems should extend this class, so the general search
  * strategies can be used.<p>
- * Copyright: Copyright (c) Nazareno Aguirre 2003,2010<p>
+ * Copyright: Copyright (c) Nazareno Aguirre 2003,2010
+ * <p>
  * Company: None<p>
  *
  * @author Nazareno Aguirre
@@ -23,7 +24,7 @@ public interface State {
      * @pre. other!=null.
      * @post. true is returned iff 'this' is equal, as a state, to 'other'.
      */
-    abstract public boolean equals(State other);
+    boolean equals(State other);
 
     /**
      * Returns a representation as a string of the current state. This method
@@ -34,5 +35,5 @@ public interface State {
      * @post. A text representation of the current state is returned.
      */
     @Override
-    abstract public String toString();
+    String toString();
 }

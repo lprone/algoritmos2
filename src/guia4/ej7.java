@@ -12,7 +12,7 @@ public class ej7 {
      * @param str2
      * @return
      */
-    public int computeLevenshteinDistance(String str1, String str2) {
+    private int computeLevenshteinDistance(String str1, String str2) {
         int[][] distance = new int[str1.length() + 1][];
         int repi, repj;
 
@@ -55,7 +55,7 @@ public class ej7 {
                         } else {
                             if (str1.charAt(repi - 1) != str2.charAt(repj - 1)) {
                                 System.out.println("Reemplazar la " + str1.charAt(repi - 1) + " por " + str2.charAt(repj - 1));
-                            };
+                            }
                             repi--;
                             repj--;
                         }
