@@ -8,7 +8,7 @@ import java.util.ArrayList;
  */
 public class ej5b {
 
-    private final int tablero[][] = new int[8][8];
+    private final int[][] tablero = new int[8][8];
     private final int reina = 8;
     private final int disponible = 0;
     private final int noDisponible = 1;

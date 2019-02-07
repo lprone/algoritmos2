@@ -35,22 +35,22 @@ public class ej7 {
         repj = str2.length();
         while (!(repi == 0 && repj == 0)) {
             if (repi == 0) {
-                System.out.println("Insertar " + str2.charAt(repj - 1) + " en posicion " + Integer.toString(repi));
+                System.out.println("Insertar " + str2.charAt(repj - 1) + " en posicion " + repi);
                 repj--;
             } else {
                 if (repj == 0) {
-                    System.out.println("Eliminar " + str1.charAt(repi - 1) + " en posicion " + Integer.toString(repi - 1));
+                    System.out.println("Eliminar " + str1.charAt(repi - 1) + " en posicion " + (repi - 1));
                     repi--;
                 } else {
                     int o1 = distance[repi - 1][repj] + 1;
                     int o2 = distance[repi][repj - 1] + 1;
                     int o3 = distance[repi - 1][repj - 1];
                     if (minimum(o1, o2, o3) == o1) {
-                        System.out.println("Eliminar " + str1.charAt(repi - 1) + " en posicion " + Integer.toString(repi - 1));
+                        System.out.println("Eliminar " + str1.charAt(repi - 1) + " en posicion " + (repi - 1));
                         repi--;
                     } else {
                         if (minimum(o1, o2, o3) == o2) {
-                            System.out.println("Insertar " + str2.charAt(repj - 1) + " en posicion " + Integer.toString(repi - 1));
+                            System.out.println("Insertar " + str2.charAt(repj - 1) + " en posicion " + (repi - 1));
                             repj--;
                         } else {
                             if (str1.charAt(repi - 1) != str2.charAt(repj - 1)) {

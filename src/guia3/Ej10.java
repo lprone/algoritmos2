@@ -16,7 +16,7 @@ public class Ej10 {
      *
      * @param args
      */
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         int x = Integer.valueOf(JOptionPane.showInputDialog("X: "));
         int y = Integer.valueOf(JOptionPane.showInputDialog("Y: "));
 

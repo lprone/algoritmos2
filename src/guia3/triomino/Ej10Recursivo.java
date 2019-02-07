@@ -13,7 +13,7 @@ public class Ej10Recursivo {
      *
      * @param args
      */
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
 //        int n = Integer.valueOf(JOptionPane.showInputDialog("N= "));
 //        Point ip = new Point(Integer.valueOf(JOptionPane.showInputDialog("X= ")), Integer.valueOf(JOptionPane.showInputDialog("X= ")));        
@@ -62,7 +62,7 @@ class Triomino {
 
 class Game {
 
-    Point initialPoint = new Point();
+    Point initialPoint;
     private final int n;
     final LinkedList<Triomino> result;
 

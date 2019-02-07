@@ -17,16 +17,16 @@ public class ej6 {
     private boolean esCapicua(int n) {
         String aux = null;
         if (n >= 0 && n < 10) {
-            aux = "0000" + (Integer.toString(n));
+            aux = "0000" + (n);
         }
         if (n >= 10 && n < 110) {
-            aux = "000" + (Integer.toString(n));
+            aux = "000" + (n);
         }
         if (n >= 100 && n < 1000) {
-            aux = "00" + (Integer.toString(n));
+            aux = "00" + (n);
         }
         if (n >= 1000 && n < 10000) {
-            aux = "0" + (Integer.toString(n));
+            aux = "0" + (n);
         }
         if (n >= 10000 && n < 100000) {
             aux = (Integer.toString(n));

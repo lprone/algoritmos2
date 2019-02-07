@@ -59,8 +59,8 @@ public class BusquedaBinariaDC {
      */
     private boolean join(ArrayList<Boolean> l) {
         boolean aux = false;
-        for (int i = 0; i < l.size(); i++) {
-            aux = aux || l.get(i);
+        for (Boolean aBoolean : l) {
+            aux = aux || aBoolean;
         }
         return aux;
     }
