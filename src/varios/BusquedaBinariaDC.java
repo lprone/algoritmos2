@@ -73,8 +73,8 @@ public class BusquedaBinariaDC {
      */
     private boolean busquedaBinaria(int[] a, int e) {
 
-        ArrayList<int[]> sp = new ArrayList(Arrays.asList(a));
-        ArrayList<int[]> cb = new ArrayList();
+        ArrayList<int[]> sp = new ArrayList<>(Arrays.asList(a));
+        ArrayList<int[]> cb = new ArrayList<>();
 
         while (!sp.isEmpty()) {
             if (isBase(sp.get(0))) {
@@ -108,7 +108,7 @@ public class BusquedaBinariaDC {
      * @return
      */
     private ArrayList<Boolean> mapBase(ArrayList<int[]> cb, int e) {
-        ArrayList<Boolean> sols = new ArrayList();
+        ArrayList<Boolean> sols = new ArrayList<>();
         for (int[] is : cb) {
             sols.add(base(is, e));
         }

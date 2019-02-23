@@ -94,7 +94,7 @@ public class Ej4 {
      * @param args
      */
     public static void main(String[] args) {
-        ArrayList<Persona> personas = new ArrayList();
+        ArrayList<Persona> personas = new ArrayList<>();
         personas.add(new Persona("indiana", 1));
         personas.add(new Persona("novia", 2));
         personas.add(new Persona("padre", 4));

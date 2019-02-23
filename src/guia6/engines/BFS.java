@@ -86,8 +86,8 @@ public class BFS extends SearchEngine {
      *
      */
     private State finalState;
-    private final List<State> path = new LinkedList();
-    private final LinkedList<Pair<State, State>> father = new LinkedList();
+    private final List<State> path = new LinkedList<>();
+    private final LinkedList<Pair<State, State>> father = new LinkedList<>();
 
     /**
      *
@@ -166,8 +166,8 @@ public class BFS extends SearchEngine {
      */
     @Override
     public boolean performSearch() {
-        Set<State> visitados = new LinkedHashSet();
-        Queue<State> estados = new LinkedList();
+        Set<State> visitados = new LinkedHashSet<>();
+        Queue<State> estados = new LinkedList<>();
         estados.add(problem.initialState());
         while (!estados.isEmpty()) {
             visitados.add(estados.peek());
@@ -180,7 +180,7 @@ public class BFS extends SearchEngine {
                 State s = estados.peek();
                 List<State> aux = problem.getSuccessors(estados.poll());
                 for (State state : aux) {
-                    father.add(new Pair(s, state));
+                    father.add(new Pair<>(s, state));
                     if (!in(visitados, state) && !Objects.requireNonNull(s).equals(state)) {
                         estados.add(state);
                     }

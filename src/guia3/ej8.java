@@ -154,7 +154,7 @@ public class ej8 {
      * @return
      */
     private ArrayList<MyPoint[]> split(MyPoint[] a) {
-        ArrayList<MyPoint[]> ret = new ArrayList();
+        ArrayList<MyPoint[]> ret = new ArrayList<>();
         MyPoint[] aux1 = new MyPoint[2];
         MyPoint[] aux2 = new MyPoint[a.length - 1];
         System.arraycopy(a, 0, aux1, 0, 2);
@@ -187,9 +187,9 @@ public class ej8 {
      * @return
      */
     private ret minDist(ArrayList<MyPoint[]> in) {
-        ArrayList<MyPoint[]> sp = new ArrayList();
+        ArrayList<MyPoint[]> sp = new ArrayList<>();
         sp.add(in.get(0));
-        ArrayList<MyPoint[]> cb = new ArrayList();
+        ArrayList<MyPoint[]> cb = new ArrayList<>();
 
         while (!sp.isEmpty()) {
             if (isBase(sp.get(0))) {
@@ -209,7 +209,7 @@ public class ej8 {
      * @return
      */
     private ArrayList<ret> map(ArrayList<MyPoint[]> cb) {
-        ArrayList<ret> sols = new ArrayList();
+        ArrayList<ret> sols = new ArrayList<>();
         for (MyPoint[] is : cb) {
             sols.add(base(is));
         }
@@ -242,7 +242,7 @@ public class ej8 {
             p[i] = points.get(i);
         }
 
-        ArrayList problema = new ArrayList();
+        ArrayList problema = new ArrayList<>();
         problema.add(p);
         System.out.println(e.minDist(problema));
     }

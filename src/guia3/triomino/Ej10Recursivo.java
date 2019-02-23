@@ -62,7 +62,7 @@ class Triomino {
 
 class Game {
 
-    Point initialPoint;
+    private final Point initialPoint;
     private final int n;
     final LinkedList<Triomino> result;
 
@@ -74,7 +74,11 @@ class Game {
     public Game(int n, Point p) {
         this.initialPoint = p;
         this.n = n;
-        result = new LinkedList();
+        result = new LinkedList<>();
+    }
+
+    public Point getInitialPoint() {
+        return initialPoint;
     }
 
     /**
@@ -167,7 +171,7 @@ class View extends javax.swing.JFrame {
      * @param g
      */
     public void play(Game g) {
-        setPoint(g.initialPoint);
+        setPoint(g.getInitialPoint());
         for (Triomino t : g.result) {
             System.out.println(t);
             setTriomino(t);

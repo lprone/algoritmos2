@@ -8,10 +8,10 @@ import java.util.ArrayList;
  */
 public class ej5b {
 
-    private final int[][] tablero = new int[8][8];
-    private final int reina = 8;
-    private final int disponible = 0;
-    private final int noDisponible = 1;
+    private static final int[][] tablero = new int[8][8];
+    private static final int reina = 8;
+    private static final int disponible = 0;
+    private static final int noDisponible = 1;
     private boolean solCorrecta;
 
     /**
@@ -188,7 +188,7 @@ public class ej5b {
      *
      */
     private static void solveBusquedaExaustiva() {
-        ArrayList soluciones = new ArrayList();
+        ArrayList soluciones = new ArrayList<>();
         ej5b e = new ej5b();
         e.inicializarTablero();
         for (int i = 0; i < 8; i++) {

@@ -171,7 +171,7 @@ public class ej5 {
      * @param args
      */
     public static void main(String[] args) {
-        ArrayList<Integer> a = new ArrayList();
+        ArrayList<Integer> a = new ArrayList<>();
         a.add(1);
         a.add(3);
         a.add(4);

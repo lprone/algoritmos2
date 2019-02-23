@@ -88,7 +88,7 @@ public class Ej3 {
     private static ArrayList<Cita> organizarAgenda(ArrayList<Cita> citas) {
         Collections.sort(citas);
         Collections.reverse(citas);
-        ArrayList<Cita> sol = new ArrayList();
+        ArrayList<Cita> sol = new ArrayList<>();
         int[] dia = new int[24];
         for (Cita cita : citas) {
             boolean posible = true;
@@ -112,7 +112,7 @@ public class Ej3 {
      * @param args
      */
     public static void main(String[] args) {
-        ArrayList<Cita> citas = new ArrayList();
+        ArrayList<Cita> citas = new ArrayList<>();
         citas.add(new Cita(null, 1, 2, 5));
         citas.add(new Cita(null, 2, 3, 8));
         citas.add(new Cita(null, 1, 5, 3));

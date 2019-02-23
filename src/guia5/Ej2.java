@@ -66,7 +66,7 @@ public class Ej2 {
     private static ArrayList<Moneda> cambio(ArrayList<Moneda> monedas, int precio) {
         Collections.sort(monedas);
         int retornado = 0;
-        ArrayList<Moneda> vuelto = new ArrayList();
+        ArrayList<Moneda> vuelto = new ArrayList<>();
 
         for (Moneda m : monedas) {
             while (m.getValor() <= precio - retornado) {
@@ -82,7 +82,7 @@ public class Ej2 {
      * @param args
      */
     public static void main(String[] args) {
-        ArrayList<Moneda> monedas = new ArrayList();
+        ArrayList<Moneda> monedas = new ArrayList<>();
         monedas.add(new Moneda(25));
         monedas.add(new Moneda(1));
         monedas.add(new Moneda(10));

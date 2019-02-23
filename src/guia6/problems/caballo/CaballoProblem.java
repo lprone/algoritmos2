@@ -71,7 +71,7 @@ public class CaballoProblem implements SearchProblem {
         int[][] tablero = ((CaballoState) s).tablero;
         int x = ((CaballoState) s).x;
         int y = ((CaballoState) s).y;
-        List<State> sucesores = new LinkedList();
+        List<State> sucesores = new LinkedList<>();
         tablero[x][y] = 1;
         if (in(x + 2) && in(y + 1) && !marcado(tablero, x + 2, y + 1)) {
             sucesores.add(new CaballoState(tablero, x + 2, y + 1));

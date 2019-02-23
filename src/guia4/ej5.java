@@ -84,7 +84,7 @@ public class ej5 {
      * @param args
      */
     public static void main(String[] args) {
-        ArrayList<Point> a = new ArrayList();
+        ArrayList<Point> a = new ArrayList<>();
         a.add(new Point(1, 6));
         a.add(new Point(2, 1));
         a.add(new Point(3, 1));

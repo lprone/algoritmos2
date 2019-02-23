@@ -87,8 +87,8 @@ public class MST {
      */
     private static ArrayList<Arista> kruskal(ArrayList<Arista> aristas, ArrayList<String> nodos) {
         Collections.sort(aristas);
-        ArrayList<Arista> mst = new ArrayList();
-        ArrayList<String> unidos = new ArrayList();
+        ArrayList<Arista> mst = new ArrayList<>();
+        ArrayList<String> unidos = new ArrayList<>();
         for (Arista a : aristas) {
             if (!unidos.contains(a.getNodeA()) || !unidos.contains(a.getNodeB())) {
                 mst.add(a);
@@ -104,8 +104,8 @@ public class MST {
      * @param args
      */
     public static void main(String[] args) {
-        ArrayList<Arista> aristas = new ArrayList();
-        ArrayList<String> nodosSet = new ArrayList();
+        ArrayList<Arista> aristas = new ArrayList<>();
+        ArrayList<String> nodosSet = new ArrayList<>();
         nodosSet.add("A");
         nodosSet.add("B");
         nodosSet.add("C");

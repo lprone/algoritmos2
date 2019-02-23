@@ -46,7 +46,7 @@ public class ej6 {
      * @return
      */
     private ArrayList generarCapicuas() {
-        ArrayList ret = new ArrayList();
+        ArrayList ret = new ArrayList<>();
         for (int i = 0; i < 100000; i++) {
             if (esCapicua(i)) {
                 ret.add(i);

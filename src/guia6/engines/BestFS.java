@@ -12,7 +12,7 @@ public class BestFS extends SearchEngine {
     /**
      *
      */
-    private final List path = new LinkedList();
+    private final List path = new LinkedList<>();
 
     /**
      *

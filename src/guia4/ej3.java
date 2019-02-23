@@ -18,7 +18,7 @@ public class ej3 {
         if (n == 0 || n == 1) {
             return 1;
         } else {
-            LinkedList<Double> fibos = new LinkedList();
+            LinkedList<Double> fibos = new LinkedList<>();
             fibos.add(0, 1d);
             fibos.add(1, 1d);
             for (int i = 2; i <= n; i++) {

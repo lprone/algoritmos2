@@ -126,7 +126,7 @@ public class PlantasVsZombies {
      * @param args
      */
     public static void main(String[] args) {
-        ArrayList<Planta> plantas = new ArrayList();
+        ArrayList<Planta> plantas = new ArrayList<>();
         plantas.add(new Planta("E", 4, 2));
         plantas.add(new Planta("A", 10, 10));
         plantas.add(new Planta("D", 2, 1));

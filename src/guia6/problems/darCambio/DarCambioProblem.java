@@ -12,7 +12,7 @@ import java.util.List;
 public class DarCambioProblem implements SearchProblem {
 
     private final int total;
-    private final LinkedList<Integer> monedas = new LinkedList();
+    private final LinkedList<Integer> monedas = new LinkedList<>();
 //    private int m1 = 10000, m2 = 1000, m3 = 500, m4 = 100, m5 = 10;
 //    private int m1 = 1, m2 = 2, m3 = 5, m4 = 10, m5 = 25;
 
@@ -56,7 +56,7 @@ public class DarCambioProblem implements SearchProblem {
     @Override
     public List<State> getSuccessors(State s) {
         int total = ((DarCambioState) s).total;
-        List<State> sucesores = new LinkedList();
+        List<State> sucesores = new LinkedList<>();
         for (Integer p : monedas) {
             sucesores.add(new DarCambioState(total - p));
         }

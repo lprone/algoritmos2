@@ -17,7 +17,7 @@ public class ID extends SearchEngine {
      *
      */
     private final int cotaMax;
-    private final LinkedList<State> path = new LinkedList();
+    private final LinkedList<State> path = new LinkedList<>();
 
     /**
      *

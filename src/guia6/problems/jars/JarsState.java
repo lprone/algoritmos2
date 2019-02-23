@@ -1,4 +1,4 @@
-package guia6.problems.jugs;
+package guia6.problems.jars;
 
 import guia6.problems.State;
 
@@ -6,7 +6,7 @@ import guia6.problems.State;
  *
  * @author lprone
  */
-public class JugsState implements State {
+public class JarsState implements State {
 
     /**
      *
@@ -18,7 +18,7 @@ public class JugsState implements State {
      * @param j1
      * @param j2
      */
-    public JugsState(int j1, int j2) {
+    public JarsState(int j1, int j2) {
         this.j1 = j1;
         this.j2 = j2;
     }
@@ -46,7 +46,7 @@ public class JugsState implements State {
      */
     @Override
     public boolean equals(State other) {
-        return this.j1 == ((JugsState) other).j1 && this.j2 == ((JugsState) other).j2;
+        return this.j1 == ((JarsState) other).j1 && this.j2 == ((JarsState) other).j2;
     }
 
     /**

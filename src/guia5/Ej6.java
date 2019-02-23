@@ -98,7 +98,7 @@ public class Ej6 {
      */
     private static ArrayList<Elemento> llenarMochila(ArrayList<Elemento> elementos, int capacidad) {
         Collections.sort(elementos);
-        ArrayList<Elemento> mochila = new ArrayList();
+        ArrayList<Elemento> mochila = new ArrayList<>();
         int espacioDisponible = capacidad;
         for (int i = elementos.size() - 1; i >= 0; i--) {
             Elemento elemento = elementos.get(i);
@@ -115,7 +115,7 @@ public class Ej6 {
      * @param args
      */
     public static void main(String[] args) {
-        ArrayList<Elemento> elementos = new ArrayList();
+        ArrayList<Elemento> elementos = new ArrayList<>();
         elementos.add(new Elemento(null, 4, 8));
         elementos.add(new Elemento(null, 2, 3));
 

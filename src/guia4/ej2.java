@@ -130,7 +130,7 @@ public class ej2 {
      * @return
      */
     private int fact(int n, int[] cache) {
-        Pair a = new Pair(n, cache);
+        Pair a = new Pair<>(n, cache);
         return n * fact(n - 1, cache);
     }
 
@@ -141,7 +141,7 @@ public class ej2 {
     public static void main(String[] args) {
         ej2 e = new ej2();
         int[] cache = null;
-        Pair a = new Pair(5, cache);
+        Pair a = new Pair<>(5, cache);
 
     }
 }

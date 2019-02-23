@@ -84,7 +84,7 @@ public class OchoReinasProblem implements guia6.problems.SearchProblem {
      */
     @Override
     public List<State> getSuccessors(State s) {
-        List<State> sucesores = new ArrayList();
+        List<State> sucesores = new ArrayList<>();
         sucesores.add(new OchoReinasState(
                 new Double(Math.random() * 8).intValue(),
                 new Double(Math.random() * 8).intValue(),

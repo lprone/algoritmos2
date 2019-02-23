@@ -80,7 +80,7 @@ public class FarmerProblem implements SearchProblem {
                 gallina = ((FarmerState) s).gallina,
                 maiz = ((FarmerState) s).maiz;
 
-        List<State> sucesores = new ArrayList();
+        List<State> sucesores = new ArrayList<>();
 
 
         /*

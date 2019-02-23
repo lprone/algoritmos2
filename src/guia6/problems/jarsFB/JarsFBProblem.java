@@ -6,7 +6,7 @@
 package guia6.problems.jarsFB;
 
 import guia6.problems.State;
-import guia6.problems.jugs.JugsState;
+import guia6.problems.jars.JarsState;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,7 +24,7 @@ public class JarsFBProblem implements guia6.problems.SearchProblem {
     @Override
     public List<State> getSuccessors(State s) {
         JarsFBState js = (JarsFBState) s;
-        List<State> ret = new ArrayList();
+        List<State> ret = new ArrayList<>();
         int j1 = ((JarsFBState) s).getJ1(), j2 = ((JarsFBState) s).getJ2(), j3 = ((JarsFBState) s).getJ3();
 
         if ((j1 - 5) + (j2 + 5) + (j3) == 8) {
@@ -51,7 +51,7 @@ public class JarsFBProblem implements guia6.problems.SearchProblem {
 
     @Override
     public boolean success(State s) {
-        return s.equals(new JugsState(2, 0));
+        return s.equals(new JarsState(2, 0));
     }
 
 }

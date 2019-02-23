@@ -2,19 +2,19 @@ package guia6.games;
 
 import guia6.engines.*;
 import guia6.problems.*;
-import guia6.problems.jugs.*;
+import guia6.problems.jars.*;
 
 /**
  *
  * @author lprone
  */
-public class Jugs {
+public class Jars {
 
     /**
      *
      */
     private static void solveWithDFS() {
-        JugsProblem j = new JugsProblem();
+        JarsProblem j = new JarsProblem();
         SearchEngine d = new DFS();
         d.setProblem(j);
         System.out.println(d.performSearch());
@@ -25,7 +25,7 @@ public class Jugs {
      *
      */
     public static void solveWithBFS() {
-        SearchProblem j = new JugsProblem();
+        SearchProblem j = new JarsProblem();
         SearchEngine b = new BFS();
         b.setProblem(j);
         System.out.println(b.performSearch());
@@ -36,7 +36,7 @@ public class Jugs {
      *
      */
     public static void solveWithID() {
-        SearchProblem j = new JugsProblem();
+        SearchProblem j = new JarsProblem();
         SearchEngine i = new ID(6);
         i.setProblem(j);
         System.out.println(i.performSearch());
@@ -47,7 +47,7 @@ public class Jugs {
      *
      */
     public static void solveWithBestFS() {
-        SearchProblem j = new JugsProblem();
+        SearchProblem j = new JarsProblem();
         SearchEngine b = new BestFS();
         b.setProblem(j);
         System.out.println(b.performSearch());

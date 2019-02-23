@@ -77,9 +77,9 @@ public class Ej7 {
             colorUsado++;
         }
         verMatriz(matrizAdyacencia);
-        ArrayList<Pair<String, String>> ret = new ArrayList();
+        ArrayList<Pair<String, String>> ret = new ArrayList<>();
         for (int i = 0; i < matrizAdyacencia.length; i++) {
-            ret.add(new Pair(nodos.get(i), colores.get(matrizAdyacencia[i][i] - 5)));
+            ret.add(new Pair<>(nodos.get(i), colores.get(matrizAdyacencia[i][i] - 5)));
         }
         return ret;
     }
@@ -103,9 +103,9 @@ public class Ej7 {
      * @param args
      */
     public static void main(String[] args) {
-        ArrayList<String> nodos = new ArrayList();
-        ArrayList<Pair<Integer, Integer>> aristas = new ArrayList();
-        ArrayList<String> colores = new ArrayList();
+        ArrayList<String> nodos = new ArrayList<>();
+        ArrayList<Pair<Integer, Integer>> aristas = new ArrayList<>();
+        ArrayList<String> colores = new ArrayList<>();
 
         colores.add("azul");
         colores.add("amarillo");
@@ -125,12 +125,12 @@ public class Ej7 {
 //        aristas.add(new Pair(2, 3));
 //        aristas.add(new Pair(3, 4));
 //        aristas.add(new Pair(4, 1));
-        aristas.add(new Pair(0, 1));
-        aristas.add(new Pair(0, 2));
-        aristas.add(new Pair(0, 3));
-        aristas.add(new Pair(2, 4));
-        aristas.add(new Pair(1, 2));
-        aristas.add(new Pair(4, 1));
+        aristas.add(new Pair<>(0, 1));
+        aristas.add(new Pair<>(0, 2));
+        aristas.add(new Pair<>(0, 3));
+        aristas.add(new Pair<>(2, 4));
+        aristas.add(new Pair<>(1, 2));
+        aristas.add(new Pair<>(4, 1));
 
         for (Pair<String, String> a : colorear(nodos, aristas, colores)) {
             System.out.println(a);

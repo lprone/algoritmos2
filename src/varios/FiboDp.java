@@ -32,7 +32,7 @@ public class FiboDp {
      * @return
      */
     private ArrayList<Integer> split(int a) {
-        ArrayList<Integer> ret = new ArrayList();
+        ArrayList<Integer> ret = new ArrayList<>();
         int p1 = a - 1;
         int p2 = a - 2;
         ret.add(p1);
@@ -60,9 +60,9 @@ public class FiboDp {
      */
     private int fibo(int a) {
 
-        ArrayList<Integer> sp = new ArrayList();
+        ArrayList<Integer> sp = new ArrayList<>();
         sp.add(a);
-        ArrayList<Integer> cb = new ArrayList();
+        ArrayList<Integer> cb = new ArrayList<>();
 
         while (!sp.isEmpty()) {
             if (isBase(sp.get(0))) {
@@ -87,7 +87,7 @@ public class FiboDp {
      * @return
      */
     private ArrayList<Integer> map(ArrayList<Integer> cb) {
-        ArrayList<Integer> sols = new ArrayList();
+        ArrayList<Integer> sols = new ArrayList<>();
         for (int is : cb) {
             sols.add(base(is));
         }

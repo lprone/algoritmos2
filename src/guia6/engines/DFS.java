@@ -16,7 +16,7 @@ public class DFS extends SearchEngine {
     /**
      *
      */
-    private final LinkedList<State> path = new LinkedList();
+    private final LinkedList<State> path = new LinkedList<>();
 
     /**
      *
@@ -58,8 +58,8 @@ public class DFS extends SearchEngine {
      */
     @Override
     public boolean performSearch() {
-        Set<State> visitados = new LinkedHashSet();
-        Stack<State> estados = new Stack();
+        Set<State> visitados = new LinkedHashSet<>();
+        Stack<State> estados = new Stack<>();
         estados.add(problem.initialState());
         while (!estados.isEmpty()) {
             visitados.add(estados.peek());

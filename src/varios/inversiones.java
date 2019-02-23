@@ -33,7 +33,7 @@ public class inversiones {
      * @return
      */
     private ArrayList<int[]> split(int[] a) {
-        ArrayList<int[]> ret = new ArrayList();
+        ArrayList<int[]> ret = new ArrayList<>();
         int[] aux1 = new int[2];
         int[] aux2 = new int[a.length - 1];
         System.arraycopy(a, 0, aux1, 0, 2);
@@ -61,11 +61,11 @@ public class inversiones {
      * @param in
      * @return
      */
-    private int inversiones(int[] in) {
+    private int hacerInversiones(int[] in) {
 
         // join(map (inversiones (split isbase base)))
-        ArrayList<int[]> sp = new ArrayList(Arrays.asList(in));
-        ArrayList<int[]> cb = new ArrayList();
+        ArrayList<int[]> sp = new ArrayList<>(Arrays.asList(in));
+        ArrayList<int[]> cb = new ArrayList<>();
 
         while (!sp.isEmpty()) {
             if (isBase(sp.get(0))) {
@@ -93,7 +93,7 @@ public class inversiones {
      * @return
      */
     private ArrayList<Integer> map(ArrayList<int[]> cb) {
-        ArrayList<Integer> sols = new ArrayList();
+        ArrayList<Integer> sols = new ArrayList<>();
         for (int[] is : cb) {
             sols.add(base(is));
         }
@@ -107,6 +107,6 @@ public class inversiones {
     public static void main(String[] args) {
         inversiones i = new inversiones();
         int[] a = {1, 4, 3, 2, 1};
-        System.out.println(i.inversiones(a));
+        System.out.println(i.hacerInversiones(a));
     }
 }

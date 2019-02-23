@@ -153,7 +153,7 @@ class Triomino extends Observable {
      */
     public Triomino() {
         board = new int[8][8];
-        result = new LinkedList();
+        result = new LinkedList<>();
         count = 0;
     }
 
