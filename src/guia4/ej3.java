@@ -3,13 +3,11 @@ package guia4;
 import java.util.LinkedList;
 
 /**
- *
  * @author lprone
  */
 public class ej3 {
 
     /**
-     *
      * @param n
      * @return
      */
@@ -29,7 +27,6 @@ public class ej3 {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {

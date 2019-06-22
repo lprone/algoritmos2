@@ -4,7 +4,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- *
  * @author lprone
  */
 public class BestFS extends SearchEngine {
@@ -15,7 +14,6 @@ public class BestFS extends SearchEngine {
     private final List path = new LinkedList<>();
 
     /**
-     *
      * @return
      */
     @Override
@@ -32,7 +30,6 @@ public class BestFS extends SearchEngine {
     }
 
     /**
-     *
      * @return
      */
     @Override

@@ -5,10 +5,8 @@
 package guia5;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 /**
- *
  * @author lprone
  */
 class Persona implements Comparable {
@@ -17,7 +15,6 @@ class Persona implements Comparable {
     final int tiempo;
 
     /**
-     *
      * @param nombre
      * @param tiempo
      */
@@ -27,7 +24,6 @@ class Persona implements Comparable {
     }
 
     /**
-     *
      * @return
      */
     public String getNombre() {
@@ -35,7 +31,6 @@ class Persona implements Comparable {
     }
 
     /**
-     *
      * @return
      */
     public int getTiempo() {
@@ -43,7 +38,6 @@ class Persona implements Comparable {
     }
 
     /**
-     *
      * @param o
      * @return
      */
@@ -53,7 +47,6 @@ class Persona implements Comparable {
     }
 
     /**
-     *
      * @return
      */
     @Override
@@ -63,20 +56,18 @@ class Persona implements Comparable {
 }
 
 /**
- *
  * @author lprone
  */
 public class Ej4 {
 
     /**
-     *
      * @param personas
      * @param t
      * @return
      */
     private static boolean cruzarRio(ArrayList<Persona> personas, int t) {
         int tTotal = 0;
-        Collections.sort(personas);
+        personas.sort(Persona::compareTo);
         Persona best = personas.get(0);
         personas.remove(0);
         while (!personas.isEmpty()) {
@@ -90,7 +81,6 @@ public class Ej4 {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {

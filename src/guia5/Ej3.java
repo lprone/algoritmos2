@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
- *
  * @author lprone
  */
 class Cita implements Comparable {
@@ -17,7 +16,6 @@ class Cita implements Comparable {
     private final int hi, hf, p;
 
     /**
-     *
      * @param descripcion
      * @param hi
      * @param hf
@@ -31,7 +29,6 @@ class Cita implements Comparable {
     }
 
     /**
-     *
      * @return
      */
     public int getP() {
@@ -39,7 +36,6 @@ class Cita implements Comparable {
     }
 
     /**
-     *
      * @return
      */
     public int getHf() {
@@ -47,7 +43,6 @@ class Cita implements Comparable {
     }
 
     /**
-     *
      * @return
      */
     public int getHi() {
@@ -55,7 +50,6 @@ class Cita implements Comparable {
     }
 
     /**
-     *
      * @return
      */
     @Override
@@ -64,7 +58,6 @@ class Cita implements Comparable {
     }
 
     /**
-     *
      * @param other
      * @return
      */
@@ -75,18 +68,16 @@ class Cita implements Comparable {
 }
 
 /**
- *
  * @author lprone
  */
 public class Ej3 {
 
     /**
-     *
      * @param citas
      * @return
      */
     private static ArrayList<Cita> organizarAgenda(ArrayList<Cita> citas) {
-        Collections.sort(citas);
+        citas.sort(Cita::compareTo);
         Collections.reverse(citas);
         ArrayList<Cita> sol = new ArrayList<>();
         int[] dia = new int[24];
@@ -108,7 +99,6 @@ public class Ej3 {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {

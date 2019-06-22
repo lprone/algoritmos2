@@ -1,13 +1,11 @@
 package guia4;
 
 /**
- *
  * @author lprone
  */
 public class ej7 {
 
     /**
-     *
      * @param str1
      * @param str2
      * @return
@@ -68,7 +66,6 @@ public class ej7 {
     }
 
     /**
-     *
      * @param a
      * @param b
      * @param c
@@ -85,7 +82,6 @@ public class ej7 {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {

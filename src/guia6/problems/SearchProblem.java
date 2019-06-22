@@ -1,17 +1,16 @@
 package guia6.problems;
 
-import java.util.*; // necessary due to the use of lists.
+import java.util.List;
 
 /**
- *
  * @author lprone
  */
 public interface SearchProblem {
 
     /**
      * Returns the initial state corresponding to the problem. Concrete
- implementations of SearchProblem must implement this routine, to
- indicate the starting point for the search.
+     * implementations of SearchProblem must implement this routine, to
+     * indicate the starting point for the search.
      *
      * @return the initial state for the problem
      * @pre. true.
@@ -22,8 +21,8 @@ public interface SearchProblem {
     /**
      * Returns the list of successor states for a given state, in the context of
      * the current problem. Concrete implementations of SearchProblem
- must implement this routine, to indicate the 'advance' rules for the
- search.
+     * must implement this routine, to indicate the 'advance' rules for the
+     * search.
      *
      * @param s is the state for which its successors are being computed.
      * @return the list of successor states of s.
@@ -35,8 +34,8 @@ public interface SearchProblem {
     /**
      * Indicates whether a given state is a successful state, in the context of
      * the current problem. Concrete implementations of SearchProblem
- must implement this routine, to indicate when the search has been
- successful.
+     * must implement this routine, to indicate when the search has been
+     * successful.
      *
      * @param s is the state being checked to be successful.
      * @return true iff s is a successful state.

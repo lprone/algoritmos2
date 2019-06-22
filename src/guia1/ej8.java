@@ -1,7 +1,6 @@
 package guia1;
 
 /**
- *
  * @author lprone
  */
 public class ej8 {
@@ -37,7 +36,6 @@ public class ej8 {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {

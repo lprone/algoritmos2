@@ -1,16 +1,14 @@
 package varios;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Collections;
 
 /**
- *
  * @author lprone
  */
 public class BusquedaBinariaDC {
 
     /**
-     *
      * @param in
      * @return
      */
@@ -19,7 +17,6 @@ public class BusquedaBinariaDC {
     }
 
     /**
-     *
      * @param in
      * @param elem
      * @return
@@ -30,7 +27,6 @@ public class BusquedaBinariaDC {
     }
 
     /**
-     *
      * @param a
      * @return
      */
@@ -53,7 +49,6 @@ public class BusquedaBinariaDC {
     }
 
     /**
-     *
      * @param l
      * @return
      */
@@ -66,14 +61,13 @@ public class BusquedaBinariaDC {
     }
 
     /**
-     *
      * @param a
      * @param e
      * @return
      */
     private boolean busquedaBinaria(int[] a, int e) {
 
-        ArrayList<int[]> sp = new ArrayList<>(Arrays.asList(a));
+        ArrayList<int[]> sp = new ArrayList<>(Collections.singletonList(a));
         ArrayList<int[]> cb = new ArrayList<>();
 
         while (!sp.isEmpty()) {
@@ -102,7 +96,6 @@ public class BusquedaBinariaDC {
     }
 
     /**
-     *
      * @param cb
      * @param e
      * @return
@@ -116,7 +109,6 @@ public class BusquedaBinariaDC {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {

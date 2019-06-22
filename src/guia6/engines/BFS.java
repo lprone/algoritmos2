@@ -5,7 +5,6 @@ import guia6.problems.State;
 import java.util.*;
 
 /**
- *
  * @author lprone
  */
 class Pair<A, B> {
@@ -14,7 +13,6 @@ class Pair<A, B> {
     private B second;
 
     /**
-     *
      * @param first
      * @param second
      */
@@ -25,7 +23,6 @@ class Pair<A, B> {
     }
 
     /**
-     *
      * @param other
      * @return
      */
@@ -35,7 +32,6 @@ class Pair<A, B> {
     }
 
     /**
-     *
      * @return
      */
     @Override
@@ -44,7 +40,6 @@ class Pair<A, B> {
     }
 
     /**
-     *
      * @return
      */
     public A getFirst() {
@@ -52,7 +47,6 @@ class Pair<A, B> {
     }
 
     /**
-     *
      * @param first
      */
     public void setFirst(A first) {
@@ -60,7 +54,6 @@ class Pair<A, B> {
     }
 
     /**
-     *
      * @return
      */
     public B getSecond() {
@@ -68,7 +61,6 @@ class Pair<A, B> {
     }
 
     /**
-     *
      * @param second
      */
     public void setSecond(B second) {
@@ -77,7 +69,6 @@ class Pair<A, B> {
 }
 
 /**
- *
  * @author lprone
  */
 public class BFS extends SearchEngine {
@@ -90,7 +81,6 @@ public class BFS extends SearchEngine {
     private final LinkedList<Pair<State, State>> father = new LinkedList<>();
 
     /**
-     *
      * @return
      */
     @Override
@@ -106,7 +96,6 @@ public class BFS extends SearchEngine {
     }
 
     /**
-     *
      * @param s
      * @return
      */
@@ -131,7 +120,6 @@ public class BFS extends SearchEngine {
     }
 
     /**
-     *
      * @param s
      * @param e
      * @return
@@ -146,7 +134,6 @@ public class BFS extends SearchEngine {
     }
 
     /**
-     *
      * @param s
      * @param e
      * @return
@@ -161,7 +148,6 @@ public class BFS extends SearchEngine {
     }
 
     /**
-     *
      * @return
      */
     @Override

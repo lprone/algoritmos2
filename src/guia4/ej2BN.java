@@ -1,13 +1,11 @@
 package guia4;
 
 /**
- *
  * @author lprone
  */
 public class ej2BN {
 
     /**
-     *
      * @param n
      * @return
      */
@@ -26,7 +24,6 @@ public class ej2BN {
     }
 
     /**
-     *
      * @param m
      * @param n
      * @return
@@ -36,7 +33,6 @@ public class ej2BN {
     }
 
     /**
-     *
      * @param n
      * @return
      */
@@ -49,7 +45,6 @@ public class ej2BN {
     }
 
     /**
-     *
      * @param m
      * @param n
      * @return
@@ -59,7 +54,6 @@ public class ej2BN {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {

@@ -1,16 +1,14 @@
 package varios;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Collections;
 
 /**
- *
  * @author lprone
  */
 public class inversiones {
 
     /**
-     *
      * @param a
      * @return
      */
@@ -19,7 +17,6 @@ public class inversiones {
     }
 
     /**
-     *
      * @param a
      * @return
      */
@@ -28,7 +25,6 @@ public class inversiones {
     }
 
     /**
-     *
      * @param a
      * @return
      */
@@ -44,7 +40,6 @@ public class inversiones {
     }
 
     /**
-     *
      * @param in
      * @return
      */
@@ -57,14 +52,13 @@ public class inversiones {
     }
 
     /**
-     *
      * @param in
      * @return
      */
     private int hacerInversiones(int[] in) {
 
         // join(map (inversiones (split isbase base)))
-        ArrayList<int[]> sp = new ArrayList<>(Arrays.asList(in));
+        ArrayList<int[]> sp = new ArrayList<>(Collections.singletonList(in));
         ArrayList<int[]> cb = new ArrayList<>();
 
         while (!sp.isEmpty()) {
@@ -88,7 +82,6 @@ public class inversiones {
     }
 
     /**
-     *
      * @param cb
      * @return
      */
@@ -101,7 +94,6 @@ public class inversiones {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {

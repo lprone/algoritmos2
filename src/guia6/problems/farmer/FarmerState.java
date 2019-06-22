@@ -3,7 +3,6 @@ package guia6.problems.farmer;
 import guia6.problems.State;
 
 /**
- *
  * @author lprone
  */
 public class FarmerState implements State {
@@ -17,7 +16,6 @@ public class FarmerState implements State {
     final int maiz;
 
     /**
-     *
      * @param granjero
      * @param zorro
      * @param gallina
@@ -31,7 +29,6 @@ public class FarmerState implements State {
     }
 
     /**
-     *
      * @param o
      * @return
      */
@@ -44,7 +41,6 @@ public class FarmerState implements State {
     }
 
     /**
-     *
      * @return
      */
     @Override

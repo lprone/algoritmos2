@@ -3,13 +3,11 @@ package varios;
 import java.util.ArrayList;
 
 /**
- *
  * @author lprone
  */
 public class FiboDc {
 
     /**
-     *
      * @param in
      * @return
      */
@@ -18,7 +16,6 @@ public class FiboDc {
     }
 
     /**
-     *
      * @param elem
      * @return
      */
@@ -27,7 +24,6 @@ public class FiboDc {
     }
 
     /**
-     *
      * @param a
      * @return
      */
@@ -41,7 +37,6 @@ public class FiboDc {
     }
 
     /**
-     *
      * @param l
      * @return
      */
@@ -54,7 +49,6 @@ public class FiboDc {
     }
 
     /**
-     *
      * @param a
      * @return
      */
@@ -77,7 +71,6 @@ public class FiboDc {
     }
 
     /**
-     *
      * @param cb
      * @return
      */
@@ -90,7 +83,6 @@ public class FiboDc {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {

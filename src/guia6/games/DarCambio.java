@@ -1,21 +1,15 @@
 package guia6.games;
 
-import guia6.engines.SearchEngine;
-import guia6.engines.BFS;
-import guia6.engines.BestFS;
-import guia6.engines.DFS;
-import guia6.engines.ID;
-import guia6.problems.darCambio.DarCambioProblem;
+import guia6.engines.*;
 import guia6.problems.SearchProblem;
+import guia6.problems.darCambio.DarCambioProblem;
 
 /**
- *
  * @author lprone
  */
 public class DarCambio {
 
     /**
-     *
      * @param n
      */
     public static void solveWithDFS(int n) {
@@ -27,7 +21,6 @@ public class DarCambio {
     }
 
     /**
-     *
      * @param n
      */
     private static void solveWithBFS(int n) {
@@ -39,7 +32,6 @@ public class DarCambio {
     }
 
     /**
-     *
      * @param n
      */
     public static void solveWithID(int n) {
@@ -51,7 +43,6 @@ public class DarCambio {
     }
 
     /**
-     *
      * @param n
      */
     public static void solveWithBestFS(int n) {
@@ -62,7 +53,6 @@ public class DarCambio {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {

@@ -3,7 +3,6 @@ package guia2;
 import java.util.ArrayList;
 
 /**
- *
  * @author lprone
  */
 public class ej5b {
@@ -15,7 +14,6 @@ public class ej5b {
     private boolean solCorrecta;
 
     /**
-     *
      * @return
      */
     private String getPosicionReinas() {
@@ -31,7 +29,6 @@ public class ej5b {
     }
 
     /**
-     *
      * @param x
      * @param y
      */
@@ -40,7 +37,6 @@ public class ej5b {
     }
 
     /**
-     *
      * @param x
      * @param y
      * @return
@@ -50,7 +46,6 @@ public class ej5b {
     }
 
     /**
-     *
      * @param x
      * @param y
      */
@@ -77,7 +72,6 @@ public class ej5b {
     }
 
     /**
-     *
      * @param x
      */
     private void setFil(int x) {
@@ -89,7 +83,6 @@ public class ej5b {
     }
 
     /**
-     *
      * @param y
      */
     private void setCol(int y) {
@@ -101,7 +94,6 @@ public class ej5b {
     }
 
     /**
-     *
      * @param x
      * @param y
      */
@@ -144,7 +136,6 @@ public class ej5b {
     }
 
     /**
-     *
      * @param x
      * @param y
      * @return
@@ -154,7 +145,6 @@ public class ej5b {
     }
 
     /**
-     *
      * @param x
      * @param y
      * @return
@@ -177,7 +167,6 @@ public class ej5b {
     }
 
     /**
-     *
      * @return
      */
     private boolean solucionCorrecta() {
@@ -228,7 +217,6 @@ public class ej5b {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {

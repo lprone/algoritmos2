@@ -1,14 +1,10 @@
 package guia6.engines;
 
 import guia6.problems.State;
-import java.util.LinkedHashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Set;
-import java.util.Stack;
+
+import java.util.*;
 
 /**
- *
  * @author lprone
  */
 public class ID extends SearchEngine {
@@ -20,7 +16,6 @@ public class ID extends SearchEngine {
     private final LinkedList<State> path = new LinkedList<>();
 
     /**
-     *
      * @param cotaMax
      */
     public ID(int cotaMax) {
@@ -35,7 +30,6 @@ public class ID extends SearchEngine {
     }
 
     /**
-     *
      * @return
      */
     @Override
@@ -54,7 +48,6 @@ public class ID extends SearchEngine {
     }
 
     /**
-     *
      * @param s
      * @param e
      * @return
@@ -69,7 +62,6 @@ public class ID extends SearchEngine {
     }
 
     /**
-     *
      * @return
      */
     @Override

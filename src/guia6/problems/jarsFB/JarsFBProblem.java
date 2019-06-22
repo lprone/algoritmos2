@@ -5,16 +5,17 @@
  */
 package guia6.problems.jarsFB;
 
+import guia6.problems.SearchProblem;
 import guia6.problems.State;
 import guia6.problems.jars.JarsState;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
  * @author lprone
  */
-public class JarsFBProblem implements guia6.problems.SearchProblem {
+public class JarsFBProblem implements SearchProblem {
 
     @Override
     public State initialState() {
@@ -42,7 +43,7 @@ public class JarsFBProblem implements guia6.problems.SearchProblem {
         if ((j1 + 5) + (j2 - 5) + (j3) == 8) {
             ret.add(new JarsFBState(j1 + 5, j2 - 5, j3));
         }
-        if ((j1) + (j2 - 3) + (j3+3) == 8) {
+        if ((j1) + (j2 - 3) + (j3 + 3) == 8) {
             ret.add(new JarsFBState(j1 + 5, j2 - 5, j3));
         }
 

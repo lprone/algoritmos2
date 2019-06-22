@@ -1,12 +1,13 @@
 package guia6.problems.darCambio;
 
-import guia6.problems.*;
+import guia6.problems.SearchProblem;
+import guia6.problems.State;
+
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
 /**
- *
  * @author lprone
  */
 public class DarCambioProblem implements SearchProblem {
@@ -17,7 +18,6 @@ public class DarCambioProblem implements SearchProblem {
 //    private int m1 = 1, m2 = 2, m3 = 5, m4 = 10, m5 = 25;
 
     /**
-     *
      * @param total
      */
     public DarCambioProblem(int total) {
@@ -30,7 +30,6 @@ public class DarCambioProblem implements SearchProblem {
     }
 
     /**
-     *
      * @return
      */
     @Override
@@ -39,7 +38,6 @@ public class DarCambioProblem implements SearchProblem {
     }
 
     /**
-     *
      * @param s
      * @return
      */
@@ -49,7 +47,6 @@ public class DarCambioProblem implements SearchProblem {
     }
 
     /**
-     *
      * @param s
      * @return
      */

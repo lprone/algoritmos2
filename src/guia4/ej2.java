@@ -1,7 +1,6 @@
 package guia4;
 
 /**
- *
  * @author lprone
  */
 class Pair<A, B> {
@@ -10,7 +9,6 @@ class Pair<A, B> {
     private B second;
 
     /**
-     *
      * @param first
      * @param second
      */
@@ -21,7 +19,6 @@ class Pair<A, B> {
     }
 
     /**
-     *
      * @param other
      * @return
      */
@@ -41,7 +38,6 @@ class Pair<A, B> {
     }
 
     /**
-     *
      * @return
      */
     @Override
@@ -50,7 +46,6 @@ class Pair<A, B> {
     }
 
     /**
-     *
      * @return
      */
     public A getFirst() {
@@ -58,7 +53,6 @@ class Pair<A, B> {
     }
 
     /**
-     *
      * @param first
      */
     public void setFirst(A first) {
@@ -66,7 +60,6 @@ class Pair<A, B> {
     }
 
     /**
-     *
      * @return
      */
     public B getSecond() {
@@ -74,7 +67,6 @@ class Pair<A, B> {
     }
 
     /**
-     *
      * @param second
      */
     public void setSecond(B second) {
@@ -83,13 +75,11 @@ class Pair<A, B> {
 }
 
 /**
- *
  * @author lprone
  */
 public class ej2 {
 
     /**
-     *
      * @param m
      * @param n
      * @return
@@ -102,7 +92,6 @@ public class ej2 {
     }
 
     /**
-     *
      * @param m
      * @param n
      * @return
@@ -124,7 +113,6 @@ public class ej2 {
     }
 
     /**
-     *
      * @param n
      * @param cache
      * @return
@@ -135,7 +123,6 @@ public class ej2 {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {

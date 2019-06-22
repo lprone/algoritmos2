@@ -1,16 +1,13 @@
 package guia2;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 /**
- *
  * @author lprone
  */
 public class ej6 {
 
     /**
-     *
      * @param n
      * @return
      */
@@ -42,11 +39,10 @@ public class ej6 {
     }
 
     /**
-     *
      * @return
      */
     private ArrayList generarCapicuas() {
-        ArrayList ret = new ArrayList<>();
+        ArrayList<Integer> ret = new ArrayList<>();
         for (int i = 0; i < 100000; i++) {
             if (esCapicua(i)) {
                 ret.add(i);
@@ -56,18 +52,16 @@ public class ej6 {
     }
 
     /**
-     *
      * @param aux
      * @return
      */
-    private ArrayList ordenarCapicuas(ArrayList aux) {
-        ArrayList ret = aux;
-        Collections.sort(ret);
+    private ArrayList ordenarCapicuas(ArrayList<Integer> aux) {
+        ArrayList<Integer> ret = aux;
+        ret.sort(Integer::compareTo);
         return ret;
     }
 
     /**
-     *
      * @param aux
      * @return
      */
@@ -83,7 +77,6 @@ public class ej6 {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {

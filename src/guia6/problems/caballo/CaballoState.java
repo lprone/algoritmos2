@@ -1,10 +1,10 @@
 package guia6.problems.caballo;
 
 import guia6.problems.State;
+
 import java.util.Arrays;
 
 /**
- *
  * @author lprone
  */
 public class CaballoState implements State {
@@ -14,7 +14,6 @@ public class CaballoState implements State {
     final int y;
 
     /**
-     *
      * @param tablero
      * @param x
      * @param y
@@ -26,7 +25,6 @@ public class CaballoState implements State {
     }
 
     /**
-     *
      * @param o
      * @return
      */
@@ -38,7 +36,6 @@ public class CaballoState implements State {
     }
 
     /**
-     *
      * @return
      */
     @Override

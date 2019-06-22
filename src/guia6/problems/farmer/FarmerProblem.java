@@ -1,17 +1,17 @@
 package guia6.problems.farmer;
 
-import guia6.problems.*;
+import guia6.problems.SearchProblem;
+import guia6.problems.State;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
  * @author lprone
  */
 public class FarmerProblem implements SearchProblem {
 
     /**
-     *
      * @return
      */
     @Override
@@ -20,7 +20,6 @@ public class FarmerProblem implements SearchProblem {
     }
 
     /**
-     *
      * @param s
      * @return
      */
@@ -30,7 +29,6 @@ public class FarmerProblem implements SearchProblem {
     }
 
     /**
-     *
      * @param x
      * @return
      */
@@ -39,7 +37,6 @@ public class FarmerProblem implements SearchProblem {
     }
 
     /**
-     *
      * @param x
      * @param y
      * @return
@@ -49,7 +46,6 @@ public class FarmerProblem implements SearchProblem {
     }
 
     /**
-     *
      * @param x
      * @param y
      * @return
@@ -59,7 +55,6 @@ public class FarmerProblem implements SearchProblem {
     }
 
     /**
-     *
      * @param x
      * @param y
      * @return
@@ -69,7 +64,6 @@ public class FarmerProblem implements SearchProblem {
     }
 
     /**
-     *
      * @param s
      * @return
      */
@@ -82,30 +76,12 @@ public class FarmerProblem implements SearchProblem {
 
         List<State> sucesores = new ArrayList<>();
 
-
-        /*
-         * > gr ga
-         * gr
-         * > gr ma
-         * gr ga
-         * > gr zo
-         * gr
-         * > gr ga
-         * 
-         * 
-         * 0 0 0 0
-         * 1 0 1 0
-         * 
-         */
-
- /*-------------------------------*/
         if (mismoLado(granjero, zorro, gallina, maiz)) {
             sucesores.add(new FarmerState(cruzar(granjero), zorro, cruzar(gallina), maiz));
         }
 
         if (mismoLado(granjero, gallina) && mismoLado(zorro, maiz) && !mismoLado(granjero, maiz)) {
             sucesores.add(new FarmerState(cruzar(granjero), zorro, gallina, maiz));
-//            sucesores.add(new FarmerState(cruzar(granjero), zorro, cruzar(gallina), maiz));
         }
 
         if (mismoLado(granjero, zorro, maiz) && !mismoLado(granjero, gallina)) {
@@ -120,68 +96,20 @@ public class FarmerProblem implements SearchProblem {
 
         if (mismoLado(granjero, gallina, maiz) && !mismoLado(granjero, zorro)) {
             sucesores.add(new FarmerState(cruzar(granjero), zorro, gallina, cruzar(maiz)));
-//            sucesores.add(new FarmerState(cruzar(granjero), zorro, cruzar(gallina), maiz));
         }
 
         if (mismoLado(granjero, zorro, gallina) && !mismoLado(granjero, maiz)) {
             sucesores.add(new FarmerState(cruzar(granjero), cruzar(zorro), gallina, maiz));
-//            sucesores.add(new FarmerState(cruzar(granjero), zorro, cruzar(gallina), maiz));
         }
 
         if (mismoLado(granjero, zorro, maiz) && !mismoLado(granjero, gallina)) {
             sucesores.add(new FarmerState(cruzar(granjero), zorro, gallina, maiz));
-//            sucesores.add(new FarmerState(cruzar(granjero), zorro, cruzar(gallina), maiz));
         }
 
         if (mismoLado(granjero, gallina) && !mismoLado(granjero, zorro, maiz)) {
             sucesores.add(new FarmerState(cruzar(granjero), zorro, cruzar(gallina), maiz));
         }
 
-        /*-------------------------------*/
-//        if (mismoLado(granjero, zorro, gallina, maiz)) {
-//            sucesores.add(new FarmerState(cruzar(granjero), zorro, cruzar(gallina), maiz));
-//        }
-//
-//        if (mismoLado(granjero, gallina) && mismoLado(zorro, maiz) && !mismoLado(granjero, maiz)) {
-//            sucesores.add(new FarmerState(cruzar(granjero), zorro, gallina, maiz));
-//            sucesores.add(new FarmerState(cruzar(granjero), zorro, cruzar(gallina), maiz));
-//        }
-//
-//        if (mismoLado(granjero, zorro) && mismoLado(granjero, maiz)) {
-//            sucesores.add(new FarmerState(cruzar(granjero), cruzar(zorro), gallina, maiz));
-//            sucesores.add(new FarmerState(cruzar(granjero), zorro, gallina, cruzar(maiz)));
-//        }
-//
-//        if (mismoLado(granjero, zorro, gallina)) {
-//            sucesores.add(new FarmerState(cruzar(granjero), zorro, cruzar(gallina), maiz));
-//        }
-//
-//        if (mismoLado(granjero, gallina, maiz)) {
-//            sucesores.add(new FarmerState(cruzar(granjero), zorro, gallina, cruzar(maiz)));
-//        }
-//
-//        if (mismoLado(granjero, zorro, maiz)) {
-//            sucesores.add(new FarmerState(cruzar(granjero), zorro, gallina, maiz));
-//            sucesores.add(new FarmerState(cruzar(granjero), cruzar(zorro), gallina, maiz));
-//            sucesores.add(new FarmerState(cruzar(granjero), zorro, gallina, cruzar(maiz)));
-//        }
-//
-//
-//
-//        if (mismoLado(zorro, gallina, maiz)) {
-//            sucesores.add(new FarmerState(cruzar(granjero), zorro, cruzar(gallina), maiz));
-//        }
-//
-//        if (mismoLado(gallina, maiz)) {
-//            sucesores.add(new FarmerState(cruzar(granjero), zorro, cruzar(gallina), maiz));
-//            sucesores.add(new FarmerState(cruzar(granjero), zorro, gallina, cruzar(maiz)));
-//        }
-//
-//        if (mismoLado(zorro, gallina)) {
-//            sucesores.add(new FarmerState(cruzar(granjero), cruzar(zorro), gallina, maiz));
-//            sucesores.add(new FarmerState(cruzar(granjero), cruzar(zorro), gallina, maiz));
-//            sucesores.add(new FarmerState(cruzar(granjero), zorro, cruzar(gallina), maiz));
-//        }
         return sucesores;
     }
 }

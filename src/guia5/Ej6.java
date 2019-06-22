@@ -4,11 +4,9 @@
  */
 package guia5;
 
-import java.util.Collections;
 import java.util.ArrayList;
 
 /**
- *
  * @author lprone
  */
 class Elemento implements Comparable {
@@ -19,7 +17,6 @@ class Elemento implements Comparable {
     private final double felicidadPrecio;
 
     /**
-     *
      * @param name
      * @param peso
      * @param felicidad
@@ -33,7 +30,6 @@ class Elemento implements Comparable {
     }
 
     /**
-     *
      * @return
      */
     public String getName() {
@@ -41,7 +37,6 @@ class Elemento implements Comparable {
     }
 
     /**
-     *
      * @return
      */
     public int getPeso() {
@@ -49,7 +44,6 @@ class Elemento implements Comparable {
     }
 
     /**
-     *
      * @return
      */
     public int getFelicidad() {
@@ -57,7 +51,6 @@ class Elemento implements Comparable {
     }
 
     /**
-     *
      * @return
      */
     @Override
@@ -66,7 +59,6 @@ class Elemento implements Comparable {
     }
 
     /**
-     *
      * @param other
      * @return
      */
@@ -85,19 +77,17 @@ class Elemento implements Comparable {
 }
 
 /**
- *
  * @author lprone
  */
 public class Ej6 {
 
     /**
-     *
      * @param elementos
      * @param capacidad
      * @return
      */
     private static ArrayList<Elemento> llenarMochila(ArrayList<Elemento> elementos, int capacidad) {
-        Collections.sort(elementos);
+        elementos.sort(Elemento::compareTo);
         ArrayList<Elemento> mochila = new ArrayList<>();
         int espacioDisponible = capacidad;
         for (int i = elementos.size() - 1; i >= 0; i--) {
@@ -111,7 +101,6 @@ public class Ej6 {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {

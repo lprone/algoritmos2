@@ -1,14 +1,10 @@
 package guia6.engines;
 
 import guia6.problems.State;
-import java.util.LinkedHashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Set;
-import java.util.Stack;
+
+import java.util.*;
 
 /**
- *
  * @author lprone
  */
 public class DFS extends SearchEngine {
@@ -19,7 +15,6 @@ public class DFS extends SearchEngine {
     private final LinkedList<State> path = new LinkedList<>();
 
     /**
-     *
      * @return
      */
     @Override
@@ -38,7 +33,6 @@ public class DFS extends SearchEngine {
     }
 
     /**
-     *
      * @param s
      * @param e
      * @return
@@ -53,7 +47,6 @@ public class DFS extends SearchEngine {
     }
 
     /**
-     *
      * @return
      */
     @Override

@@ -3,7 +3,6 @@ package guia4.tubos;
 import java.util.ArrayList;
 
 /**
- *
  * @author lprone
  */
 public class ej5 {
@@ -11,7 +10,6 @@ public class ej5 {
     private final int[][] adyacencia;
 
     /**
-     *
      * @param a
      */
     private ej5(ArrayList<Integer> a) {
@@ -19,7 +17,6 @@ public class ej5 {
     }
 
     /**
-     *
      * @param t1
      * @param t2
      * @return
@@ -29,7 +26,6 @@ public class ej5 {
     }
 
     /**
-     *
      * @param tubos
      */
     public void inicializarUniones(ArrayList<Integer> tubos) {
@@ -47,7 +43,6 @@ public class ej5 {
     }
 
     /**
-     *
      * @param m
      */
     private void mostrarMatriz(int[][] m) {
@@ -61,7 +56,6 @@ public class ej5 {
     }
 
     /**
-     *
      * @param tubos
      */
     private void une(ArrayList<Integer> tubos) {
@@ -94,7 +88,6 @@ public class ej5 {
     }
 
     /**
-     *
      * @param tubos
      */
     private void unir(ArrayList<Integer> tubos) {
@@ -116,7 +109,6 @@ public class ej5 {
     }
 
     /**
-     *
      * @param tubos
      */
     private void floydWarshall(ArrayList<Integer> tubos) {
@@ -138,7 +130,6 @@ public class ej5 {
     }
 
     /**
-     *
      * @param tubos
      * @return
      */
@@ -167,7 +158,6 @@ public class ej5 {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {

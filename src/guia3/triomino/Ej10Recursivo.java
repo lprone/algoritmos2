@@ -4,13 +4,11 @@ import java.awt.*;
 import java.util.LinkedList;
 
 /**
- *
  * @author lprone
  */
 public class Ej10Recursivo {
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {
@@ -37,7 +35,6 @@ class Triomino {
     final Point p3;
 
     /**
-     *
      * @param p1
      * @param p2
      * @param p3
@@ -49,7 +46,6 @@ class Triomino {
     }
 
     /**
-     *
      * @return
      */
     @Override
@@ -67,7 +63,6 @@ class Game {
     final LinkedList<Triomino> result;
 
     /**
-     *
      * @param n
      * @param p
      */
@@ -89,7 +84,6 @@ class Game {
     }
 
     /**
-     *
      * @param n
      * @param x
      * @param y
@@ -167,7 +161,6 @@ class View extends javax.swing.JFrame {
     }
 
     /**
-     *
      * @param g
      */
     public void play(Game g) {
@@ -181,7 +174,6 @@ class View extends javax.swing.JFrame {
     }
 
     /**
-     *
      * @param t
      */
     private void delay(int t) {
@@ -192,7 +184,6 @@ class View extends javax.swing.JFrame {
     }
 
     /**
-     *
      * @param p
      */
     private void setPoint(Point p) {
@@ -200,7 +191,6 @@ class View extends javax.swing.JFrame {
     }
 
     /**
-     *
      * @param t
      */
     private void setTriomino(Triomino t) {
@@ -221,19 +211,19 @@ class View extends javax.swing.JFrame {
         board.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         board.setFont(new java.awt.Font("Tahoma", Font.PLAIN, 24)); // NOI18N
         board.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null}
-            },
-            new String [] {
-                "", "", "", "", "", "", "", ""
-            }
+                new Object[][]{
+                        {null, null, null, null, null, null, null, null},
+                        {null, null, null, null, null, null, null, null},
+                        {null, null, null, null, null, null, null, null},
+                        {null, null, null, null, null, null, null, null},
+                        {null, null, null, null, null, null, null, null},
+                        {null, null, null, null, null, null, null, null},
+                        {null, null, null, null, null, null, null, null},
+                        {null, null, null, null, null, null, null, null}
+                },
+                new String[]{
+                        "", "", "", "", "", "", "", ""
+                }
         ));
         board.setGridColor(new java.awt.Color(0, 0, 0));
         board.setMinimumSize(new java.awt.Dimension(128, 128));
@@ -247,21 +237,22 @@ class View extends javax.swing.JFrame {
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(15, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addContainerGap(15, Short.MAX_VALUE)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap())
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 55, Short.MAX_VALUE))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 55, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable board;
     private javax.swing.JScrollPane jScrollPane1;

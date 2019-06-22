@@ -8,7 +8,6 @@ package guia6.problems.jarsFB;
 import guia6.problems.State;
 
 /**
- *
  * @author lprone
  */
 public class JarsFBState implements State {
@@ -19,7 +18,6 @@ public class JarsFBState implements State {
     private final int j1, j2, j3;
 
     /**
-     *
      * @param j1
      * @param j2
      * @param j3
@@ -31,7 +29,6 @@ public class JarsFBState implements State {
     }
 
     /**
-     *
      * @return
      */
     public int getJ1() {
@@ -39,7 +36,6 @@ public class JarsFBState implements State {
     }
 
     /**
-     *
      * @return
      */
     public int getJ2() {
@@ -47,7 +43,6 @@ public class JarsFBState implements State {
     }
 
     /**
-     *
      * @return
      */
     public int getJ3() {
@@ -55,7 +50,6 @@ public class JarsFBState implements State {
     }
 
     /**
-     *
      * @param other
      * @return
      */
@@ -65,7 +59,6 @@ public class JarsFBState implements State {
     }
 
     /**
-     *
      * @return
      */
     @Override

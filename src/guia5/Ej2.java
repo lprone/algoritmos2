@@ -5,10 +5,8 @@
 package guia5;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 /**
- *
  * @author lprone
  */
 class Moneda implements Comparable {
@@ -16,7 +14,6 @@ class Moneda implements Comparable {
     private final int valor;
 
     /**
-     *
      * @param valor
      */
     public Moneda(int valor) {
@@ -24,7 +21,6 @@ class Moneda implements Comparable {
     }
 
     /**
-     *
      * @return
      */
     public int getValor() {
@@ -32,7 +28,6 @@ class Moneda implements Comparable {
     }
 
     /**
-     *
      * @param other
      * @return
      */
@@ -42,7 +37,6 @@ class Moneda implements Comparable {
     }
 
     /**
-     *
      * @return
      */
     @Override
@@ -52,19 +46,17 @@ class Moneda implements Comparable {
 }
 
 /**
- *
  * @author lprone
  */
 public class Ej2 {
 
     /**
-     *
      * @param monedas
      * @param precio
      * @return
      */
     private static ArrayList<Moneda> cambio(ArrayList<Moneda> monedas, int precio) {
-        Collections.sort(monedas);
+        monedas.sort(Moneda::compareTo);
         int retornado = 0;
         ArrayList<Moneda> vuelto = new ArrayList<>();
 
@@ -78,7 +70,6 @@ public class Ej2 {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {

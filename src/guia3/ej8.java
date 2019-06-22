@@ -1,11 +1,9 @@
 package guia3;
 
-import java.awt.Point;
+import java.awt.*;
 import java.util.ArrayList;
-import java.util.Collections;
 
 /**
- *
  * @author lprone
  */
 class MyPoint implements Comparable {
@@ -14,7 +12,6 @@ class MyPoint implements Comparable {
     private final int y;
 
     /**
-     *
      * @param x
      * @param y
      */
@@ -24,7 +21,6 @@ class MyPoint implements Comparable {
     }
 
     /**
-     *
      * @return
      */
     public int getX() {
@@ -32,7 +28,6 @@ class MyPoint implements Comparable {
     }
 
     /**
-     *
      * @return
      */
     public int getY() {
@@ -40,7 +35,6 @@ class MyPoint implements Comparable {
     }
 
     /**
-     *
      * @param p
      * @return
      */
@@ -49,7 +43,6 @@ class MyPoint implements Comparable {
     }
 
     /**
-     *
      * @param o1
      * @param o2
      * @return
@@ -59,7 +52,6 @@ class MyPoint implements Comparable {
     }
 
     /**
-     *
      * @param other
      * @return
      */
@@ -69,7 +61,6 @@ class MyPoint implements Comparable {
     }
 
     /**
-     *
      * @return
      */
     @Override
@@ -85,7 +76,6 @@ class ret implements Comparable {
     private final MyPoint p2;
 
     /**
-     *
      * @param p1
      * @param p2
      * @param d
@@ -97,7 +87,6 @@ class ret implements Comparable {
     }
 
     /**
-     *
      * @return
      */
     private int getD() {
@@ -105,7 +94,6 @@ class ret implements Comparable {
     }
 
     /**
-     *
      * @return
      */
     @Override
@@ -114,7 +102,6 @@ class ret implements Comparable {
     }
 
     /**
-     *
      * @param other
      * @return
      */
@@ -125,13 +112,11 @@ class ret implements Comparable {
 }
 
 /**
- *
  * @author lprone
  */
 public class ej8 {
 
     /**
-     *
      * @param p
      * @return
      */
@@ -140,7 +125,6 @@ public class ej8 {
     }
 
     /**
-     *
      * @param a
      * @return
      */
@@ -149,7 +133,6 @@ public class ej8 {
     }
 
     /**
-     *
      * @param a
      * @return
      */
@@ -165,14 +148,13 @@ public class ej8 {
     }
 
     /**
-     *
      * @param in
      * @return
      */
     private ret join(ArrayList<ret> in) {
         ret r = in.get(0);
         ArrayList<ret> points = in;
-        Collections.sort(points);
+        points.sort(ret::compareTo);
         for (ret sol : points) {
             if (sol.d < r.d) {
                 r = sol;
@@ -182,7 +164,6 @@ public class ej8 {
     }
 
     /**
-     *
      * @param in
      * @return
      */
@@ -204,7 +185,6 @@ public class ej8 {
     }
 
     /**
-     *
      * @param cb
      * @return
      */
@@ -217,7 +197,6 @@ public class ej8 {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {
@@ -234,7 +213,7 @@ public class ej8 {
         points.add(new MyPoint(3, 4));
         points.add(new MyPoint(0, 7));
 
-        Collections.sort(points);
+        points.sort(MyPoint::compareTo);
 
         MyPoint[] p = new MyPoint[points.size()];
 

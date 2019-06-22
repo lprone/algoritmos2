@@ -1,11 +1,10 @@
 package guia6.games;
 
 import guia6.engines.*;
-import guia6.problems.*;
-import guia6.problems.jars.*;
+import guia6.problems.SearchProblem;
+import guia6.problems.jars.JarsProblem;
 
 /**
- *
  * @author lprone
  */
 public class Jars {
@@ -24,7 +23,7 @@ public class Jars {
     /**
      *
      */
-    public static void solveWithBFS() {
+    private static void solveWithBFS() {
         SearchProblem j = new JarsProblem();
         SearchEngine b = new BFS();
         b.setProblem(j);
@@ -35,7 +34,7 @@ public class Jars {
     /**
      *
      */
-    public static void solveWithID() {
+    private static void solveWithID() {
         SearchProblem j = new JarsProblem();
         SearchEngine i = new ID(6);
         i.setProblem(j);
@@ -46,7 +45,7 @@ public class Jars {
     /**
      *
      */
-    public static void solveWithBestFS() {
+    private static void solveWithBestFS() {
         SearchProblem j = new JarsProblem();
         SearchEngine b = new BestFS();
         b.setProblem(j);
@@ -54,7 +53,6 @@ public class Jars {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {

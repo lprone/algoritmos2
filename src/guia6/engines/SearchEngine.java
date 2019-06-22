@@ -1,10 +1,10 @@
 package guia6.engines;
 
-import java.util.*; // necessary for the use of lists
 import guia6.problems.SearchProblem;
 
+import java.util.List;
+
 /**
- *
  * @author lprone
  */
 abstract public class SearchEngine {
@@ -25,12 +25,13 @@ abstract public class SearchEngine {
     }
 
     /**
-	 * Constructor for abstract class AbstractSearchEngine.
-	 * @param p is the abstract search problem associated with the engine
-	 * being created.
-	 * @pre. p!=null.
-	 * @post. A reference to p is stored in field problem.
-	 */	
+     * Constructor for abstract class AbstractSearchEngine.
+     *
+     * @param p is the abstract search problem associated with the engine
+     *          being created.
+     * @pre. p!=null.
+     * @post. A reference to p is stored in field problem.
+     */
     public SearchEngine(SearchProblem p) {
         problem = p;
     }
@@ -67,7 +68,7 @@ abstract public class SearchEngine {
      * Sets the problem associated with the search engine.
      *
      * @param p is the search problem to be used for search (to set 'problem'
-     * to).
+     *          to).
      * @pre. p!=null.
      * @post. 'problem' is set to p.
      */

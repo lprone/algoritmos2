@@ -1,10 +1,9 @@
 package guia4;
 
-import java.awt.Point;
+import java.awt.*;
 import java.util.ArrayList;
 
 /**
- *
  * @author lprone
  */
 public class ej5 {
@@ -12,7 +11,6 @@ public class ej5 {
     private final int[][] adyacencia;
 
     /**
-     *
      * @param a
      */
     private ej5(ArrayList<Point> a) {
@@ -20,7 +18,6 @@ public class ej5 {
     }
 
     /**
-     *
      * @param t1
      * @param t2
      * @return
@@ -34,7 +31,6 @@ public class ej5 {
     }
 
     /**
-     *
      * @param tubos
      */
     private void inicializarUniones(ArrayList<Point> tubos) {
@@ -50,7 +46,6 @@ public class ej5 {
     }
 
     /**
-     *
      * @param m
      */
     private void mostrarMatriz(int[][] m) {
@@ -80,7 +75,6 @@ public class ej5 {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {

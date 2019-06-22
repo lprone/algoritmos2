@@ -1,17 +1,17 @@
 package guia6.problems.ochoReinas;
 
+import guia6.problems.SearchProblem;
 import guia6.problems.State;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
  * @author lprone
  */
-public class OchoReinasProblem implements guia6.problems.SearchProblem {
+public class OchoReinasProblem implements SearchProblem {
 
     /**
-     *
      * @return
      */
     @Override
@@ -20,7 +20,6 @@ public class OchoReinasProblem implements guia6.problems.SearchProblem {
     }
 
     /**
-     *
      * @param s
      * @return
      */
@@ -36,7 +35,6 @@ public class OchoReinasProblem implements guia6.problems.SearchProblem {
     }
 
     /**
-     *
      * @param s
      * @return
      */
@@ -52,7 +50,6 @@ public class OchoReinasProblem implements guia6.problems.SearchProblem {
     }
 
     /**
-     *
      * @param s
      * @return
      */
@@ -68,7 +65,6 @@ public class OchoReinasProblem implements guia6.problems.SearchProblem {
     }
 
     /**
-     *
      * @param s
      * @return
      */
@@ -78,7 +74,6 @@ public class OchoReinasProblem implements guia6.problems.SearchProblem {
     }
 
     /**
-     *
      * @param s
      * @return
      */

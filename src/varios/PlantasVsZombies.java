@@ -5,10 +5,8 @@
 package varios;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 /**
- *
  * @author lprone
  */
 class Planta implements Comparable {
@@ -19,7 +17,6 @@ class Planta implements Comparable {
     private final double potenciaTiempo;
 
     /**
-     *
      * @param especie
      * @param potencia
      * @param tiempo
@@ -32,7 +29,6 @@ class Planta implements Comparable {
     }
 
     /**
-     *
      * @return
      */
     public String getEspecie() {
@@ -40,7 +36,6 @@ class Planta implements Comparable {
     }
 
     /**
-     *
      * @return
      */
     public int getPotencia() {
@@ -48,7 +43,6 @@ class Planta implements Comparable {
     }
 
     /**
-     *
      * @return
      */
     public int getTiempo() {
@@ -56,7 +50,6 @@ class Planta implements Comparable {
     }
 
     /**
-     *
      * @return
      */
     @Override
@@ -65,7 +58,6 @@ class Planta implements Comparable {
     }
 
     /**
-     *
      * @param other
      * @return
      */
@@ -83,18 +75,16 @@ class Planta implements Comparable {
 }
 
 /**
- *
  * @author lprone
  */
 public class PlantasVsZombies {
 
     /**
-     *
      * @param plantas
      * @return
      */
     private static Planta[] solveGame(ArrayList<Planta> plantas) {
-        Collections.sort(plantas);
+        plantas.sort(Planta::compareTo);
         Planta[] sol = new Planta[8];
         int auxArreglo, auxList = 0;
         sol[0] = plantas.get(auxList);
@@ -122,7 +112,6 @@ public class PlantasVsZombies {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {

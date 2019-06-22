@@ -7,7 +7,6 @@ package guia5;
 import java.util.ArrayList;
 
 /**
- *
  * @author lprone
  */
 class Pair<A, B> {
@@ -16,7 +15,6 @@ class Pair<A, B> {
     final B b;
 
     /**
-     *
      * @param a
      * @param b
      */
@@ -26,7 +24,6 @@ class Pair<A, B> {
     }
 
     /**
-     *
      * @return
      */
     @Override
@@ -35,7 +32,6 @@ class Pair<A, B> {
     }
 
     /**
-     *
      * @param other
      * @return
      */
@@ -46,13 +42,11 @@ class Pair<A, B> {
 }
 
 /**
- *
  * @author lprone
  */
 public class Ej7 {
 
     /**
-     *
      * @param nodos
      * @param aristas
      * @param colores
@@ -85,7 +79,6 @@ public class Ej7 {
     }
 
     /**
-     *
      * @param matriz
      */
     private static void verMatriz(int[][] matriz) {
@@ -99,7 +92,6 @@ public class Ej7 {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {

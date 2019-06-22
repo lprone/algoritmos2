@@ -1,11 +1,10 @@
 package guia6.games;
 
 import guia6.engines.*;
-import guia6.problems.*;
-import guia6.problems.farmer.*;
+import guia6.problems.SearchProblem;
+import guia6.problems.farmer.FarmerProblem;
 
 /**
- *
  * @author lprone
  */
 public class Farmer {
@@ -55,10 +54,14 @@ public class Farmer {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {
+        long time_start, time_end;
+
+        time_start = System.currentTimeMillis();
         solveWithBFS();
+        time_end = System.currentTimeMillis();
+        System.out.println("the task has taken " + (time_end - time_start) / 1000 + " seconds");
     }
 }

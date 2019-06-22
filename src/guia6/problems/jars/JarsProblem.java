@@ -1,17 +1,17 @@
 package guia6.problems.jars;
 
+import guia6.problems.SearchProblem;
 import guia6.problems.State;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
  * @author lprone
  */
-public class JarsProblem implements guia6.problems.SearchProblem {
+public class JarsProblem implements SearchProblem {
 
     /**
-     *
      * @return
      */
     @Override
@@ -20,7 +20,6 @@ public class JarsProblem implements guia6.problems.SearchProblem {
     }
 
     /**
-     *
      * @param s
      * @return
      */
@@ -30,36 +29,54 @@ public class JarsProblem implements guia6.problems.SearchProblem {
     }
 
     /**
-     *
      * @param s
      * @return
      */
     @Override
     public List<State> getSuccessors(State s) {
         List<State> ret = new ArrayList<>();
-        int j1 = ((JarsState) s).getJ1(), j2 = ((JarsState) s).getJ2();
-        ret.add(new JarsState(0, j2));
-        ret.add(new JarsState(j1, 0));
-        ret.add(new JarsState(4, j2));
-        ret.add(new JarsState(j1, 3));
+        int jar1 = ((JarsState) s).getJar1();
+        int jar2 = ((JarsState) s).getJar2();
 
-        while (j1 > 0 && j2 < 3) {
-            j1--;
-            j2++;
-        }
-
-        ret.add(new JarsState(j1, j2));
-
-        j1 = ((JarsState) s).getJ1();
-        j2 = ((JarsState) s).getJ2();
-
-        while (j1 < 4 && j2 > 0) {
-            j1++;
-            j2--;
-        }
-
-        ret.add(new JarsState(j1, j2));
+        ret.add(fillJarOne(jar1, jar2));
+        ret.add(fillJarTwo(jar1, jar2));
+        ret.add(drainJarOne(jar1, jar2));
+        ret.add(drainJarTwo(jar1, jar2));
+        ret.add(trasferWaterFromJarOneToJarTwo(jar1, jar2));
+        ret.add(trasferWaterFromJarTwoToJarOne(jar1, jar2));
 
         return ret;
+    }
+
+    private JarsState fillJarOne(int jar1, int jar2) {
+        return new JarsState(4, jar2);
+    }
+
+    private JarsState fillJarTwo(int jar1, int jar2) {
+        return new JarsState(jar1, 3);
+    }
+
+    private JarsState drainJarOne(int jar1, int jar2) {
+        return new JarsState(0, jar2);
+    }
+
+    private JarsState drainJarTwo(int jar1, int jar2) {
+        return new JarsState(jar1, 0);
+    }
+
+    private JarsState trasferWaterFromJarOneToJarTwo(int jar1, int jar2) {
+        while (jar1 > 0 && jar2 < 3) {
+            jar1--;
+            jar2++;
+        }
+        return new JarsState(jar1, jar2);
+    }
+
+    private JarsState trasferWaterFromJarTwoToJarOne(int jar1, int jar2) {
+        while (jar1 < 4 && jar2 > 0) {
+            jar1++;
+            jar2--;
+        }
+        return new JarsState(jar1, jar2);
     }
 }

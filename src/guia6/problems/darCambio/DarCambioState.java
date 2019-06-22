@@ -3,7 +3,6 @@ package guia6.problems.darCambio;
 import guia6.problems.State;
 
 /**
- *
  * @author lprone
  */
 public class DarCambioState implements State {
@@ -11,7 +10,6 @@ public class DarCambioState implements State {
     final int total;
 
     /**
-     *
      * @param total
      */
     public DarCambioState(int total) {
@@ -19,7 +17,6 @@ public class DarCambioState implements State {
     }
 
     /**
-     *
      * @param o
      * @return
      */
@@ -29,7 +26,6 @@ public class DarCambioState implements State {
     }
 
     /**
-     *
      * @return
      */
     @Override

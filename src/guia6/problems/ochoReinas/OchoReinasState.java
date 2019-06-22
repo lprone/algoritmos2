@@ -3,7 +3,6 @@ package guia6.problems.ochoReinas;
 import guia6.problems.State;
 
 /**
- *
  * @author lprone
  */
 public class OchoReinasState implements State {
@@ -12,7 +11,6 @@ public class OchoReinasState implements State {
     final int[] tablero = new int[8];
 
     /**
-     *
      * @param t0
      * @param t1
      * @param t3

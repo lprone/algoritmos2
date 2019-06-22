@@ -4,12 +4,13 @@
  */
 package guia6.problems.caballo;
 
-import guia6.problems.*;
+import guia6.problems.SearchProblem;
+import guia6.problems.State;
+
 import java.util.LinkedList;
 import java.util.List;
 
 /**
- *
  * @author lprone
  */
 public class CaballoProblem implements SearchProblem {
@@ -18,7 +19,6 @@ public class CaballoProblem implements SearchProblem {
     private final int y;
 
     /**
-     *
      * @param x
      * @param y
      */
@@ -28,7 +28,6 @@ public class CaballoProblem implements SearchProblem {
     }
 
     /**
-     *
      * @return
      */
     @Override
@@ -37,7 +36,6 @@ public class CaballoProblem implements SearchProblem {
     }
 
     /**
-     *
      * @param s
      * @return
      */
@@ -62,7 +60,6 @@ public class CaballoProblem implements SearchProblem {
     }
 
     /**
-     *
      * @param s
      * @return
      */

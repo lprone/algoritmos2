@@ -1,19 +1,17 @@
 package guia3;
 
+import javax.swing.*;
 import java.awt.*;
 import java.util.LinkedList;
 import java.util.Observable;
 import java.util.Observer;
-import javax.swing.JOptionPane;
 
 /**
- *
  * @author lprone
  */
 public class Ej10 {
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {
@@ -33,7 +31,6 @@ class Game {
     private static Triomino game;
 
     /**
-     *
      * @param t
      */
     public Game(Triomino t) {
@@ -41,7 +38,6 @@ class Game {
     }
 
     /**
-     *
      * @param o
      */
     public void addObs(Observer o) {
@@ -49,7 +45,6 @@ class Game {
     }
 
     /**
-     *
      * @return
      */
     public static int[][] getBoard() {
@@ -57,7 +52,6 @@ class Game {
     }
 
     /**
-     *
      * @param x
      * @param y
      */
@@ -66,7 +60,6 @@ class Game {
     }
 
     /**
-     *
      * @param x1
      * @param y1
      * @param x2
@@ -96,7 +89,6 @@ class Chip {
     private final Point p3;
 
     /**
-     *
      * @param x1
      * @param y1
      * @param x2
@@ -111,7 +103,6 @@ class Chip {
     }
 
     /**
-     *
      * @return
      */
     public LinkedList<Point> getChip() {
@@ -137,7 +128,6 @@ class Triomino extends Observable {
     private int count;
 
     /**
-     *
      * @return
      */
     public int[][] getBoard() {
@@ -158,7 +148,6 @@ class Triomino extends Observable {
     }
 
     /**
-     *
      * @param x
      * @param y
      */
@@ -170,7 +159,6 @@ class Triomino extends Observable {
     }
 
     /**
-     *
      * @param x1
      * @param y1
      * @param x2
@@ -201,7 +189,6 @@ class Triomino extends Observable {
     }
 
     /**
-     *
      * @return
      */
     public boolean end() {
@@ -209,7 +196,6 @@ class Triomino extends Observable {
     }
 
     /**
-     *
      * @param x
      * @param y
      * @return
@@ -219,7 +205,6 @@ class Triomino extends Observable {
     }
 
     /**
-     *
      * @param x
      * @param y
      * @return
@@ -229,7 +214,6 @@ class Triomino extends Observable {
     }
 
     /**
-     *
      * @param x
      * @param y
      */
@@ -237,7 +221,6 @@ class Triomino extends Observable {
     }
 
     /**
-     *
      * @param x
      * @param y
      * @return
@@ -247,7 +230,6 @@ class Triomino extends Observable {
     }
 
     /**
-     *
      * @param x
      * @param y
      * @return
@@ -257,7 +239,6 @@ class Triomino extends Observable {
     }
 
     /**
-     *
      * @param x
      * @param y
      * @return
@@ -267,7 +248,6 @@ class Triomino extends Observable {
     }
 
     /**
-     *
      * @param x
      * @param y
      * @return
@@ -277,7 +257,6 @@ class Triomino extends Observable {
     }
 
     /**
-     *
      * @param x
      * @param y
      * @return
@@ -298,7 +277,6 @@ class Triomino extends Observable {
     }
 
     /**
-     *
      * @param x
      * @param y
      * @return
@@ -313,7 +291,6 @@ class Triomino extends Observable {
     }
 
     /**
-     *
      * @param x
      * @param y
      * @return
@@ -376,19 +353,19 @@ class View extends javax.swing.JFrame implements Observer {
         jTable1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTable1.setFont(new java.awt.Font("Tahoma", Font.PLAIN, 24)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null}
-            },
-            new String [] {
-                "", "", "", "", "", "", "", ""
-            }
+                new Object[][]{
+                        {null, null, null, null, null, null, null, null},
+                        {null, null, null, null, null, null, null, null},
+                        {null, null, null, null, null, null, null, null},
+                        {null, null, null, null, null, null, null, null},
+                        {null, null, null, null, null, null, null, null},
+                        {null, null, null, null, null, null, null, null},
+                        {null, null, null, null, null, null, null, null},
+                        {null, null, null, null, null, null, null, null}
+                },
+                new String[]{
+                        "", "", "", "", "", "", "", ""
+                }
         ));
         jTable1.setGridColor(new java.awt.Color(0, 0, 0));
         jTable1.setMinimumSize(new java.awt.Dimension(128, 128));
@@ -401,21 +378,22 @@ class View extends javax.swing.JFrame implements Observer {
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(15, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addContainerGap(15, Short.MAX_VALUE)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap())
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 55, Short.MAX_VALUE))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 55, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
     /**
      * @param args the command line arguments
      */
@@ -425,7 +403,6 @@ class View extends javax.swing.JFrame implements Observer {
     // End of variables declaration//GEN-END:variables
 
     /**
-     *
      * @param o
      * @param arg
      */

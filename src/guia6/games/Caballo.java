@@ -1,20 +1,14 @@
 package guia6.games;
 
-import guia6.engines.SearchEngine;
-import guia6.engines.BFS;
-import guia6.engines.BestFS;
-import guia6.engines.DFS;
-import guia6.engines.ID;
+import guia6.engines.*;
 import guia6.problems.caballo.CaballoProblem;
 
 /**
- *
  * @author lprone
  */
 public class Caballo {
 
     /**
-     *
      * @param x
      * @param y
      */
@@ -27,7 +21,6 @@ public class Caballo {
     }
 
     /**
-     *
      * @param x
      * @param y
      */
@@ -40,7 +33,6 @@ public class Caballo {
     }
 
     /**
-     *
      * @param x
      * @param y
      */
@@ -53,7 +45,6 @@ public class Caballo {
     }
 
     /**
-     *
      * @param x
      * @param y
      */
@@ -65,7 +56,6 @@ public class Caballo {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {

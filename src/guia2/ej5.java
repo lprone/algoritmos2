@@ -1,19 +1,17 @@
 package guia2;
 
 /**
- *
  * @author lprone
  */
 public class ej5 {
 
     private final int[][] tablero = new int[8][8];
     private int reinas = 0;
-    private static final int reina = 8;
-    private static final int disponible = 0;
-    private static final int noDisponible = 1;
+    private static final int REINA = 8;
+    private static final int DISPONIBLE = 0;
+    private static final int NO_DISPONIBLE = 1;
 
     /**
-     *
      * @return
      */
     private boolean tableroLleno() {
@@ -28,7 +26,6 @@ public class ej5 {
     }
 
     /**
-     *
      * @return
      */
     private String getPosicionReinas() {
@@ -44,7 +41,6 @@ public class ej5 {
     }
 
     /**
-     *
      * @return
      */
     private int getReinas() {
@@ -52,31 +48,28 @@ public class ej5 {
     }
 
     /**
-     *
      * @param x
      * @param y
      */
     private void setPosNoDisponible(int x, int y) {
-        tablero[x][y] = noDisponible;
+        tablero[x][y] = NO_DISPONIBLE;
     }
 
     /**
-     *
      * @param x
      * @param y
      * @return
      */
     private boolean esReina(int x, int y) {
-        return tablero[x][y] == reina;
+        return tablero[x][y] == REINA;
     }
 
     /**
-     *
      * @param x
      * @param y
      */
     private void setReina(int x, int y) {
-        tablero[x][y] = reina;
+        tablero[x][y] = REINA;
         reinas++;
         setFil(x);
         setCol(y);
@@ -89,14 +82,13 @@ public class ej5 {
     private void inicializarTablero() {
         for (int i = 0; i < tablero.length; i++) {
             for (int j = 0; j < tablero.length; j++) {
-                tablero[i][j] = disponible;
+                tablero[i][j] = DISPONIBLE;
             }
         }
         reinas = 0;
     }
 
     /**
-     *
      * @param x
      */
     private void setFil(int x) {
@@ -108,7 +100,6 @@ public class ej5 {
     }
 
     /**
-     *
      * @param y
      */
     private void setCol(int y) {
@@ -120,7 +111,6 @@ public class ej5 {
     }
 
     /**
-     *
      * @param x
      * @param y
      */
@@ -163,13 +153,12 @@ public class ej5 {
     }
 
     /**
-     *
      * @param x
      * @param y
      * @return
      */
     private boolean posicionPermitida(int x, int y) {
-        return tablero[x][y] == disponible;
+        return tablero[x][y] == DISPONIBLE;
     }
 
     /**
@@ -255,7 +244,6 @@ public class ej5 {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {

@@ -1,11 +1,10 @@
 package guia6.games;
 
 import guia6.engines.*;
-import guia6.problems.*;
+import guia6.problems.SearchProblem;
 import guia6.problems.ochoReinas.OchoReinasProblem;
 
 /**
- *
  * @author lprone
  */
 public class OchoReinas {
@@ -53,7 +52,6 @@ public class OchoReinas {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {

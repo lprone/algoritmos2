@@ -1,13 +1,11 @@
 package varios;
 
 /**
- *
  * @author lprone
  */
 public class busquedaBinaria {
 
     /**
-     *
      * @param in
      * @param e
      * @return
@@ -25,7 +23,6 @@ public class busquedaBinaria {
     }
 
     /**
-     *
      * @param args
      */
     public static void main(String[] args) {
