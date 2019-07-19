@@ -30,7 +30,12 @@ public class ej3 {
      * @param args
      */
     public static void main(String[] args) {
+        long time_start, time_end;
+
+        time_start = System.currentTimeMillis();
         ej3 e = new ej3();
         System.out.printf("%.0f \n", e.fibo(1475));
+        time_end = System.currentTimeMillis();
+        System.out.println("the task has taken " + (time_end - time_start) / 1000 + " seconds");
     }
 }

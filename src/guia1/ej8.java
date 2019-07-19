@@ -39,9 +39,18 @@ public class ej8 {
      * @param args
      */
     public static void main(String[] args) {
+        long time_start, time_end;
+
         ej8 e = new ej8();
+        time_start = System.currentTimeMillis();
         e.fiboInt();
+        time_end = System.currentTimeMillis();
+        System.out.println("the task has taken " + (time_end - time_start) / 1000 + " seconds");
+
         System.out.println("---------------------------");
+        time_start = System.currentTimeMillis();
         e.fiboLong();
+        time_end = System.currentTimeMillis();
+        System.out.println("the task has taken " + (time_end - time_start) / 1000 + " seconds");
     }
 }
